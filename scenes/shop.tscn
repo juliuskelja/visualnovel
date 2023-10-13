@@ -22,16 +22,18 @@ scale = Vector2(5.70588, 4.7549)
 texture = ExtResource("2_4q4rp")
 script = ExtResource("3_fg0ds")
 
-[node name="Dialogi" type="Sprite2D" parent="HahmoPlaceHolder1"]
-texture_filter = 1
-position = Vector2(6.13403, 64.1444)
-scale = Vector2(0.544801, 0.367341)
-texture = ExtResource("3_uxxhe")
-
 [node name="Area2D" type="Area2D" parent="HahmoPlaceHolder1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HahmoPlaceHolder1/Area2D"]
 position = Vector2(0.608246, -0.583508)
 shape = SubResource("RectangleShape2D_gyynw")
+
+[node name="DialogNode" type="Node2D" parent="."]
+
+[node name="Dialogi" type="Sprite2D" parent="DialogNode"]
+texture_filter = 1
+position = Vector2(575, 504)
+scale = Vector2(3.10857, 1.74667)
+texture = ExtResource("3_uxxhe")
 
 [connection signal="input_event" from="HahmoPlaceHolder1/Area2D" to="HahmoPlaceHolder1" method="_on_area_2d_input_event"]
