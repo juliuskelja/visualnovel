@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b18wi0mawl1ou"]
+
+[ext_resource type="Texture2D" uid="uid://d304p2q8sa4fv" path="res://assets/library.png" id="1_lygal"]
+
+[node name="library" type="Node2D"]
+
+[node name="Library" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(4.26667, 3)
+texture = ExtResource("1_lygal")

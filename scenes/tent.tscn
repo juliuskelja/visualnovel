@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://tlgka4kiwnos"]
+
+[ext_resource type="Texture2D" uid="uid://re135dh6abih" path="res://assets/teltta.png" id="1_jhh4s"]
+
+[node name="tent" type="Node2D"]
+
+[node name="Teltta" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("1_jhh4s")
