@@ -1,40 +1,110 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=14 format=3 uid="uid://d2t5jrn5gpuy1"]
 
-[ext_resource type="Texture2D" uid="uid://0hvwti6jvhmu" path="res://assets/World Map place holder.png" id="1_lbu1u"]
-[ext_resource type="Script" path="res://scripts/WorldMapPlaceHolder.gd" id="2_0s01a"]
+[ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/World Map assetit/0. World map road background.png" id="1_wpw5k"]
+[ext_resource type="Texture2D" uid="uid://bg5i7spvdqo16" path="res://assets/World Map assetit/1. World map road.png" id="2_wsuil"]
+[ext_resource type="Texture2D" uid="uid://x1qvegpr7glh" path="res://assets/World Map assetit/2. World map coast.png" id="3_giy7x"]
+[ext_resource type="Texture2D" uid="uid://btox3yeow3c5" path="res://assets/World Map assetit/3. World map pier.png" id="4_6fja5"]
+[ext_resource type="Script" path="res://scripts/3_WorldMapPier.gd" id="5_cjrfm"]
+[ext_resource type="Texture2D" uid="uid://6q8hn0yf2k0e" path="res://assets/World Map assetit/4. World map cartwheel.png" id="5_jp0rq"]
+[ext_resource type="Texture2D" uid="uid://6s7i7v2dwv7o" path="res://assets/World Map assetit/5. World map park.png" id="6_u43mc"]
+[ext_resource type="Script" path="res://scripts/5_WorldMapPark.gd" id="8_gwlaf"]
+[ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/World Map assetit/6. World map tent.png" id="8_m5lti"]
+[ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/World Map assetit/7. World map tavern.png" id="9_75ly2"]
+[ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/World Map assetit/8. World map library.png" id="10_itc0i"]
+[ext_resource type="Script" path="res://scripts/6_WorldMapTent.gd" id="10_mj4bt"]
+[ext_resource type="Script" path="res://scripts/8_WorldMapLibrary.gd" id="13_72x65"]
 
 [node name="map1" type="Node2D"]
 
-[node name="WorldMapPlaceHolder" type="Sprite2D" parent="."]
+[node name="0_WorldMapRoadBackground" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324.5)
-scale = Vector2(3.6, 3.59444)
-texture = ExtResource("1_lbu1u")
-script = ExtResource("2_0s01a")
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("1_wpw5k")
 
-[node name="Park" type="Area2D" parent="WorldMapPlaceHolder"]
+[node name="1_WorldMapRoad" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(575.5, 323.5)
+scale = Vector2(3.59687, 3.59444)
+texture = ExtResource("2_wsuil")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WorldMapPlaceHolder/Park"]
+[node name="2_WorldMapCoast" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("3_giy7x")
+
+[node name="3_WorldMapPier" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("4_6fja5")
+script = ExtResource("5_cjrfm")
+
+[node name="Pier" type="Area2D" parent="3_WorldMapPier"]
+position = Vector2(0, 0.138893)
+scale = Vector2(1, 0.998455)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="3_WorldMapPier/Pier"]
+polygon = PackedVector2Array(-160, 51.8856, -159.444, 89.7218, -45, 89.7218, -57.2222, 84.4359, -79.1667, 79.9845, -95, 76.3679, -109.167, 77.2025, -126.667, 69.4127, -151.389, 58.8408)
+
+[node name="4_WorldMapCartwheel" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("5_jp0rq")
+
+[node name="5_WorldMapPark" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("6_u43mc")
+script = ExtResource("8_gwlaf")
+
+[node name="Park" type="Area2D" parent="5_WorldMapPark"]
+position = Vector2(0, 0.138885)
+scale = Vector2(1, 0.998456)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="5_WorldMapPark/Park"]
 position = Vector2(5.27779, 61.6667)
 polygon = PackedVector2Array(10.5556, 13.8889, 12.7778, 3.05556, 30.2778, -14.4444, 44.4444, -20, 58.8889, -21.6667, 70.2778, -19.7222, 79.4444, -13.0556, 88.3333, -11.6667, 90.8333, -16.9444, 105, -18.8889, 116.389, -16.9444, 127.5, -4.44444, 110.556, 24.4444)
 
-[node name="Library" type="Area2D" parent="WorldMapPlaceHolder"]
+[node name="6_WorldMapTent" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("8_m5lti")
+script = ExtResource("10_mj4bt")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WorldMapPlaceHolder/Library"]
+[node name="Tent" type="Area2D" parent="6_WorldMapTent"]
+position = Vector2(0, 0.138885)
+scale = Vector2(1, 0.998455)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="6_WorldMapTent/Tent"]
+polygon = PackedVector2Array(137.5, 62.7357, 132.778, 66.6306, 127.778, 74.6986, 127.778, 76.3679, 125.833, 79.4281, 126.111, 81.932, 136.111, 81.932, 144.167, 70.5255)
+
+[node name="7_WorldMapTavern" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("9_75ly2")
+
+[node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("10_itc0i")
+script = ExtResource("13_72x65")
+
+[node name="Library" type="Area2D" parent="8_WorldMapLibrary"]
+position = Vector2(0, 0.138893)
+scale = Vector2(1, 0.998456)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="8_WorldMapLibrary/Library"]
 position = Vector2(-64.7222, -28.8889)
 polygon = PackedVector2Array(-5.83334, -12.7778, 22.2222, -8.88889, 26.3889, -4.72222, 26.6667, 10, 15.5556, 18.3333, -12.7778, 10, -11.3889, -4.72222, -9.72222, -9.72222)
 
-[node name="Tent" type="Area2D" parent="WorldMapPlaceHolder"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WorldMapPlaceHolder/Tent"]
-polygon = PackedVector2Array(137.5, 62.7357, 132.778, 66.6306, 127.778, 74.6986, 127.778, 76.3679, 125.833, 79.4281, 126.111, 81.932, 136.111, 81.932, 144.167, 70.5255)
-
-[node name="Pier" type="Area2D" parent="WorldMapPlaceHolder"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WorldMapPlaceHolder/Pier"]
-polygon = PackedVector2Array(-160, 51.8856, -159.444, 89.7218, -45, 89.7218, -57.2222, 84.4359, -79.1667, 79.9845, -95, 76.3679, -109.167, 77.2025, -126.667, 69.4127, -151.389, 58.8408)
-
-[connection signal="input_event" from="WorldMapPlaceHolder/Park" to="WorldMapPlaceHolder" method="_on_park_input_event"]
-[connection signal="input_event" from="WorldMapPlaceHolder/Library" to="WorldMapPlaceHolder" method="_on_library_input_event"]
-[connection signal="input_event" from="WorldMapPlaceHolder/Tent" to="WorldMapPlaceHolder" method="_on_tent_input_event"]
-[connection signal="input_event" from="WorldMapPlaceHolder/Pier" to="WorldMapPlaceHolder" method="_on_pier_input_event"]
+[connection signal="input_event" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_input_event"]
+[connection signal="input_event" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_input_event"]
+[connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
+[connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
