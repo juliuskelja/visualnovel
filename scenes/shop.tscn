@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://pnqe3nxxmh8u" path="res://assets/Hahmo place holder 1.png" id="2_4q4rp"]
 [ext_resource type="Script" path="res://scripts/HahmoPlaceHolder1.gd" id="3_fg0ds"]
 [ext_resource type="Texture2D" uid="uid://bqh3ayp5vhr2r" path="res://assets/DIALOGI.png" id="3_uxxhe"]
-[ext_resource type="Script" path="res://scenes/DialogNode.gd" id="4_l1dy4"]
+[ext_resource type="Script" path="res://scripts/DialogNode.gd" id="4_6bfad"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gyynw"]
 size = Vector2(34.8866, 52.9031)
@@ -30,7 +30,7 @@ position = Vector2(0.608246, -0.583508)
 shape = SubResource("RectangleShape2D_gyynw")
 
 [node name="DialogNode" type="Node2D" parent="."]
-script = ExtResource("4_l1dy4")
+script = ExtResource("4_6bfad")
 
 [node name="Dialogi" type="Sprite2D" parent="DialogNode"]
 texture_filter = 1

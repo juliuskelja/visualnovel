@@ -6,6 +6,6 @@
 
 [node name="Library" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(4.26667, 3)
+position = Vector2(960, 540)
+scale = Vector2(7.11111, 5)
 texture = ExtResource("1_lygal")

@@ -15,29 +15,30 @@
 [ext_resource type="Script" path="res://scripts/8_WorldMapLibrary.gd" id="13_72x65"]
 
 [node name="map1" type="Node2D"]
+position = Vector2(314, 146)
 
 [node name="0_WorldMapRoadBackground" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("1_wpw5k")
 
 [node name="1_WorldMapRoad" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(575.5, 323.5)
-scale = Vector2(3.59687, 3.59444)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("2_wsuil")
 
 [node name="2_WorldMapCoast" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("3_giy7x")
 
 [node name="3_WorldMapPier" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394.5)
+scale = Vector2(6, 5.99444)
 texture = ExtResource("4_6fja5")
 script = ExtResource("5_cjrfm")
 
@@ -50,14 +51,14 @@ polygon = PackedVector2Array(-160, 51.8856, -159.444, 89.7218, -45, 89.7218, -57
 
 [node name="4_WorldMapCartwheel" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("5_jp0rq")
 
 [node name="5_WorldMapPark" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("6_u43mc")
 script = ExtResource("8_gwlaf")
 
@@ -71,8 +72,8 @@ polygon = PackedVector2Array(10.5556, 13.8889, 12.7778, 3.05556, 30.2778, -14.44
 
 [node name="6_WorldMapTent" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("8_m5lti")
 script = ExtResource("10_mj4bt")
 
@@ -85,14 +86,14 @@ polygon = PackedVector2Array(137.5, 62.7357, 132.778, 66.6306, 127.778, 74.6986,
 
 [node name="7_WorldMapTavern" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394.5)
+scale = Vector2(6, 5.99444)
 texture = ExtResource("9_75ly2")
 
 [node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 324)
-scale = Vector2(3.6, 3.6)
+position = Vector2(646, 394)
+scale = Vector2(6, 6)
 texture = ExtResource("10_itc0i")
 script = ExtResource("13_72x65")
 
