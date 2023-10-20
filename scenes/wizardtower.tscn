@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://clipwf3cx7res"]
+
+[ext_resource type="Texture2D" uid="uid://cc8titkm55kdr" path="res://assets/backgrounds/wizardtower.png" id="1_u54fy"]
+
+[node name="wizardtower" type="Node2D"]
+
+[node name="Velhontorni" type="Sprite2D" parent="."]
+position = Vector2(960, 540.5)
+scale = Vector2(6, 6.00556)
+texture = ExtResource("1_u54fy")

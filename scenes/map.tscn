@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://3odyo3endu1t"]
 
-[ext_resource type="Texture2D" uid="uid://cfjp5p3xanh7q" path="res://assets/Overworld placeholder-export.png" id="1_8g6gy"]
+[ext_resource type="Texture2D" uid="uid://cfjp5p3xanh7q" path="res://assets/other/overworld_placeholder.png" id="1_8g6gy"]
 [ext_resource type="Script" path="res://scripts/ovi.gd" id="2_wk7kq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2crvq"]

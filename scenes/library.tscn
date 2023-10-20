@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b18wi0mawl1ou"]
 
-[ext_resource type="Texture2D" uid="uid://d304p2q8sa4fv" path="res://assets/library.png" id="1_lygal"]
+[ext_resource type="Texture2D" uid="uid://d304p2q8sa4fv" path="res://assets/backgrounds/library.png" id="1_lygal"]
 
 [node name="library" type="Node2D"]
 

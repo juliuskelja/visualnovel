@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b3caac2dfrv3m"]
 
-[ext_resource type="Texture2D" uid="uid://do4idw381i4ks" path="res://assets/background laituri usva.png" id="1_51156"]
+[ext_resource type="Texture2D" uid="uid://do4idw381i4ks" path="res://assets/backgrounds/pier.png" id="1_51156"]
 
 [node name="pier" type="Node2D"]
 

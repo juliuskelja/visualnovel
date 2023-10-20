@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c6sgqeiy3rj8e"]
 
-[ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/puisto.png" id="1_pyxlm"]
+[ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="1_pyxlm"]
 
 [node name="park" type="Node2D"]
 

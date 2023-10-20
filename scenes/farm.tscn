@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://hat2oslfq3it"]
+
+[ext_resource type="Texture2D" uid="uid://c3n6opx0sp3ay" path="res://assets/backgrounds/farm.png" id="1_ipeuo"]
+
+[node name="farm" type="Node2D"]
+
+[node name="Farm" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_ipeuo")
