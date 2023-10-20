@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c6sgqeiy3rj8e"]
 
-[ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="1_pyxlm"]
+[ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="1_wwmgi"]
 
 [node name="park" type="Node2D"]
 
@@ -8,4 +8,4 @@
 texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("1_pyxlm")
+texture = ExtResource("1_wwmgi")

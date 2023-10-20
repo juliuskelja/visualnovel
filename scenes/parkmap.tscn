@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqwu76ax4f7yh"]
+
+[ext_resource type="Texture2D" uid="uid://du2h7qjxv5nw1" path="res://assets/other/Park Map.png" id="1_2fm1b"]
+
+[node name="parkmap" type="Node2D"]
+
+[node name="ParkMap_Placeholder" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_2fm1b")

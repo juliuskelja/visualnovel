@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://uel82tb03hch"]
+[gd_scene load_steps=2 format=3 uid="uid://uel82tb03hch"]
+
+[ext_resource type="Texture2D" uid="uid://fs3vn4pcsy5n" path="res://assets/backgrounds/pharmacy.png" id="1_3ft1t"]
 
 [node name="pharmacy" type="Node2D"]
+
+[node name="Apteekki" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_3ft1t")
