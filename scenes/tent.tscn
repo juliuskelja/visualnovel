@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://tlgka4kiwnos"]
+[gd_scene load_steps=5 format=3 uid="uid://tlgka4kiwnos"]
 
 [ext_resource type="Texture2D" uid="uid://re135dh6abih" path="res://assets/backgrounds/tent.png" id="1_jhh4s"]
+[ext_resource type="Texture2D" uid="uid://c010rfglo5jwb" path="res://assets/other/arrow_back_FILL0_wght400_GRAD0_opsz24.png" id="2_m1o72"]
+[ext_resource type="Script" path="res://scripts/ArrowBack.gd" id="3_k61e5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83rq2"]
 
 [node name="tent" type="Node2D"]
 
@@ -9,3 +13,17 @@ texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("1_jhh4s")
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(127, 978)
+scale = Vector2(10.4792, 8.3125)
+texture = ExtResource("2_m1o72")
+script = ExtResource("3_k61e5")
+
+[node name="Area2D" type="Area2D" parent="ArrowBack"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowBack/Area2D"]
+shape = SubResource("RectangleShape2D_83rq2")
+
+[connection signal="input_event" from="ArrowBack/Area2D" to="ArrowBack" method="_on_area_2d_input_event"]

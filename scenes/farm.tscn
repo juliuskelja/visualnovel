@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://hat2oslfq3it"]
+[gd_scene load_steps=5 format=3 uid="uid://hat2oslfq3it"]
 
 [ext_resource type="Texture2D" uid="uid://c3n6opx0sp3ay" path="res://assets/backgrounds/farm.png" id="1_ipeuo"]
+[ext_resource type="Texture2D" uid="uid://c010rfglo5jwb" path="res://assets/other/arrow_back_FILL0_wght400_GRAD0_opsz24.png" id="2_ps0js"]
+[ext_resource type="Script" path="res://scripts/ArrowBack.gd" id="3_yrrjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ri0ey"]
 
 [node name="farm" type="Node2D"]
 
@@ -8,3 +12,17 @@
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("1_ipeuo")
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(125, 100)
+scale = Vector2(10.4792, 8.3125)
+texture = ExtResource("2_ps0js")
+script = ExtResource("3_yrrjs")
+
+[node name="Area2D" type="Area2D" parent="ArrowBack"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowBack/Area2D"]
+shape = SubResource("RectangleShape2D_ri0ey")
+
+[connection signal="input_event" from="ArrowBack/Area2D" to="ArrowBack" method="_on_area_2d_input_event"]

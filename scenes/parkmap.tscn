@@ -1,11 +1,99 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqwu76ax4f7yh"]
+[gd_scene load_steps=15 format=3 uid="uid://bqwu76ax4f7yh"]
 
-[ext_resource type="Texture2D" uid="uid://du2h7qjxv5nw1" path="res://assets/other/Park Map.png" id="1_2fm1b"]
+[ext_resource type="Texture2D" uid="uid://d3a1iokgmbd7g" path="res://assets/map/park_assets/0 park background.png" id="1_v4p88"]
+[ext_resource type="Texture2D" uid="uid://c010rfglo5jwb" path="res://assets/other/arrow_back_FILL0_wght400_GRAD0_opsz24.png" id="2_b31aq"]
+[ext_resource type="Texture2D" uid="uid://b12w1hpamkdyb" path="res://assets/map/park_assets/1 park road.png" id="2_fkj3s"]
+[ext_resource type="Texture2D" uid="uid://t1q44hoy6mi7" path="res://assets/map/park_assets/2 park pond.png" id="3_kt8go"]
+[ext_resource type="Script" path="res://scripts/ArrowBack.gd" id="3_txfq2"]
+[ext_resource type="Texture2D" uid="uid://b6uxv6cffatvk" path="res://assets/map/park_assets/3 park fence background.png" id="4_tdfj6"]
+[ext_resource type="Texture2D" uid="uid://sj4vc3a87ic5" path="res://assets/map/park_assets/4 park fence.png" id="5_g5t83"]
+[ext_resource type="Texture2D" uid="uid://blow580o67g0n" path="res://assets/map/park_assets/5 park bushes.png" id="6_ilqtc"]
+[ext_resource type="Texture2D" uid="uid://i5tw3lex171k" path="res://assets/map/park_assets/6 park trees.png" id="7_ppnvf"]
+[ext_resource type="Texture2D" uid="uid://dyfhmfarni3n4" path="res://assets/map/park_assets/7 park bushes2.png" id="8_ku0gt"]
+[ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="9_33s8p"]
+[ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="10_bnwi1"]
+[ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="11_jo4da"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cei1"]
 
 [node name="parkmap" type="Node2D"]
 
-[node name="ParkMap_Placeholder" type="Sprite2D" parent="."]
+[node name="0ParkBackground" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("1_2fm1b")
+texture = ExtResource("1_v4p88")
+
+[node name="1ParkRoad" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("2_fkj3s")
+
+[node name="2ParkPond" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_kt8go")
+
+[node name="3ParkFenceBackground" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("4_tdfj6")
+
+[node name="4ParkFence" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("5_g5t83")
+
+[node name="5ParkBushes" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("6_ilqtc")
+
+[node name="6ParkTrees" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("7_ppnvf")
+
+[node name="7ParkBushes2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("8_ku0gt")
+
+[node name="8ParkPicnic" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("9_33s8p")
+
+[node name="9ParkBenches" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("10_bnwi1")
+
+[node name="10ParkLighting" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("11_jo4da")
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(125, 100)
+scale = Vector2(10.4792, 8.3125)
+texture = ExtResource("2_b31aq")
+script = ExtResource("3_txfq2")
+
+[node name="Area2D" type="Area2D" parent="ArrowBack"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowBack/Area2D"]
+shape = SubResource("RectangleShape2D_1cei1")
+
+[connection signal="input_event" from="ArrowBack/Area2D" to="ArrowBack" method="_on_area_2d_input_event"]

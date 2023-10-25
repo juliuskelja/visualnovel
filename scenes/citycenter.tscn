@@ -1,3 +1,28 @@
-[gd_scene format=3 uid="uid://mngioutldt4"]
+[gd_scene load_steps=5 format=3 uid="uid://mngioutldt4"]
+
+[ext_resource type="Texture2D" uid="uid://cv44btmlrhwso" path="res://assets/backgrounds/citycenter.png" id="1_qiesq"]
+[ext_resource type="Texture2D" uid="uid://c010rfglo5jwb" path="res://assets/other/arrow_back_FILL0_wght400_GRAD0_opsz24.png" id="2_06dr5"]
+[ext_resource type="Script" path="res://scripts/ArrowBack.gd" id="3_8rq0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wkob"]
 
 [node name="citycenter" type="Node2D"]
+
+[node name="Citycenter" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_qiesq")
+
+[node name="ArrowBack" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(127, 101)
+scale = Vector2(10.4792, 8.3125)
+texture = ExtResource("2_06dr5")
+script = ExtResource("3_8rq0h")
+
+[node name="Area2D" type="Area2D" parent="ArrowBack"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowBack/Area2D"]
+shape = SubResource("RectangleShape2D_3wkob")
+
+[connection signal="input_event" from="ArrowBack/Area2D" to="ArrowBack" method="_on_area_2d_input_event"]

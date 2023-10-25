@@ -1,40 +1,40 @@
 [gd_scene load_steps=37 format=3 uid="uid://d2t5jrn5gpuy1"]
 
-[ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
-[ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_5y1ay"]
-[ext_resource type="Texture2D" uid="uid://bg5i7spvdqo16" path="res://assets/map/map_assets/1. World map road.png" id="3_lld47"]
-[ext_resource type="Texture2D" uid="uid://x1qvegpr7glh" path="res://assets/map/map_assets/2. World map coast.png" id="4_8ltfh"]
+[ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/0. World map road background.png" id="1_7uhax"]
+[ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/skyline.png" id="2_84apg"]
+[ext_resource type="Texture2D" uid="uid://bg5i7spvdqo16" path="res://assets/map/1. World map road.png" id="2_n2o3n"]
+[ext_resource type="Texture2D" uid="uid://x1qvegpr7glh" path="res://assets/map/2. World map coast.png" id="3_cd501"]
+[ext_resource type="Texture2D" uid="uid://btox3yeow3c5" path="res://assets/map/3. World map pier.png" id="4_uwks1"]
 [ext_resource type="Script" path="res://scripts/3_WorldMapPier.gd" id="5_cjrfm"]
-[ext_resource type="Texture2D" uid="uid://btox3yeow3c5" path="res://assets/map/map_assets/3. World map pier.png" id="5_ol4dv"]
-[ext_resource type="Texture2D" uid="uid://6q8hn0yf2k0e" path="res://assets/map/map_assets/4. World map cartwheel.png" id="7_7slqx"]
+[ext_resource type="Texture2D" uid="uid://6q8hn0yf2k0e" path="res://assets/map/4. World map cartwheel.png" id="6_kqdd3"]
 [ext_resource type="Script" path="res://scripts/4_WorldMapCartwheel.gd" id="7_sarv8"]
 [ext_resource type="Script" path="res://scripts/5_WorldMapPark.gd" id="8_gwlaf"]
-[ext_resource type="Texture2D" uid="uid://6s7i7v2dwv7o" path="res://assets/map/map_assets/5. World map park.png" id="9_flkek"]
+[ext_resource type="Texture2D" uid="uid://6s7i7v2dwv7o" path="res://assets/map/5. World map park.png" id="8_sdbom"]
 [ext_resource type="Script" path="res://scripts/6_WorldMapTent.gd" id="10_mj4bt"]
-[ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/map/map_assets/6. World map tent.png" id="11_knbui"]
+[ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/map/6. World map tent.png" id="10_uotu6"]
 [ext_resource type="Script" path="res://scripts/7_WorldMapTavern.gd" id="12_4ewu2"]
+[ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/map/7. World map tavern.png" id="12_ssd43"]
 [ext_resource type="Shader" path="res://shaders/map1.gdshader" id="13_4d64m"]
 [ext_resource type="Script" path="res://scripts/8_WorldMapLibrary.gd" id="13_72x65"]
-[ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/map/map_assets/7. World map tavern.png" id="14_gd3bo"]
-[ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/map/map_assets/8. World map library.png" id="16_udmqt"]
-[ext_resource type="Texture2D" uid="uid://dtypq18x3hvmt" path="res://assets/map/map_assets/9 World Map forest.png" id="18_p7aa3"]
+[ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/map/8. World map library.png" id="14_fbrye"]
+[ext_resource type="Texture2D" uid="uid://dtypq18x3hvmt" path="res://assets/map/9 World Map forest.png" id="17_g26ht"]
+[ext_resource type="Texture2D" uid="uid://4wlklg3hkgur" path="res://assets/map/10 World Map farm.png" id="18_qhhs3"]
+[ext_resource type="Texture2D" uid="uid://bb2o7sua3kmj5" path="res://assets/map/11 World Map forest2.png" id="19_5a2k4"]
 [ext_resource type="Script" path="res://scripts/10WorldMapFarm.gd" id="19_kqyut"]
-[ext_resource type="Texture2D" uid="uid://4wlklg3hkgur" path="res://assets/map/map_assets/10 World Map farm.png" id="19_qnwxr"]
+[ext_resource type="Texture2D" uid="uid://mce4mh4k0jd3" path="res://assets/map/12 World Map wizard tower.png" id="20_v1upo"]
 [ext_resource type="Script" path="res://scripts/12WorldMapWizardTower.gd" id="21_jafs3"]
-[ext_resource type="Texture2D" uid="uid://bb2o7sua3kmj5" path="res://assets/map/map_assets/11 World Map forest2.png" id="21_uf0bd"]
-[ext_resource type="Texture2D" uid="uid://mce4mh4k0jd3" path="res://assets/map/map_assets/12 World Map wizard tower.png" id="22_lemck"]
-[ext_resource type="Texture2D" uid="uid://8sdoqjjyei4b" path="res://assets/map/map_assets/13 World Map castle.png" id="24_43njb"]
-[ext_resource type="Texture2D" uid="uid://dinomf8gaiitr" path="res://assets/map/map_assets/14 World Map house1.png" id="25_vflyq"]
+[ext_resource type="Texture2D" uid="uid://8sdoqjjyei4b" path="res://assets/map/13 World Map castle.png" id="22_m0cqj"]
+[ext_resource type="Texture2D" uid="uid://dinomf8gaiitr" path="res://assets/map/14 World Map house1.png" id="23_e7x25"]
+[ext_resource type="Texture2D" uid="uid://dcentpqd2ungw" path="res://assets/map/15 World Map pharmacy.png" id="24_53qkv"]
+[ext_resource type="Texture2D" uid="uid://3qxxc5qu680b" path="res://assets/map/16 World Map city center.png" id="25_e3qj1"]
 [ext_resource type="Script" path="res://scripts/15WorldMapPharmacy.gd" id="26_5pjjx"]
-[ext_resource type="Texture2D" uid="uid://dcentpqd2ungw" path="res://assets/map/map_assets/15 World Map pharmacy.png" id="26_vi4k7"]
+[ext_resource type="Texture2D" uid="uid://ceer4vjekaap3" path="res://assets/map/17 World Map house2.png" id="26_bpeax"]
+[ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/18 World Map house3.png" id="27_wx5ii"]
 [ext_resource type="Script" path="res://scripts/16WorldMapCityCenter.gd" id="28_hnxpp"]
-[ext_resource type="Texture2D" uid="uid://3qxxc5qu680b" path="res://assets/map/map_assets/16 World Map city center.png" id="28_nc0yh"]
-[ext_resource type="Texture2D" uid="uid://ceer4vjekaap3" path="res://assets/map/map_assets/17 World Map house2.png" id="30_7qaga"]
+[ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/19 World Map Mayors house.png" id="28_qy1jn"]
+[ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/20 World Map forest3.png" id="29_cdnvu"]
+[ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/21 World Map mood lighting.png" id="30_jyh4d"]
 [ext_resource type="Script" path="res://scripts/19WorldMapMayorsHouse.gd" id="31_gdg68"]
-[ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="31_wfk42"]
-[ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="32_esln5"]
-[ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_12aw6"]
-[ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/map_assets/21 World Map mood lighting.png" id="35_wymqv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4sxv0"]
 shader = ExtResource("13_4d64m")
@@ -48,31 +48,31 @@ position = Vector2(314, 146)
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("1_n0k70")
+texture = ExtResource("1_7uhax")
 
 [node name="Skyline" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("2_5y1ay")
+texture = ExtResource("2_84apg")
 
 [node name="1_WorldMapRoad" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("3_lld47")
+texture = ExtResource("2_n2o3n")
 
 [node name="2_WorldMapCoast" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("4_8ltfh")
+texture = ExtResource("3_cd501")
 
 [node name="3_WorldMapPier" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
-texture = ExtResource("5_ol4dv")
+texture = ExtResource("4_uwks1")
 script = ExtResource("5_cjrfm")
 
 [node name="Pier" type="Area2D" parent="3_WorldMapPier"]
@@ -86,7 +86,7 @@ polygon = PackedVector2Array(-119.5, 71.6215, -119.667, 65.7737, -138.667, 74.79
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("7_7slqx")
+texture = ExtResource("6_kqdd3")
 script = ExtResource("7_sarv8")
 
 [node name="Area2D" type="Area2D" parent="4_WorldMapCartwheel"]
@@ -98,7 +98,7 @@ polygon = PackedVector2Array(-159.333, 44.8333, -152.167, 40.6667, -141.667, 46.
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("9_flkek")
+texture = ExtResource("8_sdbom")
 script = ExtResource("8_gwlaf")
 
 [node name="Park" type="Area2D" parent="5_WorldMapPark"]
@@ -113,7 +113,7 @@ polygon = PackedVector2Array(10.5556, 13.8889, 12.7778, 3.05556, 30.2778, -14.44
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("11_knbui")
+texture = ExtResource("10_uotu6")
 script = ExtResource("10_mj4bt")
 
 [node name="Tent" type="Area2D" parent="6_WorldMapTent"]
@@ -129,7 +129,7 @@ texture_filter = 1
 material = SubResource("ShaderMaterial_4sxv0")
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
-texture = ExtResource("14_gd3bo")
+texture = ExtResource("12_ssd43")
 script = ExtResource("12_4ewu2")
 
 [node name="Area2D" type="Area2D" parent="7_WorldMapTavern"]
@@ -141,7 +141,7 @@ polygon = PackedVector2Array(-108.333, 9.75903, -108.333, 1.91844, -97.5, -9.759
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("16_udmqt")
+texture = ExtResource("14_fbrye")
 script = ExtResource("13_72x65")
 
 [node name="Library" type="Area2D" parent="8_WorldMapLibrary"]
@@ -156,13 +156,13 @@ polygon = PackedVector2Array(-5.83334, -12.7778, 22.2222, -8.88889, 26.3889, -4.
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("18_p7aa3")
+texture = ExtResource("17_g26ht")
 
 [node name="10WorldMapFarm" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("19_qnwxr")
+texture = ExtResource("18_qhhs3")
 script = ExtResource("19_kqyut")
 
 [node name="Area2D" type="Area2D" parent="10WorldMapFarm"]
@@ -180,13 +180,13 @@ polygon = PackedVector2Array(104.167, -11.1667, 95.6667, -4, 99, -0.833328, 112,
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("21_uf0bd")
+texture = ExtResource("19_5a2k4")
 
 [node name="12WorldMapWizardTower" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("22_lemck")
+texture = ExtResource("20_v1upo")
 script = ExtResource("21_jafs3")
 
 [node name="Area2D" type="Area2D" parent="12WorldMapWizardTower"]
@@ -198,19 +198,19 @@ polygon = PackedVector2Array(-83.8333, -87, -79.8333, -87.1667, -78, -78.6667, -
 texture_filter = 1
 position = Vector2(645.5, 394)
 scale = Vector2(5.99688, 6)
-texture = ExtResource("24_43njb")
+texture = ExtResource("22_m0cqj")
 
 [node name="14WorldMapHouse1" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("25_vflyq")
+texture = ExtResource("23_e7x25")
 
 [node name="15WorldMapPharmacy" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("26_vi4k7")
+texture = ExtResource("24_53qkv")
 script = ExtResource("26_5pjjx")
 
 [node name="Area2D" type="Area2D" parent="15WorldMapPharmacy"]
@@ -222,7 +222,7 @@ polygon = PackedVector2Array(43.8333, 24, 38, 27.3333, 38, 40.1667, 45.1667, 35.
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("28_nc0yh")
+texture = ExtResource("25_e3qj1")
 script = ExtResource("28_hnxpp")
 
 [node name="Area2D" type="Area2D" parent="16WorldMapCityCenter"]
@@ -234,19 +234,19 @@ polygon = PackedVector2Array(-21, -18.8333, -57.8333, 14.5, -57.8333, 30.5, -54.
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("30_7qaga")
+texture = ExtResource("26_bpeax")
 
 [node name="18WorldMapHouse3" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("31_wfk42")
+texture = ExtResource("27_wx5ii")
 
 [node name="19WorldMapMayorsHouse" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("32_esln5")
+texture = ExtResource("28_qy1jn")
 script = ExtResource("31_gdg68")
 
 [node name="Area2D" type="Area2D" parent="19WorldMapMayorsHouse"]
@@ -258,12 +258,12 @@ polygon = PackedVector2Array(13, -35.1667, 13, -16.6667, 16.3333, -14.5, 33, -12
 texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("34_12aw6")
+texture = ExtResource("29_cdnvu")
 
 [node name="21WorldMapMoodLighting" type="Sprite2D" parent="."]
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
-texture = ExtResource("35_wymqv")
+texture = ExtResource("30_jyh4d")
 
 [connection signal="input_event" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_input_event"]
 [connection signal="input_event" from="4_WorldMapCartwheel/Area2D" to="4_WorldMapCartwheel" method="_on_area_2d_input_event"]
