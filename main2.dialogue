@@ -1,0 +1,17 @@
+~ this_is_a_node_title
+
+shrimpholder: [[Hi|Hello|Howdy]], this is some dialogue.
+char_placeholder: Oli mielessä yks pornolehffa idea
+shrimpholder: Vai niin...
+- Onkos pornossa juonta?
+char_placeholder: Siin olis noita joka kyssyy weleholta aikaa.
+char_placeholder: Ja weleho ottaa sauvasa esii ja sannoo et se ois pano aika.
+- Kiviäkin kiinnostaa.
+char_placeholder: no haist vithu sit
+- You goofy nuh-uh.
+	shrimpholder: You picked the second one.
+- Start again => this_is_a_node_title
+- End the conversation => END
+shrimpholder: For more information see the online documentation.
+
+=> END

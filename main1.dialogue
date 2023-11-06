@@ -1,0 +1,14 @@
+~ this_is_a_node_title
+
+shrimpholder: [[Hi|Hello|Howdy]], this is some dialogue.
+char_placeholder: Mallun kartsa puoleen tuntiin.
+shrimpholder: Uhuh..
+- Thats some real shit.
+	shrimpholder: You picked the first one.
+- You goofy nuh-uh.
+	shrimpholder: You picked the second one.
+- Start again => this_is_a_node_title
+- End the conversation => END
+shrimpholder: For more information see the online documentation.
+
+=> END
