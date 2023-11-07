@@ -1,61 +1,49 @@
-[gd_scene load_steps=15 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=20 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://custom_balloon/balloon.gd" id="1_4u26j"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Texture2D" uid="uid://bv88nn4sa7xag" path="res://UI assets/Choice_default.png" id="2_k31dh"]
+[ext_resource type="Texture2D" uid="uid://dwh7wng8gvlgp" path="res://UI assets/new highlighted.png" id="3_4gxss"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 [ext_resource type="FontFile" uid="uid://dysoe072yxgo3" path="res://new fonts/AutourOne-Regular.ttf" id="3_361at"]
+[ext_resource type="Texture2D" uid="uid://qrfa6vc2e50p" path="res://UI assets/Choice_highlighted.png" id="3_rscks"]
 [ext_resource type="FontFile" uid="uid://bpw00d7brf3mo" path="res://new fonts/GrenzeGotisch-VariableFont_wght.ttf" id="4_42uim"]
-[ext_resource type="Texture2D" uid="uid://cwypsexm1t8no" path="res://UI assets/Dialogue_textbox.png" id="4_g13e0"]
+[ext_resource type="Texture2D" uid="uid://dawqsjbuvcdn8" path="res://UI assets/Dialogue_textbox 2.png" id="5_gmn2v"]
 [ext_resource type="Texture2D" uid="uid://dh4b2rcp4l5ye" path="res://UI assets/Dialogue_name_box.png" id="7_j887r"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.329412, 0.329412, 0.329412, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o7ksn"]
+texture = ExtResource("2_k31dh")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ri4m3"]
-bg_color = Color(0.121569, 0.121569, 0.121569, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_khxhy"]
+texture = ExtResource("3_4gxss")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0njw"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-border_color = Color(0.6, 0.6, 0.6, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u21xw"]
+texture = ExtResource("3_rscks")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8u2a2"]
+texture = ExtResource("2_k31dh")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lss78"]
-texture = ExtResource("4_g13e0")
-expand_margin_top = 100.0
-expand_margin_bottom = 100.0
+texture = ExtResource("5_gmn2v")
 
 [sub_resource type="Theme" id="Theme_qq3yp"]
 default_font = ExtResource("3_361at")
 default_font_size = 23
-Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
-Button/styles/focus = SubResource("StyleBoxFlat_ri4m3")
-Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
-Button/styles/normal = SubResource("StyleBoxFlat_e0njw")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_focus_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_o7ksn")
+Button/styles/focus = SubResource("StyleBoxTexture_khxhy")
+Button/styles/hover = SubResource("StyleBoxTexture_u21xw")
+Button/styles/normal = SubResource("StyleBoxTexture_8u2a2")
 MarginContainer/constants/margin_bottom = 40
 MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30
@@ -63,6 +51,8 @@ MarginContainer/constants/margin_top = 30
 Panel/styles/panel = SubResource("StyleBoxTexture_lss78")
 
 [sub_resource type="Theme" id="Theme_4g63n"]
+
+[sub_resource type="Theme" id="Theme_uybhv"]
 
 [sub_resource type="Theme" id="Theme_lfoog"]
 default_font = ExtResource("4_42uim")
@@ -74,20 +64,22 @@ script = ExtResource("1_4u26j")
 
 [node name="Balloon" type="Panel" parent="."]
 unique_name_in_owner = true
+z_index = 1
 texture_filter = 2
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 319.0
-offset_top = -223.0
-offset_right = -343.0
+offset_left = 510.0
+offset_top = -284.0
+offset_right = -474.0
 offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_qq3yp")
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -98,6 +90,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/Dialogue"]
+z_index = 1
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Dialogue/HBoxContainer"]
@@ -111,10 +104,10 @@ anchor_left = 0.226
 anchor_top = 0.166
 anchor_right = 0.961
 anchor_bottom = 0.168
-offset_left = -3.31201
-offset_top = -404.224
-offset_right = -0.63208
-offset_bottom = -0.552
+offset_left = 100.464
+offset_top = -375.99
+offset_right = -13.496
+offset_bottom = 27.48
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_4g63n")
@@ -128,31 +121,37 @@ script = ExtResource("3_72ixx")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
+theme = SubResource("Theme_uybhv")
 text = "Response example"
 
 [node name="Sprite2D" type="Sprite2D" parent="Balloon"]
-position = Vector2(148, -23)
-scale = Vector2(0.53972, 0.53972)
+z_index = 1
+position = Vector2(208, 2)
+scale = Vector2(0.46476, 0.53972)
 texture = ExtResource("7_j887r")
 
 [node name="Portrait" type="TextureRect" parent="Balloon"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(150, 150)
+z_index = -5
+texture_filter = 1
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
-offset_left = 4.0
-offset_top = -331.0
-offset_right = 291.0
-offset_bottom = -44.0
+offset_left = 6.0
+offset_top = -407.0
+offset_right = 506.0
+offset_bottom = 93.0
+expand_mode = 1
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon"]
 unique_name_in_owner = true
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
+z_index = 2
 layout_mode = 2
-offset_left = 19.0
-offset_top = -58.0
-offset_right = 1217.0
-offset_bottom = 2.0
+offset_left = 94.0
+offset_top = -30.0
+offset_right = 377.0
+offset_bottom = 30.0
 mouse_filter = 1
 theme = SubResource("Theme_lfoog")
 bbcode_enabled = true
@@ -166,10 +165,10 @@ self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 anchors_preset = 0
 anchor_right = 0.0
-offset_left = 101.0
-offset_top = 44.0
-offset_right = 1299.0
-offset_bottom = 194.0
+offset_left = 155.0
+offset_top = 75.0
+offset_right = 1353.0
+offset_bottom = 225.0
 size_flags_vertical = 3
 text = "Dialogue..."
 
