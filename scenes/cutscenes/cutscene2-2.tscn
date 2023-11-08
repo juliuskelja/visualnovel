@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://lens7kowbngj"]
+
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_rnssu"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_kmb6o"]
+[ext_resource type="Texture2D" uid="uid://cg54mstqktxc6" path="res://assets/cutscene/Cutscenes2-2-1 skyline.png" id="3_xvueg"]
+[ext_resource type="Texture2D" uid="uid://dk0i3lvs08gou" path="res://assets/cutscene/Cutscenes2-2-2 bushes.png" id="4_3yem0"]
+[ext_resource type="Texture2D" uid="uid://t0ymmjeilgu" path="res://assets/cutscene/Cutscenes2-2-3 sand.png" id="5_16rvu"]
+[ext_resource type="Texture2D" uid="uid://bgt32nk102bm7" path="res://assets/cutscene/Cutscenes2-2-4 mayor_s house.png" id="6_3bi2f"]
+[ext_resource type="Texture2D" uid="uid://bfxm8jua6nbkj" path="res://assets/cutscene/Cutscenes2-2-5 side buildings.png" id="7_x5jbo"]
+
+[node name="cutscene2-2" type="Node2D"]
+
+[node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_rnssu")
+
+[node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960.5, 539)
+scale = Vector2(6.00313, 5.98889)
+texture = ExtResource("2_kmb6o")
+
+[node name="Cutscenes2-2-1Skyline" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 539)
+scale = Vector2(6, 5.98889)
+texture = ExtResource("3_xvueg")
+
+[node name="Cutscenes2-2-2Bushes" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("4_3yem0")
+
+[node name="Cutscenes2-2-3Sand" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960.5, 540.5)
+scale = Vector2(6.00312, 5.99444)
+texture = ExtResource("5_16rvu")
+
+[node name="Cutscenes2-2-4MayorSHouse" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960.5, 540)
+scale = Vector2(6.00312, 6)
+texture = ExtResource("6_3bi2f")
+
+[node name="Cutscenes2-2-5SideBuildings" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 539)
+scale = Vector2(6, 5.98889)
+texture = ExtResource("7_x5jbo")
