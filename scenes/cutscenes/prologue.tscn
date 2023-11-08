@@ -30,11 +30,11 @@ offset_right = 1598.0
 offset_bottom = 992.0
 theme_override_font_sizes/normal_font_size = 40
 text = "monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke "
-visible_characters = 1
-visible_ratio = 0.00555556
+visible_characters = 0
+visible_ratio = 0.0
 script = ExtResource("3_k6cpr")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
-wait_time = 2.635
+wait_time = 0.001
 
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
