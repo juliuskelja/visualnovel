@@ -1,22 +1,78 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3caac2dfrv3m"]
+[gd_scene load_steps=13 format=3 uid="uid://b3caac2dfrv3m"]
 
-[ext_resource type="Texture2D" uid="uid://do4idw381i4ks" path="res://assets/backgrounds/pier.png" id="1_51156"]
+[ext_resource type="Texture2D" uid="uid://dsr28l2umrrmt" path="res://assets/map/pier_assets/1 Laituri bg.png" id="1_pb28b"]
+[ext_resource type="Texture2D" uid="uid://b6cyjkcbtdalq" path="res://assets/map/pier_assets/2 Laituri skyline.png" id="2_8nvlp"]
 [ext_resource type="Texture2D" uid="uid://c010rfglo5jwb" path="res://assets/other/arrow_back_FILL0_wght400_GRAD0_opsz24.png" id="2_oy0h7"]
 [ext_resource type="Script" path="res://scripts/ArrowBack.gd" id="3_nxxrj"]
+[ext_resource type="Texture2D" uid="uid://2ms52d7j1du5" path="res://assets/map/pier_assets/3 Laituri clouds.png" id="3_osm6j"]
+[ext_resource type="Texture2D" uid="uid://bd2pcjxpgwx5e" path="res://assets/map/pier_assets/4 Laituri land.png" id="4_2ppp4"]
+[ext_resource type="Texture2D" uid="uid://cpx35cnbgn1o7" path="res://assets/map/pier_assets/5 Laituri water.png" id="5_x6wuy"]
+[ext_resource type="Texture2D" uid="uid://cedrpwt48kjie" path="res://assets/map/pier_assets/6 Laituri woods1.png" id="6_huh7n"]
+[ext_resource type="Texture2D" uid="uid://c5ayhnblbq5ec" path="res://assets/map/pier_assets/7 Laituri laituri.png" id="7_g0wfd"]
+[ext_resource type="Texture2D" uid="uid://d0vktyj4y25i0" path="res://assets/map/pier_assets/8 Laituri splash sfx.png" id="8_a4py1"]
+[ext_resource type="Texture2D" uid="uid://jf4876f3wvew" path="res://assets/map/pier_assets/9 Laituri boat.png" id="9_3303y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yev50"]
 
 [node name="pier" type="Node2D"]
 
-[node name="BackgroundLaituriUsva" type="Sprite2D" parent="."]
+[node name="1LaituriBg" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 540)
-scale = Vector2(7.11111, 5)
-texture = ExtResource("1_51156")
+scale = Vector2(6, 6)
+texture = ExtResource("1_pb28b")
+
+[node name="2LaituriSkyline" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 539.5)
+scale = Vector2(6, 5.99444)
+texture = ExtResource("2_8nvlp")
+
+[node name="3LaituriClouds" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_osm6j")
+
+[node name="4LaituriLand" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960.5, 540)
+scale = Vector2(5.99688, 6)
+texture = ExtResource("4_2ppp4")
+
+[node name="5LaituriWater" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("5_x6wuy")
+
+[node name="6LaituriWoods1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540.5)
+scale = Vector2(6, 6.00556)
+texture = ExtResource("6_huh7n")
+
+[node name="7LaituriLaituri" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("7_g0wfd")
+
+[node name="8LaituriSplashSfx" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("8_a4py1")
+
+[node name="9LaituriBoat" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960.5, 541)
+scale = Vector2(5.99688, 6)
+texture = ExtResource("9_3303y")
 
 [node name="ArrowBack" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(126, 981)
+position = Vector2(123, 99.0001)
 scale = Vector2(10.4792, 8.3125)
 texture = ExtResource("2_oy0h7")
 script = ExtResource("3_nxxrj")

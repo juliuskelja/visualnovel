@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1t1xu1vuk80f"]
+
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_2bncs"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_vc1dt"]
+[ext_resource type="Script" path="res://scenes/RichTextLabel.gd" id="3_k6cpr"]
+
+[node name="prologue" type="Node2D"]
+
+[node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_2bncs")
+
+[node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("2_vc1dt")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+offset_left = 306.0
+offset_top = 700.0
+offset_right = 1598.0
+offset_bottom = 992.0
+theme_override_font_sizes/normal_font_size = 40
+text = "monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke "
+visible_characters = 1
+visible_ratio = 0.00555556
+script = ExtResource("3_k6cpr")
+
+[node name="Timer" type="Timer" parent="Control/RichTextLabel"]
+wait_time = 2.635
+
+[connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
