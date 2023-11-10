@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg54mstqktxc6"
-path="res://.godot/imported/Cutscenes2-2-1 skyline.png-b5015b0d4377dea7147234266927cd9e.ctex"
+uid="uid://dl3xmi64jxkou"
+path="res://.godot/imported/Cutscenes2 kylän keskusta.png-0b5b7e8419c1b47c4236e13c1cf2f0c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/Cutscenes2-2-1 skyline.png"
-dest_files=["res://.godot/imported/Cutscenes2-2-1 skyline.png-b5015b0d4377dea7147234266927cd9e.ctex"]
+source_file="res://assets/cutscene/Cutscenes2 kylän keskusta.png"
+dest_files=["res://.godot/imported/Cutscenes2 kylän keskusta.png-0b5b7e8419c1b47c4236e13c1cf2f0c0.ctex"]
 
 [params]
 

@@ -11,9 +11,12 @@ func _process(delta):
 
 func _on_timer_timeout():
 	visible_characters = visible_characters + 1
-	print("add char")
 	
 	# Stop the timer when the whole text is printed
 	if visible_characters > len(get_text()):
 		$Timer.stop()
 		print("timer stopped")
+
+
+func _on_gui_input(event):
+	pass # Replace with function body.
