@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://djajnwjlttk2i"]
+
+[ext_resource type="Texture2D" uid="uid://df00kydi53ng5" path="res://assets/characters/Anne.png" id="1_cft8y"]
+[ext_resource type="Script" path="res://scenes/clicktest.gd" id="2_3cuec"]
+[ext_resource type="PackedScene" uid="uid://8hq31n6pr2aa" path="res://scenes/0Clickable dialog test.tscn" id="2_8ughn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_150fi"]
+size = Vector2(1394.45, 2214.56)
+
+[node name="1Clickable char test" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(751, 576)
+scale = Vector2(0.140343, 0.140343)
+texture = ExtResource("1_cft8y")
+script = ExtResource("2_3cuec")
+
+[node name="Actionable" parent="Sprite2D" instance=ExtResource("2_8ughn")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Actionable"]
+position = Vector2(-212.699, 11.4072)
+shape = SubResource("RectangleShape2D_150fi")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[connection signal="input_event" from="Sprite2D/Actionable" to="Sprite2D" method="_on_actionable_input_event"]
