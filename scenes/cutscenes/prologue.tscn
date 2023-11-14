@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_2bncs"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_vc1dt"]
-[ext_resource type="Script" path="res://scenes/RichTextLabel.gd" id="3_k6cpr"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="3_vygfb"]
 
 [node name="prologue" type="Node2D"]
 
@@ -24,17 +24,18 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
 offset_left = 306.0
 offset_top = 700.0
 offset_right = 1598.0
 offset_bottom = 992.0
 theme_override_font_sizes/normal_font_size = 40
 text = "monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke monke "
-visible_characters = 1
-visible_ratio = 0.00555556
-script = ExtResource("3_k6cpr")
+visible_characters = 0
+visible_ratio = 0.0
+script = ExtResource("3_vygfb")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
-wait_time = 2.635
+wait_time = 0.001
 
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]

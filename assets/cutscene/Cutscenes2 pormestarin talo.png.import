@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ompmp0e7gymw"
-path="res://.godot/imported/Cutscenes2-1-4 kylän keskusta  sand.png-5737c54a95d95fede9df1cd905c4ae81.ctex"
+uid="uid://d3cmsmy07lvt2"
+path="res://.godot/imported/Cutscenes2 pormestarin talo.png-c68ceb251f56c7fac5fca1309bc858bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/Cutscenes2-1-4 kylän keskusta  sand.png"
-dest_files=["res://.godot/imported/Cutscenes2-1-4 kylän keskusta  sand.png-5737c54a95d95fede9df1cd905c4ae81.ctex"]
+source_file="res://assets/cutscene/Cutscenes2 pormestarin talo.png"
+dest_files=["res://.godot/imported/Cutscenes2 pormestarin talo.png-c68ceb251f56c7fac5fca1309bc858bc.ctex"]
 
 [params]
 
