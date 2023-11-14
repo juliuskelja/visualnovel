@@ -98,16 +98,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.226
-anchor_top = 0.166
-anchor_right = 0.961
-anchor_bottom = 0.168
-offset_left = 101.464
-offset_top = -376.99
-offset_right = -12.496
-offset_bottom = 26.48
+layout_mode = 2
+offset_left = 314.0
+offset_top = -309.0
+offset_right = 889.0
+offset_bottom = 72.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_4g63n")
@@ -138,8 +133,8 @@ custom_minimum_size = Vector2(400, 400)
 layout_mode = 2
 offset_left = 23.0
 offset_top = -375.0
-offset_right = 487.0
-offset_bottom = 89.0
+offset_right = 423.0
+offset_bottom = 25.0
 expand_mode = 1
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon"]
@@ -150,7 +145,7 @@ z_index = 2
 layout_mode = 2
 offset_left = 94.0
 offset_top = -30.0
-offset_right = 377.0
+offset_right = 327.0
 offset_bottom = 30.0
 mouse_filter = 1
 theme = SubResource("Theme_lfoog")
@@ -167,8 +162,8 @@ anchors_preset = 0
 anchor_right = 0.0
 offset_left = 155.0
 offset_top = 75.0
-offset_right = 1353.0
-offset_bottom = 225.0
+offset_right = 1031.0
+offset_bottom = 222.0
 size_flags_vertical = 3
 text = "Dialogue..."
 
