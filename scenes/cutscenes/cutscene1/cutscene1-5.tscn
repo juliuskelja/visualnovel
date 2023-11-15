@@ -1,17 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://by5303ppbjhpl"]
+[gd_scene load_steps=12 format=3 uid="uid://bqdf0mqk8ythj"]
 
-[ext_resource type="Script" path="res://scenes/cutscenes/cutscene2/cutscene2-1-2.gd" id="1_pnce3"]
-[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_4nycu"]
-[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_a881s"]
-[ext_resource type="Texture2D" uid="uid://d3cmsmy07lvt2" path="res://assets/cutscene/Cutscenes2 pormestarin talo.png" id="4_yyhtr"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_4p5kx"]
-[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="10_anffu"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-5.gd" id="1_a4yye"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_vbtad"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_thx31"]
+[ext_resource type="Texture2D" uid="uid://bq1uemvw3ve4v" path="res://assets/cutscene/Forest at night.png" id="4_1ggcy"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_nykcc"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="6_obhnj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uttcf"]
-size = Vector2(1918, 1080)
-
-[sub_resource type="Theme" id="Theme_wuwwe"]
-default_font = ExtResource("5_4p5kx")
+[sub_resource type="Theme" id="Theme_tcr8p"]
+default_font = ExtResource("5_nykcc")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
@@ -49,55 +46,47 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[node name="cutscene2" type="Node2D"]
-script = ExtResource("1_pnce3")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1jgu"]
+size = Vector2(1918, 1080)
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
-z_index = 1
-z_as_relative = false
-position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_uttcf")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+[node name="cutscene1-5" type="Node2D"]
+script = ExtResource("1_a4yye")
 
 [node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("2_4nycu")
+texture = ExtResource("2_vbtad")
 
 [node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(960.5, 539.5)
-scale = Vector2(6.00313, 5.99444)
-texture = ExtResource("3_a881s")
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_thx31")
 
-[node name="Cutscenes2PormestarinTalo" type="Sprite2D" parent="."]
+[node name="ForestAtNight" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(960.5, 540)
-scale = Vector2(6.00312, 6)
-texture = ExtResource("4_yyhtr")
+position = Vector2(960, 360)
+scale = Vector2(4.3875, 2.8)
+texture = ExtResource("4_1ggcy")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
 layout_mode = 0
 offset_left = 270.0
 offset_top = 705.0
 offset_right = 1636.0
-offset_bottom = 997.0
-theme = SubResource("Theme_wuwwe")
+offset_bottom = 1042.0
+theme = SubResource("Theme_tcr8p")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur aliquet consectetur massa, ac sollicitudin justo scelerisque ut. Sed ac molestie erat, eget vestibulum arcu. "
+text = "Behind the castle is a vast area of beautiful, green forest that has gone untouched for a very long time. Therefore, the vegetation is dense, and the wildlife is rampant. Never has there been anything dangerous in the forest, otherwise the King would have certainly done something about it."
 scroll_active = false
+autowrap_mode = 2
 tab_size = 2
-script = ExtResource("10_anffu")
+script = ExtResource("6_obhnj")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
 wait_time = 0.001
@@ -105,13 +94,22 @@ wait_time = 0.001
 [node name="FadeRect" type="ColorRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 678.0
-color = Color(0, 0, 0, 0)
+color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
 libraries = {
 "": SubResource("AnimationLibrary_085nn")
 }
 
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 1
+z_as_relative = false
+position = Vector2(960, 539)
+shape = SubResource("RectangleShape2D_e1jgu")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
 [connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

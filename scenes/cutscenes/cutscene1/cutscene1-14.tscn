@@ -1,35 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://1o8u2xj6kkio"]
+[gd_scene load_steps=11 format=3 uid="uid://3tjd80vp3586"]
 
-[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_xad13"]
-[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_03b3j"]
-[ext_resource type="Texture2D" uid="uid://bq1uemvw3ve4v" path="res://assets/cutscene/Forest at night.png" id="4_e1k4d"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_1jqkp"]
-[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="6_jmc8y"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-14.gd" id="1_2o2rq"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_itxjo"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_ml45i"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_8n5rt"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_dlgre"]
 
-[sub_resource type="GDScript" id="GDScript_ay70q"]
-script/source = "extends Node2D
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	$FadeRect/AnimationPlayer.play(\"fade_in\")
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func _on_area_2d_input_event(viewport, event, shape_idx):
-	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file(\"res://scenes/cutscenes/cutscene1/prologue2-2.tscn\")
-		print(\"switch scene\")
-
-func _on_rich_text_label_gui_input(event):
-	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file(\"res://scenes/cutscenes/cutscene1/prologue2-2.tscn\")
-		print(\"switch scene\")
-"
-
-[sub_resource type="Theme" id="Theme_f0tlm"]
-default_font = ExtResource("5_1jqkp")
+[sub_resource type="Theme" id="Theme_bauni"]
+default_font = ExtResource("4_8n5rt")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
@@ -67,28 +45,22 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cenh0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q122j"]
 size = Vector2(1918, 1080)
 
-[node name="prologue" type="Node2D"]
-script = SubResource("GDScript_ay70q")
+[node name="cutscene1-14" type="Node2D"]
+script = ExtResource("1_2o2rq")
 
 [node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("2_xad13")
+texture = ExtResource("2_itxjo")
 
 [node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("3_03b3j")
-
-[node name="ForestAtNight" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(960, 360)
-scale = Vector2(4.3875, 2.8)
-texture = ExtResource("4_e1k4d")
+texture = ExtResource("3_ml45i")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -100,14 +72,14 @@ offset_left = 270.0
 offset_top = 705.0
 offset_right = 1636.0
 offset_bottom = 1042.0
-theme = SubResource("Theme_f0tlm")
+theme = SubResource("Theme_bauni")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Behind the castle is a vast area of beautiful, green forest that has gone untouched for a very long time. Therefore, the vegetation is dense, and the wildlife is rampant. Never has there been anything dangerous in the forest, otherwise the King would have certainly done something about it."
+text = "You reach your hand onto the stall and grab a hold of a beautiful red apple and take a big bite out of it. Almost at the same time you hear a shriek coming from behind the stall. "
 scroll_active = false
 autowrap_mode = 2
 tab_size = 2
-script = ExtResource("6_jmc8y")
+script = ExtResource("5_dlgre")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
 wait_time = 0.001
@@ -128,7 +100,7 @@ libraries = {
 z_index = 1
 z_as_relative = false
 position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_cenh0")
+shape = SubResource("RectangleShape2D_q122j")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]

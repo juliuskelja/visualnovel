@@ -1,17 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://b5mrsfto16fin"]
+[gd_scene load_steps=12 format=3 uid="uid://bbdt8t64yfstg"]
 
-[ext_resource type="Script" path="res://scenes/cutscenes/cutscene2/cutscene2-1-1.gd" id="1_5vm0f"]
-[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_u8b5g"]
-[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_koneo"]
-[ext_resource type="Texture2D" uid="uid://dl3xmi64jxkou" path="res://assets/cutscene/Cutscenes2 kylän keskusta.png" id="4_4ed6w"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_qkpi2"]
-[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="10_ni2qk"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-3.gd" id="1_kok83"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_sabpw"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_afut0"]
+[ext_resource type="Texture2D" uid="uid://cosdcjr2ycewh" path="res://assets/cutscene/Royal couple.png" id="4_74xq5"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_4nnv2"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="6_q0k12"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uiuk"]
-size = Vector2(1918, 1080)
-
-[sub_resource type="Theme" id="Theme_wuwwe"]
-default_font = ExtResource("5_qkpi2")
+[sub_resource type="Theme" id="Theme_1aj06"]
+default_font = ExtResource("5_4nnv2")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
@@ -49,35 +46,28 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[node name="cutscene2" type="Node2D"]
-script = ExtResource("1_5vm0f")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_17phh"]
+size = Vector2(1918, 1080)
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-visible = false
-z_index = 1
-z_as_relative = false
-position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_7uiuk")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+[node name="cutscene1-3" type="Node2D"]
+script = ExtResource("1_kok83")
 
 [node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("2_u8b5g")
+texture = ExtResource("2_sabpw")
 
 [node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(960.5, 539.5)
-scale = Vector2(6.00313, 5.99444)
-texture = ExtResource("3_koneo")
-
-[node name="Cutscenes2KylänKeskusta" type="Sprite2D" parent="."]
-texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("4_4ed6w")
+texture = ExtResource("3_afut0")
+
+[node name="RoyalCouple" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 360)
+scale = Vector2(4.3875, 2.8)
+texture = ExtResource("4_74xq5")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -89,14 +79,14 @@ offset_left = 270.0
 offset_top = 705.0
 offset_right = 1636.0
 offset_bottom = 997.0
-theme = SubResource("Theme_wuwwe")
+theme = SubResource("Theme_1aj06")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, velit eget fermentum sollicitudin, nisl sapien vulputate risus, vel facilisis urna magna in nunc. Suspendisse vestibulum commodo tincidunt."
+text = "Their only child, as competent as their parents, is arguably more interested in all the physical activities, like archery and fencing, instead of studying. Deeming the need to become a scholar while their father still reigns as king to be unnecessary. "
 scroll_active = false
 autowrap_mode = 2
 tab_size = 2
-script = ExtResource("10_ni2qk")
+script = ExtResource("6_q0k12")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
 wait_time = 0.001
@@ -111,6 +101,15 @@ libraries = {
 "": SubResource("AnimationLibrary_085nn")
 }
 
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 1
+z_as_relative = false
+position = Vector2(960, 539)
+shape = SubResource("RectangleShape2D_17phh")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
 [connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

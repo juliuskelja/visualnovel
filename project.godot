@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
-run/main_scene="res://scenes/cutscenes/credits/credits.tscn"
+run/main_scene="res://scenes/cutscenes/cutscene1/cutscene1-1.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
 
@@ -33,13 +33,17 @@ window/size/viewport_height=1080
 
 project/assembly_name="VisualNovel"
 
+[editor]
+
+import/reimport_missing_imported_files=false
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://dialogue/main2.dialogue", "res://main2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue")
 
 [layer_names]
 

@@ -1,35 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://cpi4w062soh4n"]
+[gd_scene load_steps=11 format=3 uid="uid://blvjqas3dmwle"]
 
-[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_6jdf2"]
-[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_8a3jl"]
-[ext_resource type="Texture2D" uid="uid://cosdcjr2ycewh" path="res://assets/cutscene/Royal couple.png" id="4_g3uic"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_pmxf2"]
-[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="6_5a7js"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-10.gd" id="1_xiwn0"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_kqqwm"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_ugcbf"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_rx78g"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_auvyk"]
 
-[sub_resource type="GDScript" id="GDScript_qm2dp"]
-script/source = "extends Node2D
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-		$FadeRect/AnimationPlayer.play(\"fade_in\")
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func _on_area_2d_input_event(viewport, event, shape_idx):
-	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file(\"res://scenes/cutscenes/cutscene1/prologue1-3.tscn\")
-		print(\"switch scene\")
-
-func _on_rich_text_label_gui_input(event):
-	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file(\"res://scenes/cutscenes/cutscene1/prologue1-3.tscn\")
-		print(\"switch scene\")
-"
-
-[sub_resource type="Theme" id="Theme_f0tlm"]
-default_font = ExtResource("5_pmxf2")
+[sub_resource type="Theme" id="Theme_myoqu"]
+default_font = ExtResource("4_rx78g")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
@@ -67,28 +45,22 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cenh0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n03j"]
 size = Vector2(1918, 1080)
 
-[node name="prologue" type="Node2D"]
-script = SubResource("GDScript_qm2dp")
+[node name="cutscene1-10" type="Node2D"]
+script = ExtResource("1_xiwn0")
 
 [node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("2_6jdf2")
+texture = ExtResource("2_kqqwm")
 
 [node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("3_8a3jl")
-
-[node name="RoyalCouple" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(960, 360)
-scale = Vector2(4.3875, 2.8)
-texture = ExtResource("4_g3uic")
+texture = ExtResource("3_ugcbf")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -99,15 +71,16 @@ layout_mode = 0
 offset_left = 270.0
 offset_top = 705.0
 offset_right = 1636.0
-offset_bottom = 997.0
-theme = SubResource("Theme_f0tlm")
+offset_bottom = 1042.0
+theme = SubResource("Theme_myoqu")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Their only child, as competent as their parents, is arguably more interested in all the physical activities, like archery and fencing, instead of studying. Deeming the need to become a scholar while their father still reigns as king to be unnecessary. "
+text = "The sellers begin setting up their little market stalls to start selling all sorts of goods, like fish, veggies and fruits, beautiful jewelry and clothing and baked goods, some still being in the oven and filling the crisp morning air.
+"
 scroll_active = false
 autowrap_mode = 2
 tab_size = 2
-script = ExtResource("6_5a7js")
+script = ExtResource("5_auvyk")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
 wait_time = 0.001
@@ -128,7 +101,7 @@ libraries = {
 z_index = 1
 z_as_relative = false
 position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_cenh0")
+shape = SubResource("RectangleShape2D_0n03j")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]

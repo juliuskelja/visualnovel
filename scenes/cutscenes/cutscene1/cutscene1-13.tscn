@@ -1,14 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://cjw1xoddkvwvr"]
+[gd_scene load_steps=11 format=3 uid="uid://dhdnewix6kcsd"]
 
-[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-1.gd" id="1_1vdjj"]
-[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_uhsej"]
-[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_po5vh"]
-[ext_resource type="Texture2D" uid="uid://28f21bfs5rc4" path="res://assets/cutscene/Castle cutscene.png" id="4_uwkn7"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_eytsj"]
-[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/RichTextLabel.gd" id="5_jhodg"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-13.gd" id="1_hkcx1"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_k2pc6"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_evdvc"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_aoo3n"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_pk8v5"]
 
-[sub_resource type="Theme" id="Theme_tpwli"]
-default_font = ExtResource("5_eytsj")
+[sub_resource type="Theme" id="Theme_6b20r"]
+default_font = ExtResource("4_aoo3n")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
@@ -46,28 +45,22 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvic8"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5l38s"]
 size = Vector2(1918, 1080)
 
-[node name="cutscene1-1" type="Node2D"]
-script = ExtResource("1_1vdjj")
+[node name="cutscene1-13" type="Node2D"]
+script = ExtResource("1_hkcx1")
 
 [node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("2_uhsej")
+texture = ExtResource("2_k2pc6")
 
 [node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
-texture = ExtResource("3_po5vh")
-
-[node name="CastleCutscene" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(960, 359)
-scale = Vector2(4.3875, 2.8)
-texture = ExtResource("4_uwkn7")
+texture = ExtResource("3_evdvc")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -78,15 +71,15 @@ layout_mode = 0
 offset_left = 270.0
 offset_top = 705.0
 offset_right = 1636.0
-offset_bottom = 997.0
-theme = SubResource("Theme_tpwli")
+offset_bottom = 1042.0
+theme = SubResource("Theme_6b20r")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Today’s story will take you to the Kingdom of Auturnia. The King and his Queen rule the Kingdom with sternness and something to make all the villages under the Kingdom flourish up to their standards."
+text = "Looking at all the different stalls filled with unfamiliar baked goods and meats, the youngster finally reaches a stand that is filled with something that looks familiar; a stand filled with an assortment of fruits and vegetables."
 scroll_active = false
 autowrap_mode = 2
 tab_size = 2
-script = ExtResource("5_jhodg")
+script = ExtResource("5_pk8v5")
 
 [node name="Timer" type="Timer" parent="Control/RichTextLabel"]
 wait_time = 0.001
@@ -107,7 +100,7 @@ libraries = {
 z_index = 1
 z_as_relative = false
 position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_qvic8")
+shape = SubResource("RectangleShape2D_5l38s")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
