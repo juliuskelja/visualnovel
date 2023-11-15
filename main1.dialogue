@@ -1,0 +1,14 @@
+~ start
+
+Anne: [[Hi|Hello|Howdy]], this is some dialogue.
+Anne: Mallun kartsa puoleen tuntiin.
+wizardcat: Uhuh..
+- Thats some real shit.
+	wizardcat: You picked the first one.
+- You goofy nuh-uh.
+	wizardcat: You picked the second one.
+- Start again => start
+- End the conversation => END
+wizardcat: For more information see the online documentation.
+
+=> END

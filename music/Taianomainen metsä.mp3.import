@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmaaxwk63yyu6"
+path="res://.godot/imported/Taianomainen metsä.mp3-9ed7fc8255f3d23a24f13d3c2119459e.mp3str"
+
+[deps]
+
+source_file="res://music/Taianomainen metsä.mp3"
+dest_files=["res://.godot/imported/Taianomainen metsä.mp3-9ed7fc8255f3d23a24f13d3c2119459e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
