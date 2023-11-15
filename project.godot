@@ -18,6 +18,7 @@ config/icon="res://assets/other/icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+MusicPlayer="*res://scenes/MusicPlayer.tscn"
 
 [dialogue_manager]
 
