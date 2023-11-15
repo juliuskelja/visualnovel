@@ -15,4 +15,3 @@ func _on_timer_timeout():
 	# Stop the timer when the whole text is printed
 	if visible_characters > len(get_text()):
 		$Timer.stop()
-		print("timer stopped")
