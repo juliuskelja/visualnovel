@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bcaimoqptoi87"
-path="res://.godot/imported/PublicPixel.ttf-fb61f1cb208a7a89bd9604f575a2c0d5.fontdata"
+uid="uid://0todyxllownt"
+path="res://.godot/imported/GrenzeGotisch-ExtraLight.ttf-be89288baceb9436ae0f80f65a4d40e9.fontdata"
 
 [deps]
 
-source_file="res://assets/public-pixel/PublicPixel.ttf"
-dest_files=["res://.godot/imported/PublicPixel.ttf-fb61f1cb208a7a89bd9604f575a2c0d5.fontdata"]
+source_file="res://assets/fonts/Grenze_Gotisch/static/GrenzeGotisch-ExtraLight.ttf"
+dest_files=["res://.godot/imported/GrenzeGotisch-ExtraLight.ttf-be89288baceb9436ae0f80f65a4d40e9.fontdata"]
 
 [params]
 

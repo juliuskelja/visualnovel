@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_uenkf"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_macqh"]
 [ext_resource type="Texture2D" uid="uid://cyb1i84cxy5fa" path="res://assets/cutscene/Cutscenes2 taverna.png" id="4_6cufy"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/public-pixel/PublicPixel.ttf" id="9_g1mhy"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_we4tt"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="10_doalb"]
 
 [sub_resource type="Theme" id="Theme_wuwwe"]
-default_font = ExtResource("9_g1mhy")
+default_font = ExtResource("5_we4tt")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"

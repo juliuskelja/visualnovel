@@ -4,19 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_lhmbs"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sktli"]
-load_path = "res://.godot/imported/Cutscenes2-2-1 skyline.png-b5015b0d4377dea7147234266927cd9e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mpqmq"]
-load_path = "res://.godot/imported/Cutscenes2-2-2 bushes.png-ba6ae12e7b79f4f16fc9ec3649142789.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p1utj"]
-load_path = "res://.godot/imported/Cutscenes2-2-3 sand.png-54d225ef9c9eaf71b5cde95d21493576.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lxrpe"]
-load_path = "res://.godot/imported/Cutscenes2-2-4 mayor_s house.png-b16d3306dbdc6a2ef144b5d20863875e.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i7vqy"]
-load_path = "res://.godot/imported/Cutscenes2-2-5 side buildings.png-0782c55ed737dd9dac55e333b212208f.ctex"
 
 [node name="cutscene2-2" type="Node2D"]
 

@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_u8b5g"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_koneo"]
 [ext_resource type="Texture2D" uid="uid://dl3xmi64jxkou" path="res://assets/cutscene/Cutscenes2 kylän keskusta.png" id="4_4ed6w"]
-[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/public-pixel/PublicPixel.ttf" id="9_8avoa"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_qkpi2"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="10_ni2qk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7uiuk"]
 size = Vector2(1918, 1080)
 
 [sub_resource type="Theme" id="Theme_wuwwe"]
-default_font = ExtResource("9_8avoa")
+default_font = ExtResource("5_qkpi2")
 
 [sub_resource type="Animation" id="Animation_dtsim"]
 resource_name = "fade"
