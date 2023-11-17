@@ -1,0 +1,198 @@
+[gd_scene load_steps=30 format=3 uid="uid://ct4dek63v5j5j"]
+
+[ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_3jpn6"]
+[ext_resource type="Texture2D" uid="uid://tsln7dwid0dq" path="res://credits-scene/exampleTitle.png" id="2_xutvm"]
+[ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_0scfs"]
+[ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://credits-scene/fallingleaves/Falling leaves animation1.png" id="3_ichlm"]
+[ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://credits-scene/fallingleaves/Falling leaves animation2.png" id="4_qo7uc"]
+[ext_resource type="Texture2D" uid="uid://cplesu8qk1ejc" path="res://credits-scene/fallingleaves/Falling leaves animation3.png" id="5_uk873"]
+[ext_resource type="Texture2D" uid="uid://chebmaej8anlx" path="res://credits-scene/fallingleaves/Falling leaves animation4.png" id="6_kc64g"]
+[ext_resource type="Texture2D" uid="uid://b57j83qbf2x6s" path="res://credits-scene/fallingleaves/Falling leaves animation5.png" id="7_ioqp6"]
+[ext_resource type="Texture2D" uid="uid://c5ysmryd2fxne" path="res://credits-scene/fallingleaves/Falling leaves animation6.png" id="8_panbh"]
+[ext_resource type="Texture2D" uid="uid://dxg16bbc8lcpy" path="res://credits-scene/fallingleaves/Falling leaves animation7.png" id="9_vsiyq"]
+[ext_resource type="Texture2D" uid="uid://b2xo7dtvq7t73" path="res://credits-scene/fallingleaves/Falling leaves animation8.png" id="10_53f34"]
+[ext_resource type="Texture2D" uid="uid://c1bvmbxofdc48" path="res://credits-scene/fallingleaves/Falling leaves animation9.png" id="11_f2qbw"]
+[ext_resource type="Texture2D" uid="uid://cyyw3bajx4bxs" path="res://credits-scene/fallingleaves/Falling leaves animation10.png" id="12_d0r0h"]
+[ext_resource type="Texture2D" uid="uid://dtsl807hqi1ic" path="res://credits-scene/fallingleaves/Falling leaves animation11.png" id="13_qhujk"]
+[ext_resource type="Texture2D" uid="uid://bef0l74nqs3fu" path="res://credits-scene/fallingleaves/Falling leaves animation12.png" id="14_h6gnt"]
+[ext_resource type="Texture2D" uid="uid://5gldn03r5lth" path="res://credits-scene/fallingleaves/Falling leaves animation13.png" id="15_g4ajl"]
+[ext_resource type="Texture2D" uid="uid://ckyo2ou6miksx" path="res://credits-scene/fallingleaves/Falling leaves animation14.png" id="16_0plfs"]
+[ext_resource type="Texture2D" uid="uid://cogj04gl78fwo" path="res://credits-scene/fallingleaves/Falling leaves animation15.png" id="17_u45ou"]
+[ext_resource type="Texture2D" uid="uid://cnvp4wc3dspwp" path="res://credits-scene/fallingleaves/Falling leaves animation16.png" id="18_0qg4i"]
+[ext_resource type="Texture2D" uid="uid://dqa5sgt1gyqg0" path="res://credits-scene/fallingleaves/Falling leaves animation17.png" id="19_3gclt"]
+[ext_resource type="Texture2D" uid="uid://1cwbey8yrm7i" path="res://credits-scene/fallingleaves/Falling leaves animation18.png" id="20_c3lrv"]
+[ext_resource type="Texture2D" uid="uid://d0qk5fiii7sdi" path="res://credits-scene/fallingleaves/Falling leaves animation19.png" id="21_rq2o4"]
+[ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://credits-scene/fallingleaves/Falling leaves animation20.png" id="22_aqlpy"]
+[ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://credits-scene/fallingleaves/Falling leaves animation21.png" id="23_uxqse"]
+[ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://credits-scene/fallingleaves/Falling leaves animation22.png" id="24_srs4k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_df8se"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ichlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qo7uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uk873")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kc64g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ioqp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_panbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vsiyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_53f34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f2qbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d0r0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qhujk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_h6gnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_g4ajl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0plfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_u45ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0qg4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3gclt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_c3lrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_rq2o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_aqlpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_uxqse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_srs4k")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 22.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwo7g"]
+size = Vector2(1919, 1079)
+
+[sub_resource type="Animation" id="Animation_6ws68"]
+resource_name = "creditfade"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1.7411, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v0iak"]
+_data = {
+"creditfade": SubResource("Animation_6ws68")
+}
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3jpn6")
+creditsFile = "res://credits-scene/example-CREDITS"
+titleImage = ExtResource("2_xutvm")
+destroyOnEnd = true
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="backgroundVideo" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand = true
+
+[node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="scrollingContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="titleImg" type="TextureRect" parent="scrollingContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+stretch_mode = 5
+
+[node name="FallingLeaves2D" type="Area2D" parent="."]
+script = ExtResource("3_0scfs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FallingLeaves2D"]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_df8se")
+animation = &"fall"
+frame_progress = 0.645107
+speed_scale = 0.28
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallingLeaves2D"]
+position = Vector2(960.5, 539.5)
+shape = SubResource("RectangleShape2D_cwo7g")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
+libraries = {
+"": SubResource("AnimationLibrary_v0iak")
+}
+
+[connection signal="finished" from="backgroundVideo" to="." method="_on_backgroundVideo_finished"]
+[connection signal="finished" from="musicPlayer" to="." method="_on_musicPlayer_finished"]
