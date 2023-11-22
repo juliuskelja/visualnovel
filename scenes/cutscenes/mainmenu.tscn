@@ -1,14 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://d16wa5rf06oth"]
+[gd_scene load_steps=6 format=3 uid="uid://d16wa5rf06oth"]
 
-[ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_gfdhm"]
+[ext_resource type="Script" path="res://scenes/cutscenes/mainmenu.gd" id="1_e0y1b"]
 [ext_resource type="Texture2D" uid="uid://bc3ggx57lvg14" path="res://assets/other/Title_screen_menu_default.png" id="3_x8d65"]
 [ext_resource type="Texture2D" uid="uid://d2skghdyqa6tu" path="res://assets/other/Title_screen_menu_highlight.png" id="4_iwthl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmro4"]
 size = Vector2(496, 208)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wasuj"]
+size = Vector2(490, 203)
+
 [node name="mainmenu" type="Node2D"]
-script = ExtResource("1_gfdhm")
+script = ExtResource("1_e0y1b")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1920.0
@@ -43,17 +46,19 @@ texture = ExtResource("3_x8d65")
 shape = SubResource("RectangleShape2D_nmro4")
 
 [node name="TitleScreenMenuHighlight1" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(432, 896)
+position = Vector2(432, 605)
 texture = ExtResource("4_iwthl")
 
+[node name="PlayHighlightArea2D" type="Area2D" parent="TitleScreenMenuHighlight1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TitleScreenMenuHighlight1/PlayHighlightArea2D"]
+shape = SubResource("RectangleShape2D_wasuj")
+
 [node name="TitleScreenMenuHighlight2" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(960, 896)
 texture = ExtResource("4_iwthl")
 
 [node name="TitleScreenMenuHighlight3" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(1488, 896)
 texture = ExtResource("4_iwthl")
 
@@ -64,3 +69,4 @@ texture = ExtResource("4_iwthl")
 [connection signal="mouse_exited" from="Credits/CreditsArea2D" to="." method="_on_credits_area_2d_mouse_exited"]
 [connection signal="mouse_entered" from="Quit/QuitArea2D" to="." method="_on_quit_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Quit/QuitArea2D" to="." method="_on_quit_area_2d_mouse_exited"]
+[connection signal="input_event" from="TitleScreenMenuHighlight1/PlayHighlightArea2D" to="." method="_on_play_highlight_area_2d_input_event"]

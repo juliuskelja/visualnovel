@@ -135,6 +135,9 @@ func _ready():
 			line = line.erase(line.length()-1,1)
 			centeredText.text += tr(line.strip_edges())
 			
+			centeredText.add_theme_font_size_override("font_size", 32)
+			centeredText.add_theme_font_override("font", load("res://credits-scene/Autour_One/AutourOne-Regular.ttf"))
+			
 			scrollingContainer.add_child(centeredText)
 			centeredText = null
 		

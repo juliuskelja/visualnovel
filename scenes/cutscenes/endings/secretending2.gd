@@ -10,8 +10,8 @@ func _process(delta):
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file("res://scenes/cutscenes/mainmenu.tscn")
+		get_tree().change_scene_to_file("res://credits-scene/credits.tscn")
 
 func _on_rich_text_label_gui_input(event):
 	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file("res://scenes/cutscenes/mainmenu.tscn")
+		get_tree().change_scene_to_file("res://credits-scene/credits.tscn")

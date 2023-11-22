@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://coip7pwk4y8an"
-path="res://.godot/imported/GrenzeGotisch-Medium.ttf-bb7f92196f367dc356a994020b8c6ea5.fontdata"
+uid="uid://deon8ctwm8aae"
+path="res://.godot/imported/AutourOne-Regular.ttf-09e85701e646a390606f6498ade642c4.fontdata"
 
 [deps]
 
-source_file="res://credits-scene/Grenze_Gotisch-20231113T090640Z-001/Grenze_Gotisch/static/GrenzeGotisch-Medium.ttf"
-dest_files=["res://.godot/imported/GrenzeGotisch-Medium.ttf-bb7f92196f367dc356a994020b8c6ea5.fontdata"]
+source_file="res://credits-scene/Autour_One/AutourOne-Regular.ttf"
+dest_files=["res://.godot/imported/AutourOne-Regular.ttf-09e85701e646a390606f6498ade642c4.fontdata"]
 
 [params]
 
