@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cfsi2uehalq7s"]
+[gd_scene load_steps=13 format=3 uid="uid://cfsi2uehalq7s"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-2.gd" id="1_idw7f"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_jvcop"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cosdcjr2ycewh" path="res://assets/cutscene/Royal couple.png" id="3_srafj"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_b7461"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_pnnqa"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/Area2D.gd" id="7_kancc"]
 
 [sub_resource type="Theme" id="Theme_704ww"]
 default_font = ExtResource("4_b7461")
@@ -102,6 +103,7 @@ libraries = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("7_kancc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 z_index = 1

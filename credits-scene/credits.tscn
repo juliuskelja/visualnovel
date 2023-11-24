@@ -3,97 +3,97 @@
 [ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_3jpn6"]
 [ext_resource type="Texture2D" uid="uid://tsln7dwid0dq" path="res://credits-scene/exampleTitle.png" id="2_xutvm"]
 [ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_0scfs"]
-[ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://credits-scene/fallingleaves/Falling leaves animation1.png" id="3_ichlm"]
-[ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://credits-scene/fallingleaves/Falling leaves animation2.png" id="4_qo7uc"]
-[ext_resource type="Texture2D" uid="uid://cplesu8qk1ejc" path="res://credits-scene/fallingleaves/Falling leaves animation3.png" id="5_uk873"]
-[ext_resource type="Texture2D" uid="uid://chebmaej8anlx" path="res://credits-scene/fallingleaves/Falling leaves animation4.png" id="6_kc64g"]
-[ext_resource type="Texture2D" uid="uid://b57j83qbf2x6s" path="res://credits-scene/fallingleaves/Falling leaves animation5.png" id="7_ioqp6"]
-[ext_resource type="Texture2D" uid="uid://c5ysmryd2fxne" path="res://credits-scene/fallingleaves/Falling leaves animation6.png" id="8_panbh"]
-[ext_resource type="Texture2D" uid="uid://dxg16bbc8lcpy" path="res://credits-scene/fallingleaves/Falling leaves animation7.png" id="9_vsiyq"]
-[ext_resource type="Texture2D" uid="uid://b2xo7dtvq7t73" path="res://credits-scene/fallingleaves/Falling leaves animation8.png" id="10_53f34"]
-[ext_resource type="Texture2D" uid="uid://c1bvmbxofdc48" path="res://credits-scene/fallingleaves/Falling leaves animation9.png" id="11_f2qbw"]
-[ext_resource type="Texture2D" uid="uid://cyyw3bajx4bxs" path="res://credits-scene/fallingleaves/Falling leaves animation10.png" id="12_d0r0h"]
-[ext_resource type="Texture2D" uid="uid://dtsl807hqi1ic" path="res://credits-scene/fallingleaves/Falling leaves animation11.png" id="13_qhujk"]
-[ext_resource type="Texture2D" uid="uid://bef0l74nqs3fu" path="res://credits-scene/fallingleaves/Falling leaves animation12.png" id="14_h6gnt"]
-[ext_resource type="Texture2D" uid="uid://5gldn03r5lth" path="res://credits-scene/fallingleaves/Falling leaves animation13.png" id="15_g4ajl"]
-[ext_resource type="Texture2D" uid="uid://ckyo2ou6miksx" path="res://credits-scene/fallingleaves/Falling leaves animation14.png" id="16_0plfs"]
-[ext_resource type="Texture2D" uid="uid://cogj04gl78fwo" path="res://credits-scene/fallingleaves/Falling leaves animation15.png" id="17_u45ou"]
-[ext_resource type="Texture2D" uid="uid://cnvp4wc3dspwp" path="res://credits-scene/fallingleaves/Falling leaves animation16.png" id="18_0qg4i"]
-[ext_resource type="Texture2D" uid="uid://dqa5sgt1gyqg0" path="res://credits-scene/fallingleaves/Falling leaves animation17.png" id="19_3gclt"]
-[ext_resource type="Texture2D" uid="uid://1cwbey8yrm7i" path="res://credits-scene/fallingleaves/Falling leaves animation18.png" id="20_c3lrv"]
-[ext_resource type="Texture2D" uid="uid://d0qk5fiii7sdi" path="res://credits-scene/fallingleaves/Falling leaves animation19.png" id="21_rq2o4"]
-[ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://credits-scene/fallingleaves/Falling leaves animation20.png" id="22_aqlpy"]
-[ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://credits-scene/fallingleaves/Falling leaves animation21.png" id="23_uxqse"]
-[ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://credits-scene/fallingleaves/Falling leaves animation22.png" id="24_srs4k"]
+[ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="4_8vh6o"]
+[ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="5_owdsm"]
+[ext_resource type="Texture2D" uid="uid://cplesu8qk1ejc" path="res://assets/fallingleaves/Falling leaves animation3.png" id="6_y6ewe"]
+[ext_resource type="Texture2D" uid="uid://chebmaej8anlx" path="res://assets/fallingleaves/Falling leaves animation4.png" id="7_rwi4h"]
+[ext_resource type="Texture2D" uid="uid://b57j83qbf2x6s" path="res://assets/fallingleaves/Falling leaves animation5.png" id="8_marpm"]
+[ext_resource type="Texture2D" uid="uid://c5ysmryd2fxne" path="res://assets/fallingleaves/Falling leaves animation6.png" id="9_cx601"]
+[ext_resource type="Texture2D" uid="uid://dxg16bbc8lcpy" path="res://assets/fallingleaves/Falling leaves animation7.png" id="10_k5kgw"]
+[ext_resource type="Texture2D" uid="uid://b2xo7dtvq7t73" path="res://assets/fallingleaves/Falling leaves animation8.png" id="11_wh5oj"]
+[ext_resource type="Texture2D" uid="uid://c1bvmbxofdc48" path="res://assets/fallingleaves/Falling leaves animation9.png" id="12_sk4mj"]
+[ext_resource type="Texture2D" uid="uid://cyyw3bajx4bxs" path="res://assets/fallingleaves/Falling leaves animation10.png" id="13_2mp6c"]
+[ext_resource type="Texture2D" uid="uid://dtsl807hqi1ic" path="res://assets/fallingleaves/Falling leaves animation11.png" id="14_n2b2l"]
+[ext_resource type="Texture2D" uid="uid://bef0l74nqs3fu" path="res://assets/fallingleaves/Falling leaves animation12.png" id="15_d0v2d"]
+[ext_resource type="Texture2D" uid="uid://5gldn03r5lth" path="res://assets/fallingleaves/Falling leaves animation13.png" id="16_xp2rn"]
+[ext_resource type="Texture2D" uid="uid://ckyo2ou6miksx" path="res://assets/fallingleaves/Falling leaves animation14.png" id="17_nudhq"]
+[ext_resource type="Texture2D" uid="uid://cogj04gl78fwo" path="res://assets/fallingleaves/Falling leaves animation15.png" id="18_eny2v"]
+[ext_resource type="Texture2D" uid="uid://cnvp4wc3dspwp" path="res://assets/fallingleaves/Falling leaves animation16.png" id="19_awwkf"]
+[ext_resource type="Texture2D" uid="uid://dqa5sgt1gyqg0" path="res://assets/fallingleaves/Falling leaves animation17.png" id="20_hmnl2"]
+[ext_resource type="Texture2D" uid="uid://1cwbey8yrm7i" path="res://assets/fallingleaves/Falling leaves animation18.png" id="21_2gov0"]
+[ext_resource type="Texture2D" uid="uid://d0qk5fiii7sdi" path="res://assets/fallingleaves/Falling leaves animation19.png" id="22_kdx0e"]
+[ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://assets/fallingleaves/Falling leaves animation20.png" id="23_ki3ym"]
+[ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://assets/fallingleaves/Falling leaves animation21.png" id="24_cm1n3"]
+[ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="25_pu62q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_df8se"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_ichlm")
+"texture": ExtResource("4_8vh6o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_qo7uc")
+"texture": ExtResource("5_owdsm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_uk873")
+"texture": ExtResource("6_y6ewe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_kc64g")
+"texture": ExtResource("7_rwi4h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ioqp6")
+"texture": ExtResource("8_marpm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_panbh")
+"texture": ExtResource("9_cx601")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_vsiyq")
+"texture": ExtResource("10_k5kgw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_53f34")
+"texture": ExtResource("11_wh5oj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_f2qbw")
+"texture": ExtResource("12_sk4mj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_d0r0h")
+"texture": ExtResource("13_2mp6c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_qhujk")
+"texture": ExtResource("14_n2b2l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_h6gnt")
+"texture": ExtResource("15_d0v2d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_g4ajl")
+"texture": ExtResource("16_xp2rn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_0plfs")
+"texture": ExtResource("17_nudhq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_u45ou")
+"texture": ExtResource("18_eny2v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_0qg4i")
+"texture": ExtResource("19_awwkf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_3gclt")
+"texture": ExtResource("20_hmnl2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_c3lrv")
+"texture": ExtResource("21_2gov0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_rq2o4")
+"texture": ExtResource("22_kdx0e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_aqlpy")
+"texture": ExtResource("23_ki3ym")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_uxqse")
+"texture": ExtResource("24_cm1n3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_srs4k")
+"texture": ExtResource("25_pu62q")
 }],
 "loop": true,
 "name": &"fall",

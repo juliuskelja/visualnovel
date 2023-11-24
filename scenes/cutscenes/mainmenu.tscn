@@ -1,14 +1,149 @@
-[gd_scene load_steps=6 format=3 uid="uid://d16wa5rf06oth"]
+[gd_scene load_steps=42 format=3 uid="uid://d16wa5rf06oth"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/mainmenu.gd" id="1_e0y1b"]
 [ext_resource type="Texture2D" uid="uid://bc3ggx57lvg14" path="res://assets/other/Title_screen_menu_default.png" id="3_x8d65"]
+[ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="4_52lfj"]
 [ext_resource type="Texture2D" uid="uid://d2skghdyqa6tu" path="res://assets/other/Title_screen_menu_highlight.png" id="4_iwthl"]
+[ext_resource type="FontFile" uid="uid://byw2gogfjvv2o" path="res://assets/fonts/Grenze_Gotisch/static/GrenzeGotisch-Black.ttf" id="4_mjak7"]
+[ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="5_rdth2"]
+[ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="6_mg1rn"]
+[ext_resource type="Texture2D" uid="uid://cplesu8qk1ejc" path="res://assets/fallingleaves/Falling leaves animation3.png" id="7_ymiyw"]
+[ext_resource type="Texture2D" uid="uid://chebmaej8anlx" path="res://assets/fallingleaves/Falling leaves animation4.png" id="8_uwjpj"]
+[ext_resource type="Texture2D" uid="uid://b57j83qbf2x6s" path="res://assets/fallingleaves/Falling leaves animation5.png" id="9_4omii"]
+[ext_resource type="Texture2D" uid="uid://c5ysmryd2fxne" path="res://assets/fallingleaves/Falling leaves animation6.png" id="10_0rquk"]
+[ext_resource type="Texture2D" uid="uid://dxg16bbc8lcpy" path="res://assets/fallingleaves/Falling leaves animation7.png" id="11_ngen0"]
+[ext_resource type="Texture2D" uid="uid://b2xo7dtvq7t73" path="res://assets/fallingleaves/Falling leaves animation8.png" id="12_rx8yx"]
+[ext_resource type="Texture2D" uid="uid://c1bvmbxofdc48" path="res://assets/fallingleaves/Falling leaves animation9.png" id="13_ntnou"]
+[ext_resource type="Texture2D" uid="uid://cyyw3bajx4bxs" path="res://assets/fallingleaves/Falling leaves animation10.png" id="14_lm4y2"]
+[ext_resource type="Texture2D" uid="uid://dtsl807hqi1ic" path="res://assets/fallingleaves/Falling leaves animation11.png" id="15_8wh8v"]
+[ext_resource type="Texture2D" uid="uid://bef0l74nqs3fu" path="res://assets/fallingleaves/Falling leaves animation12.png" id="16_gtj6c"]
+[ext_resource type="Texture2D" uid="uid://5gldn03r5lth" path="res://assets/fallingleaves/Falling leaves animation13.png" id="17_qdfjd"]
+[ext_resource type="Texture2D" uid="uid://ckyo2ou6miksx" path="res://assets/fallingleaves/Falling leaves animation14.png" id="18_2feq4"]
+[ext_resource type="Texture2D" uid="uid://cogj04gl78fwo" path="res://assets/fallingleaves/Falling leaves animation15.png" id="19_l6h54"]
+[ext_resource type="Texture2D" uid="uid://cnvp4wc3dspwp" path="res://assets/fallingleaves/Falling leaves animation16.png" id="20_w0nme"]
+[ext_resource type="Texture2D" uid="uid://dqa5sgt1gyqg0" path="res://assets/fallingleaves/Falling leaves animation17.png" id="21_dwqfe"]
+[ext_resource type="Texture2D" uid="uid://1cwbey8yrm7i" path="res://assets/fallingleaves/Falling leaves animation18.png" id="22_k7w5p"]
+[ext_resource type="Texture2D" uid="uid://d0qk5fiii7sdi" path="res://assets/fallingleaves/Falling leaves animation19.png" id="23_mu1md"]
+[ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://assets/fallingleaves/Falling leaves animation20.png" id="24_nxlse"]
+[ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://assets/fallingleaves/Falling leaves animation21.png" id="25_5ffay"]
+[ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="26_t0w4v"]
+[ext_resource type="Texture2D" uid="uid://wqing5dpjd01" path="res://assets/ui/Fall Away logo_luonnos.png" id="29_gxtia"]
+[ext_resource type="AudioStream" uid="uid://ww8qpwm5fjdy" path="res://assets/sound/valikkonavigointi.audio.mp3" id="30_ap1nl"]
+[ext_resource type="AudioStream" uid="uid://b2b6ix56pd0oo" path="res://assets/sound/valikkovalitse.audio.mp3" id="31_0c70d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmro4"]
 size = Vector2(496, 208)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wasuj"]
 size = Vector2(490, 203)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q6es0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_rdth2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mg1rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ymiyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uwjpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4omii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0rquk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ngen0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rx8yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ntnou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lm4y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8wh8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gtj6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qdfjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2feq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_l6h54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_w0nme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dwqfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_k7w5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mu1md")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_nxlse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5ffay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_t0w4v")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 22.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1hnp"]
+size = Vector2(1919, 1079)
+
+[sub_resource type="Animation" id="Animation_6ws68"]
+resource_name = "creditfade"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1.7411, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v0iak"]
+_data = {
+"creditfade": SubResource("Animation_6ws68")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4wc1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f4o8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0dhm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d18u7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4pa6"]
 
 [node name="mainmenu" type="Node2D"]
 script = ExtResource("1_e0y1b")
@@ -22,51 +157,247 @@ color = Color(0.223529, 0.164706, 0.0901961, 1)
 position = Vector2(432, 896)
 texture = ExtResource("3_x8d65")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Play"]
+clip_contents = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = -75.0
+offset_right = -314.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.269531, 0.203125, 0.113281, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Play"
+
 [node name="PlayArea2D" type="Area2D" parent="Play"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Play/PlayArea2D"]
+visible = false
 shape = SubResource("RectangleShape2D_nmro4")
 
 [node name="Credits" type="Sprite2D" parent="."]
 position = Vector2(960, 896)
 texture = ExtResource("3_x8d65")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Credits"]
+clip_contents = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -75.0
+offset_right = -231.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.269531, 0.203125, 0.113281, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Credits"
+
 [node name="CreditsArea2D" type="Area2D" parent="Credits"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Credits/CreditsArea2D"]
+visible = false
 shape = SubResource("RectangleShape2D_nmro4")
 
 [node name="Quit" type="Sprite2D" parent="."]
 position = Vector2(1488, 896)
 texture = ExtResource("3_x8d65")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Quit"]
+clip_contents = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -75.0
+offset_right = -372.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.269531, 0.203125, 0.113281, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Quit"
+
 [node name="QuitArea2D" type="Area2D" parent="Quit"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Quit/QuitArea2D"]
+visible = false
 shape = SubResource("RectangleShape2D_nmro4")
 
 [node name="TitleScreenMenuHighlight1" type="Sprite2D" parent="."]
-position = Vector2(432, 605)
+position = Vector2(432, 896)
 texture = ExtResource("4_iwthl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight1"]
+clip_contents = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = -75.0
+offset_right = -314.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Play"
+metadata/_edit_use_anchors_ = true
 
 [node name="PlayHighlightArea2D" type="Area2D" parent="TitleScreenMenuHighlight1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TitleScreenMenuHighlight1/PlayHighlightArea2D"]
+visible = false
 shape = SubResource("RectangleShape2D_wasuj")
 
 [node name="TitleScreenMenuHighlight2" type="Sprite2D" parent="."]
-position = Vector2(960, 896)
+position = Vector2(961, 896)
 texture = ExtResource("4_iwthl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight2"]
+clip_contents = false
+anchors_preset = -1
+anchor_right = 1.03878
+anchor_bottom = 0.912195
+offset_left = -125.0
+offset_top = -76.0
+offset_right = -360.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Credits"
+metadata/_edit_use_anchors_ = true
 
 [node name="TitleScreenMenuHighlight3" type="Sprite2D" parent="."]
 position = Vector2(1488, 896)
 texture = ExtResource("4_iwthl")
 
-[connection signal="input_event" from="Play/PlayArea2D" to="." method="_on_play_area_2d_input_event"]
+[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight3"]
+clip_contents = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -75.0
+offset_right = -311.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Quit"
+metadata/_edit_use_anchors_ = true
+
+[node name="FallingLeaves2D" type="Area2D" parent="."]
+script = ExtResource("4_52lfj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FallingLeaves2D"]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_q6es0")
+animation = &"fall"
+speed_scale = 0.28
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallingLeaves2D"]
+visible = false
+position = Vector2(960.5, 539.5)
+shape = SubResource("RectangleShape2D_u1hnp")
+
+[node name="FallAwayLogoLuonnos" type="Sprite2D" parent="."]
+position = Vector2(961, 341)
+scale = Vector2(0.398357, 0.398357)
+texture = ExtResource("29_gxtia")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect2"]
+libraries = {
+"": SubResource("AnimationLibrary_v0iak")
+}
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 187.0
+offset_top = 794.0
+offset_right = 677.0
+offset_bottom = 999.0
+theme_override_fonts/font = ExtResource("4_mjak7")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4wc1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8f4o8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t0dhm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d18u7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f4pa6")
+
+[node name="PlayTimer" type="Timer" parent="PlayButton"]
+wait_time = 0.3
+one_shot = true
+
+[node name="CreditsButton" type="Button" parent="."]
+offset_left = 716.0
+offset_top = 794.0
+offset_right = 1205.0
+offset_bottom = 999.0
+theme_override_fonts/font = ExtResource("4_mjak7")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4wc1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8f4o8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t0dhm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d18u7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f4pa6")
+
+[node name="CreditsTimer" type="Timer" parent="CreditsButton"]
+wait_time = 0.3
+one_shot = true
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 1243.0
+offset_top = 794.0
+offset_right = 1733.0
+offset_bottom = 999.0
+theme_override_fonts/font = ExtResource("4_mjak7")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4wc1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8f4o8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_t0dhm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d18u7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f4pa6")
+
+[node name="QuitTimer" type="Timer" parent="QuitButton"]
+wait_time = 0.3
+
+[node name="MenuHover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_ap1nl")
+
+[node name="MenuClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_0c70d")
+volume_db = 6.0
+
 [connection signal="mouse_entered" from="Play/PlayArea2D" to="." method="_on_play_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Play/PlayArea2D" to="." method="_on_play_area_2d_mouse_exited"]
 [connection signal="mouse_entered" from="Credits/CreditsArea2D" to="." method="_on_credits_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Credits/CreditsArea2D" to="." method="_on_credits_area_2d_mouse_exited"]
 [connection signal="mouse_entered" from="Quit/QuitArea2D" to="." method="_on_quit_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Quit/QuitArea2D" to="." method="_on_quit_area_2d_mouse_exited"]
-[connection signal="input_event" from="TitleScreenMenuHighlight1/PlayHighlightArea2D" to="." method="_on_play_highlight_area_2d_input_event"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="timeout" from="PlayButton/PlayTimer" to="." method="_on_play_timer_timeout"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="timeout" from="CreditsButton/CreditsTimer" to="." method="_on_credits_timer_timeout"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="timeout" from="QuitButton/QuitTimer" to="." method="_on_quit_timer_timeout"]
