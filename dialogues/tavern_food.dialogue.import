@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://cvqrtx1vopscj"
+path="res://.godot/imported/tavern_food.dialogue-c0fa17c6161c6925a46636eee0f28bb1.tres"
+
+[deps]
+
+source_file="res://dialogues/tavern_food.dialogue"
+dest_files=["res://.godot/imported/tavern_food.dialogue-c0fa17c6161c6925a46636eee0f28bb1.tres"]
+
+[params]
+
+defaults=true

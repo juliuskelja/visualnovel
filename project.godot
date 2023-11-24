@@ -19,6 +19,7 @@ config/icon="res://assets/other/icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 MusicPlayer="*res://scenes/MusicPlayer.tscn"
+GameStates="*res://gamestates/Game_states.gd"
 
 [dialogue_manager]
 
@@ -39,7 +40,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://dialogue/main2.dialogue", "res://main2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/template1.dialogue", "res://dialogues/tavern_food.dialogue")
 
 [layer_names]
 

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://oqlpsy6tqibf"]
+
+[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/tavern_food.gd" id="1_dwfd7"]
+
+[node name="tavern_food" type="Node2D"]
+script = ExtResource("1_dwfd7")
