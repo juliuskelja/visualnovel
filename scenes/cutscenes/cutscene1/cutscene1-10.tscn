@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://blvjqas3dmwle"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-10.gd" id="1_xiwn0"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_kqqwm"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_ugcbf"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_rx78g"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_auvyk"]
+
+[sub_resource type="Theme" id="Theme_myoqu"]
+default_font = ExtResource("4_rx78g")
+
+[sub_resource type="Animation" id="Animation_dtsim"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gwtdk"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_085nn"]
+_data = {
+"fade_in": SubResource("Animation_dtsim"),
+"fade_out": SubResource("Animation_gwtdk")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0n03j"]
+size = Vector2(1918, 1080)
+
+[node name="cutscene1-10" type="Node2D"]
+script = ExtResource("1_xiwn0")
+
+[node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("2_kqqwm")
+
+[node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_ugcbf")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 705.0
+offset_right = 1636.0
+offset_bottom = 1042.0
+theme = SubResource("Theme_myoqu")
+theme_override_constants/line_separation = 21
+theme_override_font_sizes/normal_font_size = 28
+text = "The sellers begin setting up their little market stalls to start selling all sorts of goods, like fish, veggies and fruits, beautiful jewelry and clothing and baked goods, some still being in the oven and filling the crisp morning air.
+"
+scroll_active = false
+autowrap_mode = 2
+tab_size = 2
+script = ExtResource("5_auvyk")
+
+[node name="Timer" type="Timer" parent="Control/RichTextLabel"]
+wait_time = 0.001
+
+[node name="FadeRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 678.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
+libraries = {
+"": SubResource("AnimationLibrary_085nn")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 1
+z_as_relative = false
+position = Vector2(960, 539)
+shape = SubResource("RectangleShape2D_0n03j")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
+[connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

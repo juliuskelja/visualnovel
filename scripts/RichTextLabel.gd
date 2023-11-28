@@ -16,7 +16,3 @@ func _on_timer_timeout():
 	if visible_characters > len(get_text()):
 		$Timer.stop()
 		print("timer stopped")
-
-
-func _on_gui_input(event):
-	pass # Replace with function body.

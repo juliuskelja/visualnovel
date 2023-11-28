@@ -1,0 +1,115 @@
+[gd_scene load_steps=12 format=3 uid="uid://7k67p5w8xg2m"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-7.gd" id="1_lyft7"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_avuea"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_xnc6o"]
+[ext_resource type="Texture2D" uid="uid://bq1uemvw3ve4v" path="res://assets/cutscene/Forest at night.png" id="4_hbtan"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_58gro"]
+[ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="6_pgx06"]
+
+[sub_resource type="Theme" id="Theme_lfpcj"]
+default_font = ExtResource("5_58gro")
+
+[sub_resource type="Animation" id="Animation_dtsim"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gwtdk"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_085nn"]
+_data = {
+"fade_in": SubResource("Animation_dtsim"),
+"fade_out": SubResource("Animation_gwtdk")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5clx"]
+size = Vector2(1918, 1080)
+
+[node name="cutscene1-7" type="Node2D"]
+script = ExtResource("1_lyft7")
+
+[node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("2_avuea")
+
+[node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_xnc6o")
+
+[node name="ForestAtNight" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 359.5)
+scale = Vector2(4.3875, 2.80556)
+texture = ExtResource("4_hbtan")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 705.0
+offset_right = 1636.0
+offset_bottom = 1042.0
+theme = SubResource("Theme_lfpcj")
+theme_override_constants/line_separation = 21
+theme_override_font_sizes/normal_font_size = 28
+text = "Realizing that they might have wandered too far into the forest, they decide to turn around to go back. Only to realize that they have no idea which way is “back” anymore. So, with a panic growing inside of them, they decide to just pick a direction and trust that it had to have been the right way back to the castle."
+scroll_active = false
+autowrap_mode = 2
+tab_size = 2
+script = ExtResource("6_pgx06")
+
+[node name="Timer" type="Timer" parent="Control/RichTextLabel"]
+wait_time = 0.001
+
+[node name="FadeRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 678.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
+libraries = {
+"": SubResource("AnimationLibrary_085nn")
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+z_index = 1
+z_as_relative = false
+position = Vector2(960, 539)
+shape = SubResource("RectangleShape2D_r5clx")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
+[connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
