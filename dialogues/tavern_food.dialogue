@@ -1,13 +1,16 @@
-~ Beginning
+~ this_is_a_node_title
 
-Anne: [[Hi|Hello|Howdy]], asdasdasd
-Anne: Here are some choices.
-- First one
-	Anne: You picked the first one.
+missingno: [[Hi|Hello|Howdy]], this is tavern food
+missingno: 麵包很好吃，特別是預先切片的輕麵包，好吃
+- 牙齒 牙齒 牙齒
+	placehold: The living organism, in situation determined by the play of energy on the surface of the globe, ordinarily receives more energy than is necessary to maintaining life;
+	placehold: the excess energy (wealth) can be used for the growth of the system (e.g., an organism);
+	placehold: if the system can no longer grow, or if the excess cannot be completely absorbed in its growth,
+	placehold: it must necessarily be lost without profit; it must be spent, willingly or not, gloriously
+	placehold: or [shake rate=20 level=10]catastrophically.[/shake]
+	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/deletelater.tscn")
 - Second one
-	Anne: You picked the second one.
-- Start again => Beginning
-- End the conversation => END
-Anne: For more information see the online documentation.
+	missingno: You picked the second one.
+	do get_tree().change_scene_to_file("res://scenes/map1.tscn")
 
 => END

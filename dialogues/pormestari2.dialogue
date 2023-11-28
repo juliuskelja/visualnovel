@@ -1,0 +1,11 @@
+~ this_is_a_node_title
+
+missingno: [[Hi|Hello|Howdy]], this is pormestari2 dialogue.
+missingno: Here are some choices.
+- First one
+	missingno: You picked the first one.
+- Second one
+	missingno: You picked the second one.
+missingno: xd
+
+=> END

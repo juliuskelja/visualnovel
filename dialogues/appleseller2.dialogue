@@ -1,0 +1,13 @@
+~ this_is_a_node_title
+
+
+Erica: [[Hi!|Hello!|]]. . .
+Erica: Oh.[wait=0.5] It’s you again. What do you want to steal now?
+- Apologetic
+	: I’m not looking for anything to steal. Quite the opposite, actually. Here, this is what I owe you. And I’m sorry for stealing in the first place.
+- Offended
+	: Awfully rude of you. I know that I wronged you, but that is no way to talk to someone. Anyway, I came here to pay you what I owe. Here.
+- Annoyed
+: Actually, I just realized that I didn’t need to be here. Good luck with your business, you sure do need it.
+
+=> END

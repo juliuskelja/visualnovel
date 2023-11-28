@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2wnlp52n8hbm"]
+
+[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/pormestari2.gd" id="1_q0qig"]
+
+[node name="pormestari2" type="Node2D"]
+script = ExtResource("1_q0qig")

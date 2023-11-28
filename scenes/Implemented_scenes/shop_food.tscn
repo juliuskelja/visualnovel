@@ -1,10 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://djvbmb8115bms"]
+[gd_scene load_steps=5 format=3 uid="uid://djvbmb8115bms"]
 
 [ext_resource type="Texture2D" uid="uid://d304p2q8sa4fv" path="res://assets/backgrounds/library.png" id="1_fq3jp"]
+[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_kf1bk"]
+[ext_resource type="Texture2D" uid="uid://c0cayos11p2cw" path="res://scenes/Implemented_scenes/placeholder_scene_art/missingno.png" id="3_37a2e"]
 
-[node name="shop" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfy14"]
+size = Vector2(1037.05, 1045.9)
+
+[node name="shop" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
+script = ExtResource("1_kf1bk")
+clickable_sprite = NodePath("Anne")
+setdialogue = "shop_food"
 
 [node name="LibraryShop" type="Sprite2D" parent="."]
 position = Vector2(961.024, 540.5)
 scale = Vector2(7.11869, 5.02315)
 texture = ExtResource("1_fq3jp")
+
+[node name="Anne" type="Sprite2D" parent="."]
+position = Vector2(983.349, 645.496)
+scale = Vector2(0.436818, 0.455112)
+texture = ExtResource("3_37a2e")
+
+[node name="Area2D" type="Area2D" parent="Anne"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
+position = Vector2(-4.2334, -5.48413)
+shape = SubResource("RectangleShape2D_rfy14")
+
+[connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

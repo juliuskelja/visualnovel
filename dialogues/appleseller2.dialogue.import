@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://dktgjvrbdstho"
+path="res://.godot/imported/appleseller2.dialogue-f582e24476f4efb3087760932a58373a.tres"
+
+[deps]
+
+source_file="res://dialogues/appleseller2.dialogue"
+dest_files=["res://.godot/imported/appleseller2.dialogue-f582e24476f4efb3087760932a58373a.tres"]
+
+[params]
+
+defaults=true

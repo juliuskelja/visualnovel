@@ -7,8 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xammt"]
 size = Vector2(804.5, 618.979)
 
-[node name="tavern" type="Node2D"]
+[node name="tavern" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_c5gv4")
+clickable_sprite = NodePath("Anne")
 setdialogue = "tavern_food"
 
 [node name="Tavern" type="Sprite2D" parent="."]

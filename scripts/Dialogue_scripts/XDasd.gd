@@ -14,7 +14,7 @@ func _ready():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if (event is InputEventMouseButton and event.pressed):
 		add_child(dialogue.instantiate())
-		clickable_sprite.visible = false
+		clickable_sprite.visible = true
 
 ### Signals
 func _on_dialogue_ended(_resource: DialogueResource):

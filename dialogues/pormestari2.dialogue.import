@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://bi01c2biqckoa"
+path="res://.godot/imported/pormestari2.dialogue-5961c2cac4e06d54e104c5eeffef390a.tres"
+
+[deps]
+
+source_file="res://dialogues/pormestari2.dialogue"
+dest_files=["res://.godot/imported/pormestari2.dialogue-5961c2cac4e06d54e104c5eeffef390a.tres"]
+
+[params]
+
+defaults=true

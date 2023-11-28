@@ -1,0 +1,11 @@
+~ this_is_a_node_title
+
+Finn: [[Hi|Hello|Howdy]] täs meikä
+Blake: ja meikä
+- First one
+	Finn: You picked the first one.
+- Second one
+	Finn: You picked the second one.
+	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+
+=> END
