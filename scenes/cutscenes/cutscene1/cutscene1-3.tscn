@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbdt8t64yfstg"]
+[gd_scene load_steps=16 format=3 uid="uid://bbdt8t64yfstg"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-3.gd" id="1_kok83"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_sabpw"]
@@ -46,8 +46,15 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_17phh"]
-size = Vector2(1918, 1080)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ht45s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uxxns"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e4c0h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sm0ys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_42mqm"]
 
 [node name="cutscene1-3" type="Node2D"]
 script = ExtResource("1_kok83")
@@ -82,7 +89,7 @@ offset_bottom = 997.0
 theme = SubResource("Theme_1aj06")
 theme_override_constants/line_separation = 21
 theme_override_font_sizes/normal_font_size = 28
-text = "Their only child, as competent as their parents, is arguably more interested in all the physical activities, like archery and fencing, instead of studying. Deeming the need to become a scholar while their father still reigns as king to be unnecessary. "
+text = "This is what is creating some commotion within the walls of the castle. The king is very adamant that studying would be beneficial for the future of leading the kingdom. "
 scroll_active = false
 autowrap_mode = 2
 tab_size = 2
@@ -101,15 +108,14 @@ libraries = {
 "": SubResource("AnimationLibrary_085nn")
 }
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ht45s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uxxns")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_e4c0h")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sm0ys")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_42mqm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-z_index = 1
-z_as_relative = false
-position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_17phh")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
-
-[connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

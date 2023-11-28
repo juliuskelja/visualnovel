@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cosdcjr2ycewh"
-path="res://.godot/imported/Royal couple.png-14573ef6d3c3ca13398992b2e2ffda2a.ctex"
+uid="uid://bwlyicdcrogn2"
+path="res://.godot/imported/omena koju cutscene.png-cfa56536a6a83b832555b6e6598991c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/Royal couple.png"
-dest_files=["res://.godot/imported/Royal couple.png-14573ef6d3c3ca13398992b2e2ffda2a.ctex"]
+source_file="res://assets/cutscene/omena koju cutscene.png"
+dest_files=["res://.godot/imported/omena koju cutscene.png-cfa56536a6a83b832555b6e6598991c3.ctex"]
 
 [params]
 
