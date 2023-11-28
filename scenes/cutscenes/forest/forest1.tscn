@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://30xb388kgtwd"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/forest/forest1.gd" id="1_mjhxg"]
+[ext_resource type="Texture2D" uid="uid://ctbkqq6wvg2de" path="res://scenes/cutscenes/forest/forest edge.png" id="2_i4lv0"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="3_s2w0q"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="4_52p8n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6jci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f2e37"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jtin5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4j85j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v57re"]
+
+[node name="forest1" type="Node2D"]
+script = ExtResource("1_mjhxg")
+
+[node name="ForestEdge" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(957.889, 538.375)
+scale = Vector2(5.98472, 5.98472)
+texture = ExtResource("2_i4lv0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 148.0
+offset_top = 97.0
+offset_right = 1796.0
+offset_bottom = 993.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("3_s2w0q")
+theme_override_font_sizes/normal_font_size = 28
+text = "You feel something eerie fill the atmosphere. You can’t quite understand what is going on, but you can for certain say that it is very unsettling. You wonder how no one has done anything about this part of the forest. This part of the forest is unusually dark and you can feel a slight cold breeze coming from the area as well.
+
+This doesn’t make sense to you, since the sun is shining and warming up the village. You think you saw something in the darkness, but can’t be sure if it was your imagination doing tricks on you for staring into the void for too long, or if there actually was something staring back at you."
+scroll_active = false
+script = ExtResource("4_52p8n")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q6jci")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_f2e37")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jtin5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4j85j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v57re")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

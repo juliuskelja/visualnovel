@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-2.gd" id="1_idw7f"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_jvcop"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_wvskx"]
-[ext_resource type="Texture2D" uid="uid://cosdcjr2ycewh" path="res://assets/cutscene/Royal couple.png" id="3_srafj"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_b7461"]
+[ext_resource type="Texture2D" uid="uid://qm1q26yl01ki" path="res://assets/cutscene/royal couple new.png" id="4_l43tb"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_pnnqa"]
 
 [sub_resource type="Theme" id="Theme_704ww"]
@@ -70,11 +70,11 @@ position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("2_wvskx")
 
-[node name="RoyalCouple" type="Sprite2D" parent="."]
+[node name="RoyalCoupleNew" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 360)
 scale = Vector2(4.3875, 2.8)
-texture = ExtResource("3_srafj")
+texture = ExtResource("4_l43tb")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -99,6 +99,7 @@ script = ExtResource("5_pnnqa")
 wait_time = 0.001
 
 [node name="FadeRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 678.0
 color = Color(0, 0, 0, 1)

@@ -1,0 +1,53 @@
+[gd_scene load_steps=10 format=3 uid="uid://b0wfo54da4ic7"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/forest/forest2.gd" id="1_cqv7e"]
+[ext_resource type="Texture2D" uid="uid://ctbkqq6wvg2de" path="res://scenes/cutscenes/forest/forest edge.png" id="2_56fte"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="3_ixuaf"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="4_x3oit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q6jci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f2e37"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jtin5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4j85j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v57re"]
+
+[node name="forest2" type="Node2D"]
+script = ExtResource("1_cqv7e")
+
+[node name="ForestEdge" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(957.889, 538.375)
+scale = Vector2(5.98472, 5.98472)
+texture = ExtResource("2_56fte")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 148.0
+offset_top = 97.0
+offset_right = 1796.0
+offset_bottom = 993.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("3_ixuaf")
+theme_override_font_sizes/normal_font_size = 28
+text = "You realize that you have been staring into the darkness for what feels like either five minutes or multiple hours. Slowly you start to feel like you are able to control yourself and decide to take a step back. You break from the trance that took you over and decide that it is better to just turn around and go back to the town square. You think to yourself that maybe someone should do something about this mysterious zone at the edge of the forest."
+scroll_active = false
+script = ExtResource("4_x3oit")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q6jci")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_f2e37")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jtin5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4j85j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v57re")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

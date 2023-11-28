@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://f4vq4fecmoit"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/cutscene3-3.gd" id="1_yjv1m"]
+[ext_resource type="Texture2D" uid="uid://bu2x07hjjllcs" path="res://assets/cutscene/VelhonTorniPOV2.png" id="2_buqdk"]
+[ext_resource type="Texture2D" uid="uid://bxrlcppr0mor5" path="res://assets/cutscene/Borders_Cutscene.png" id="3_40thj"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_kk85c"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="5_c6bh8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6w3mc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yknsb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ss7bf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eugge"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eler8"]
+
+[node name="cutscene3-3" type="Node2D"]
+script = ExtResource("1_yjv1m")
+
+[node name="VelhonTorniPov2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 343.5)
+scale = Vector2(2.73504, 2.73705)
+texture = ExtResource("2_buqdk")
+
+[node name="BGRect" type="ColorRect" parent="."]
+offset_top = 687.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.441406, 0.164063, 0.046875, 1)
+
+[node name="BordersCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 659.5)
+scale = Vector2(6, 4.67222)
+texture = ExtResource("3_40thj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 289.0
+offset_top = 687.0
+offset_right = 1643.0
+offset_bottom = 902.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("4_kk85c")
+theme_override_font_sizes/normal_font_size = 28
+text = "You can see all sorts of different colored puffs of smoke coming out from the open window and wonder to yourself if anything that is going on in that room is safe. 
+"
+scroll_active = false
+script = ExtResource("5_c6bh8")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6w3mc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yknsb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ss7bf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_eugge")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eler8")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
