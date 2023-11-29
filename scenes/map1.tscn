@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=44 format=3 uid="uid://d2t5jrn5gpuy1"]
 
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_5y1ay"]
@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://scripts/4_WorldMapCartwheel.gd" id="7_sarv8"]
 [ext_resource type="Script" path="res://scripts/5_WorldMapPark.gd" id="8_gwlaf"]
 [ext_resource type="Texture2D" uid="uid://6s7i7v2dwv7o" path="res://assets/map/map_assets/5. World map park.png" id="9_flkek"]
-[ext_resource type="Script" path="res://scripts/6_WorldMapTent.gd" id="10_mj4bt"]
 [ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/map/map_assets/6. World map tent.png" id="11_knbui"]
 [ext_resource type="Script" path="res://scripts/7_WorldMapTavern.gd" id="12_4ewu2"]
 [ext_resource type="Shader" path="res://shaders/map1.gdshader" id="13_4d64m"]
@@ -36,7 +35,48 @@
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_12aw6"]
 [ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/map_assets/21 World Map mood lighting.png" id="35_wymqv"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6vrjm"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_avkg3"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4sxv0"]
+resource_name = "tavernshader"
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k4fgo"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m4vju"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hna3i"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s0qe8"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_obx8c"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yd5eg"]
 shader = ExtResource("13_4d64m")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
@@ -70,6 +110,8 @@ texture = ExtResource("4_8ltfh")
 
 [node name="3_WorldMapPier" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_6vrjm")
+use_parent_material = true
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("5_ol4dv")
@@ -96,6 +138,8 @@ polygon = PackedVector2Array(-159.333, 44.8333, -152.167, 40.6667, -141.667, 46.
 
 [node name="5_WorldMapPark" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_avkg3")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("9_flkek")
@@ -114,7 +158,6 @@ texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("11_knbui")
-script = ExtResource("10_mj4bt")
 
 [node name="Tent" type="Area2D" parent="6_WorldMapTent"]
 position = Vector2(0, 0.138885)
@@ -127,6 +170,7 @@ polygon = PackedVector2Array(137.5, 62.7357, 132.778, 66.6306, 127.778, 74.6986,
 z_index = 1
 texture_filter = 1
 material = SubResource("ShaderMaterial_4sxv0")
+use_parent_material = true
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("14_gd3bo")
@@ -138,7 +182,10 @@ script = ExtResource("12_4ewu2")
 polygon = PackedVector2Array(-108.333, 9.75903, -108.333, 1.91844, -97.5, -9.75903, -73, -1.25116, -69, 0.583878, -68.6667, 10.9268, -107.833, 45.2919, -127, 35.95, -126.833, 27.9425)
 
 [node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
+z_as_relative = false
 texture_filter = 1
+material = SubResource("ShaderMaterial_k4fgo")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("16_udmqt")
@@ -160,6 +207,8 @@ texture = ExtResource("18_p7aa3")
 
 [node name="10WorldMapFarm" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_m4vju")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("19_qnwxr")
@@ -184,6 +233,8 @@ texture = ExtResource("21_uf0bd")
 
 [node name="12WorldMapWizardTower" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_hna3i")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("22_lemck")
@@ -208,6 +259,8 @@ texture = ExtResource("25_vflyq")
 
 [node name="15WorldMapPharmacy" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_s0qe8")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("26_vi4k7")
@@ -219,7 +272,10 @@ script = ExtResource("26_5pjjx")
 polygon = PackedVector2Array(43.8333, 24, 38, 27.3333, 38, 40.1667, 45.1667, 35.6667, 47, 36.3333, 52.8333, 39.5, 55.3333, 40.1667, 74.8333, 30.6667, 75.1667, 24.1667, 76.6667, 18.1667, 68, 7.83334, 46.1667, 16.3333, 42.1667, 21.5, 44.3333, 22)
 
 [node name="16WorldMapCityCenter" type="Sprite2D" parent="."]
+z_index = 1
 texture_filter = 1
+material = SubResource("ShaderMaterial_obx8c")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("28_nc0yh")
@@ -244,6 +300,8 @@ texture = ExtResource("31_wfk42")
 
 [node name="19WorldMapMayorsHouse" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_yd5eg")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("32_esln5")
@@ -266,14 +324,31 @@ scale = Vector2(6, 6)
 texture = ExtResource("35_wymqv")
 
 [connection signal="input_event" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_input_event"]
+[connection signal="mouse_entered" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_mouse_entered"]
+[connection signal="mouse_exited" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_mouse_exited"]
 [connection signal="input_event" from="4_WorldMapCartwheel/Area2D" to="4_WorldMapCartwheel" method="_on_area_2d_input_event"]
 [connection signal="input_event" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_input_event"]
+[connection signal="mouse_entered" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_entered"]
+[connection signal="mouse_exited" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_exited"]
 [connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
 [connection signal="input_event" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
+[connection signal="mouse_entered" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_entered"]
+[connection signal="mouse_exited" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_exited"]
 [connection signal="input_event" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://spvfsqe1ocu0"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/cutscene3-4.gd" id="1_jmtrx"]
+[ext_resource type="Texture2D" uid="uid://bu2x07hjjllcs" path="res://assets/cutscene/VelhonTorniPOV2.png" id="2_h5ewk"]
+[ext_resource type="Texture2D" uid="uid://bxrlcppr0mor5" path="res://assets/cutscene/Borders_Cutscene.png" id="3_rnnum"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_fiiis"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="5_v5smi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6w3mc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yknsb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ss7bf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eugge"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eler8"]
+
+[node name="cutscene3-4" type="Node2D"]
+script = ExtResource("1_jmtrx")
+
+[node name="VelhonTorniPov2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 343.5)
+scale = Vector2(2.73504, 2.73705)
+texture = ExtResource("2_h5ewk")
+
+[node name="BGRect" type="ColorRect" parent="."]
+offset_top = 687.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.441406, 0.164063, 0.046875, 1)
+
+[node name="BordersCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 659.5)
+scale = Vector2(6, 4.67222)
+texture = ExtResource("3_rnnum")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 289.0
+offset_top = 663.0
+offset_right = 1643.0
+offset_bottom = 972.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("4_fiiis")
+theme_override_font_sizes/normal_font_size = 28
+text = "Taking into consideration all the noise and smoke coming from the tower, you decide that it is way too dangerous for you to even think about going inside the tower. What if something happened to you and the crazy person in there turned you into some slimy mess."
+scroll_active = false
+script = ExtResource("5_v5smi")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6w3mc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yknsb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ss7bf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_eugge")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eler8")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

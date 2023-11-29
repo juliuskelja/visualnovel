@@ -11,14 +11,18 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
-run/main_scene="res://scenes/cutscenes/credits/credits.tscn"
+run/main_scene="res://scenes/map1.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
+
+[audio]
+
+buses/default_bus_layout=""
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-MusicPlayer="*res://scenes/MusicPlayer.tscn"
+MusicPlayer="res://scenes/MusicPlayer.tscn"
 
 [dialogue_manager]
 
@@ -33,13 +37,17 @@ window/size/viewport_height=1080
 
 project/assembly_name="VisualNovel"
 
+[editor]
+
+import/reimport_missing_imported_files=false
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/template1.dialogue", "res://dialogues/tavern_food.dialogue", "res://dialogues/appleseller2.dialogue", "res://dialogues/shop_food.dialogue", "res://dialogues/dock.dialogue", "res://pormestari.dialogue", "res://dialogues/pormestari.dialogue", "res://dialogues/park2.dialogue", "res://dialogues/pormestari2.dialogue", "res://dialogues/deletelater.dialogue", "res://dialogues/park1.dialogue", "res://dialogues/park1_1.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue")
 
 [layer_names]
 

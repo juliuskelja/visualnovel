@@ -1,0 +1,125 @@
+[gd_scene load_steps=16 format=3 uid="uid://80ttgyqij7gf"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/endings/ending1-5.gd" id="1_7k3gu"]
+[ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_f0tfg"]
+[ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_eblih"]
+[ext_resource type="Texture2D" uid="uid://bhxj0786vomln" path="res://assets/cutscene/1. Kylän keskusta auringonlasku.png" id="4_7y326"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_7sex0"]
+[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/RichTextLabel.gd" id="6_rt5wo"]
+
+[sub_resource type="Theme" id="Theme_akhxf"]
+default_font = ExtResource("5_7sex0")
+
+[sub_resource type="Animation" id="Animation_dtsim"]
+resource_name = "fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gwtdk"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_085nn"]
+_data = {
+"fade_in": SubResource("Animation_dtsim"),
+"fade_out": SubResource("Animation_gwtdk")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c203l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bjyyt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xmrkk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mkjbd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pra5d"]
+
+[node name="ending1-5" type="Node2D"]
+script = ExtResource("1_7k3gu")
+
+[node name="BlackBackgroundForCutscene" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("2_f0tfg")
+
+[node name="BordersForTheCutsceneImage" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("3_eblih")
+
+[node name="1_KylänKeskustaAuringonlasku" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("4_7y326")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 705.0
+offset_right = 1636.0
+offset_bottom = 997.0
+theme = SubResource("Theme_akhxf")
+theme_override_constants/line_separation = 21
+theme_override_font_sizes/normal_font_size = 28
+text = "All this thinking gets interrupted by loud noises coming from the gate. You decide to rush over and see what is going on. Your stomach drops, when you realize what had been causing the ruckus; "
+scroll_active = false
+autowrap_mode = 2
+tab_size = 2
+script = ExtResource("6_rt5wo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="Control/RichTextLabel"]
+wait_time = 0.001
+
+[node name="FadeRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 678.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
+libraries = {
+"": SubResource("AnimationLibrary_085nn")
+}
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c203l")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bjyyt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xmrkk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mkjbd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pra5d")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

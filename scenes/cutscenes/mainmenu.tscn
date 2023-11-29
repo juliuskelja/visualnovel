@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://d16wa5rf06oth"]
+[gd_scene load_steps=67 format=3 uid="uid://d16wa5rf06oth"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/mainmenu.gd" id="1_e0y1b"]
 [ext_resource type="Texture2D" uid="uid://bc3ggx57lvg14" path="res://assets/other/Title_screen_menu_default.png" id="3_x8d65"]
@@ -27,9 +27,32 @@
 [ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://assets/fallingleaves/Falling leaves animation20.png" id="24_nxlse"]
 [ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://assets/fallingleaves/Falling leaves animation21.png" id="25_5ffay"]
 [ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="26_t0w4v"]
+[ext_resource type="Texture2D" uid="uid://dsvbatdcy7mvp" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart1.png" id="29_7ykp0"]
+[ext_resource type="Script" path="res://scenes/cutscenes/TreeAnimation2D.gd" id="29_64nbs"]
 [ext_resource type="Texture2D" uid="uid://wqing5dpjd01" path="res://assets/ui/Fall Away logo_luonnos.png" id="29_gxtia"]
 [ext_resource type="AudioStream" uid="uid://ww8qpwm5fjdy" path="res://assets/sound/valikkonavigointi.audio.mp3" id="30_ap1nl"]
+[ext_resource type="Texture2D" uid="uid://byw17neb12to3" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart2.png" id="30_obj66"]
 [ext_resource type="AudioStream" uid="uid://b2b6ix56pd0oo" path="res://assets/sound/valikkovalitse.audio.mp3" id="31_0c70d"]
+[ext_resource type="Texture2D" uid="uid://dt5rpnounhb2h" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart3.png" id="31_5pih0"]
+[ext_resource type="Texture2D" uid="uid://c8y6ysj5ys71i" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart4.png" id="32_wlgif"]
+[ext_resource type="Texture2D" uid="uid://krmirggnw387" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart5.png" id="33_gjwpr"]
+[ext_resource type="Texture2D" uid="uid://c1ffnjmrfs0sa" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart6.png" id="34_f5of6"]
+[ext_resource type="Texture2D" uid="uid://bfddxgeeowl5b" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart7.png" id="35_135sq"]
+[ext_resource type="Texture2D" uid="uid://c3oh0vnsl2eey" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart8.png" id="36_cwntb"]
+[ext_resource type="Texture2D" uid="uid://d3pumfeflks2a" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart9.png" id="37_g7ovr"]
+[ext_resource type="Texture2D" uid="uid://6dvsjerimncs" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart10.png" id="38_5bi0v"]
+[ext_resource type="Texture2D" uid="uid://17ic1j51cmyy" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart11.png" id="39_ld5av"]
+[ext_resource type="Texture2D" uid="uid://darpfrshfofot" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart12.png" id="40_clumm"]
+[ext_resource type="Texture2D" uid="uid://b0kka4kwbkurb" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart13.png" id="41_jcdcc"]
+[ext_resource type="Texture2D" uid="uid://bdavv0031o5t8" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart14.png" id="42_alkmj"]
+[ext_resource type="Texture2D" uid="uid://e2755snl8wcv" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart15.png" id="43_pa71w"]
+[ext_resource type="Texture2D" uid="uid://jcv6ob2x13xv" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart16.png" id="44_a5dyc"]
+[ext_resource type="Texture2D" uid="uid://hccfo6hvp20u" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart17.png" id="45_djf22"]
+[ext_resource type="Texture2D" uid="uid://bxww1gswrqqva" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart18.png" id="46_2lmnn"]
+[ext_resource type="Texture2D" uid="uid://ba0uf6e4gw6nk" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart19.png" id="47_gdwpg"]
+[ext_resource type="Texture2D" uid="uid://bse50310kp0tx" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart20.png" id="48_2qbfr"]
+[ext_resource type="Texture2D" uid="uid://c8hivxsal7ej2" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart21.png" id="49_hdwv8"]
+[ext_resource type="Texture2D" uid="uid://cqo2smxes5mrr" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart22.png" id="50_glc15"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmro4"]
 size = Vector2(496, 208)
@@ -114,6 +137,83 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u1hnp"]
 size = Vector2(1919, 1079)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_04wmn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_7ykp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_obj66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_5pih0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_wlgif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_gjwpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_f5of6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_135sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_cwntb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_g7ovr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_5bi0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ld5av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_clumm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_jcdcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_alkmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_pa71w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_a5dyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_djf22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_2lmnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_gdwpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_2qbfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_hdwv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_glc15")
+}],
+"loop": true,
+"name": &"trees",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1fi0"]
+size = Vector2(1920, 1080)
+
 [sub_resource type="Animation" id="Animation_6ws68"]
 resource_name = "creditfade"
 length = 5.0
@@ -154,7 +254,7 @@ offset_bottom = 1080.0
 color = Color(0.223529, 0.164706, 0.0901961, 1)
 
 [node name="Play" type="Sprite2D" parent="."]
-position = Vector2(432, 896)
+position = Vector2(432, 898)
 texture = ExtResource("3_x8d65")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Play"]
@@ -232,7 +332,7 @@ visible = false
 shape = SubResource("RectangleShape2D_nmro4")
 
 [node name="TitleScreenMenuHighlight1" type="Sprite2D" parent="."]
-position = Vector2(432, 896)
+position = Vector2(432, 898)
 texture = ExtResource("4_iwthl")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight1"]
@@ -259,7 +359,7 @@ visible = false
 shape = SubResource("RectangleShape2D_wasuj")
 
 [node name="TitleScreenMenuHighlight2" type="Sprite2D" parent="."]
-position = Vector2(961, 896)
+position = Vector2(961, 897)
 texture = ExtResource("4_iwthl")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight2"]
@@ -300,6 +400,11 @@ theme_override_font_sizes/normal_font_size = 90
 text = "Quit"
 metadata/_edit_use_anchors_ = true
 
+[node name="FallAwayLogoLuonnos" type="Sprite2D" parent="."]
+position = Vector2(959, 424)
+scale = Vector2(0.398357, 0.398357)
+texture = ExtResource("29_gxtia")
+
 [node name="FallingLeaves2D" type="Area2D" parent="."]
 script = ExtResource("4_52lfj")
 
@@ -309,6 +414,7 @@ position = Vector2(960, 540)
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_q6es0")
 animation = &"fall"
+frame_progress = 0.334094
 speed_scale = 0.28
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FallingLeaves2D"]
@@ -316,10 +422,22 @@ visible = false
 position = Vector2(960.5, 539.5)
 shape = SubResource("RectangleShape2D_u1hnp")
 
-[node name="FallAwayLogoLuonnos" type="Sprite2D" parent="."]
-position = Vector2(961, 341)
-scale = Vector2(0.398357, 0.398357)
-texture = ExtResource("29_gxtia")
+[node name="TreeAnimation2D" type="Area2D" parent="."]
+script = ExtResource("29_64nbs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TreeAnimation2D"]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_04wmn")
+animation = &"trees"
+frame_progress = 0.336626
+speed_scale = 0.4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TreeAnimation2D"]
+visible = false
+position = Vector2(960, 539)
+shape = SubResource("RectangleShape2D_s1fi0")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 visible = false
@@ -333,10 +451,10 @@ libraries = {
 }
 
 [node name="PlayButton" type="Button" parent="."]
-offset_left = 187.0
-offset_top = 794.0
-offset_right = 677.0
-offset_bottom = 999.0
+offset_left = 186.0
+offset_top = 796.5
+offset_right = 676.0
+offset_bottom = 1001.5
 theme_override_fonts/font = ExtResource("4_mjak7")
 theme_override_font_sizes/font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxEmpty_d4wc1")

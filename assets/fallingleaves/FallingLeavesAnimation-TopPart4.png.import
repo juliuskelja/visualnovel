@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cosdcjr2ycewh"
-path="res://.godot/imported/Royal couple.png-14573ef6d3c3ca13398992b2e2ffda2a.ctex"
+uid="uid://c8y6ysj5ys71i"
+path="res://.godot/imported/FallingLeavesAnimation-TopPart4.png-d846d0ed39a96af28d96c9c55412f2f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cutscene/Royal couple.png"
-dest_files=["res://.godot/imported/Royal couple.png-14573ef6d3c3ca13398992b2e2ffda2a.ctex"]
+source_file="res://assets/fallingleaves/FallingLeavesAnimation-TopPart4.png"
+dest_files=["res://.godot/imported/FallingLeavesAnimation-TopPart4.png-d846d0ed39a96af28d96c9c55412f2f2.ctex"]
 
 [params]
 

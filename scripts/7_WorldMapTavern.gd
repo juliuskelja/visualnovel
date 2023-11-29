@@ -5,5 +5,10 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		get_tree().change_scene_to_file("res://scenes/tavern.tscn")
 		print('Entered tavern')
 
+
 func _on_area_2d_mouse_entered():
-	pass
+	use_parent_material = false;
+
+
+func _on_area_2d_mouse_exited():
+	use_parent_material = true;

@@ -5,3 +5,9 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		get_tree().change_scene_to_file("res://scenes/wizardtower.tscn")
 		print('Entered wizard tower')
 
+func _on_area_2d_mouse_entered():
+	use_parent_material = false;
+	set_z_index(1)
+func _on_area_2d_mouse_exited():
+	use_parent_material = true;
+	set_z_index(0)

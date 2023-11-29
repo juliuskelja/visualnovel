@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://3tjd80vp3586"]
+[gd_scene load_steps=16 format=3 uid="uid://3tjd80vp3586"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-14.gd" id="1_2o2rq"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_itxjo"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_ml45i"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_8n5rt"]
+[ext_resource type="Texture2D" uid="uid://bwlyicdcrogn2" path="res://assets/cutscene/omena koju cutscene.png" id="4_sfrlq"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_dlgre"]
 
 [sub_resource type="Theme" id="Theme_bauni"]
@@ -45,8 +46,15 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q122j"]
-size = Vector2(1918, 1080)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4761b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jo12t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3rxfw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3evuq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qlv8a"]
 
 [node name="cutscene1-14" type="Node2D"]
 script = ExtResource("1_2o2rq")
@@ -61,6 +69,12 @@ texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("3_ml45i")
+
+[node name="OmenaKojuCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 360)
+scale = Vector2(4.3875, 2.8)
+texture = ExtResource("4_sfrlq")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -94,15 +108,13 @@ libraries = {
 "": SubResource("AnimationLibrary_085nn")
 }
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4761b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jo12t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3rxfw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3evuq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qlv8a")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-z_index = 1
-z_as_relative = false
-position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_q122j")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
-
-[connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,12 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cfsi2uehalq7s"]
+[gd_scene load_steps=16 format=3 uid="uid://cfsi2uehalq7s"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/cutscene1-2.gd" id="1_idw7f"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="1_jvcop"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="2_wvskx"]
-[ext_resource type="Texture2D" uid="uid://cosdcjr2ycewh" path="res://assets/cutscene/Royal couple.png" id="3_srafj"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_b7461"]
+[ext_resource type="Texture2D" uid="uid://qm1q26yl01ki" path="res://assets/cutscene/royal couple new.png" id="4_l43tb"]
 [ext_resource type="Script" path="res://scripts/RichTextLabel.gd" id="5_pnnqa"]
-[ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/Area2D.gd" id="7_kancc"]
 
 [sub_resource type="Theme" id="Theme_704ww"]
 default_font = ExtResource("4_b7461")
@@ -47,8 +46,15 @@ _data = {
 "fade_out": SubResource("Animation_gwtdk")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvtig"]
-size = Vector2(1918, 1080)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03818"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_run54"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a2pdk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifwqe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dadrr"]
 
 [node name="cutscene1-2" type="Node2D"]
 script = ExtResource("1_idw7f")
@@ -64,11 +70,11 @@ position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("2_wvskx")
 
-[node name="RoyalCouple" type="Sprite2D" parent="."]
+[node name="RoyalCoupleNew" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(960, 360)
 scale = Vector2(4.3875, 2.8)
-texture = ExtResource("3_srafj")
+texture = ExtResource("4_l43tb")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -93,6 +99,7 @@ script = ExtResource("5_pnnqa")
 wait_time = 0.001
 
 [node name="FadeRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 678.0
 color = Color(0, 0, 0, 1)
@@ -102,16 +109,14 @@ libraries = {
 "": SubResource("AnimationLibrary_085nn")
 }
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("7_kancc")
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_03818")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_run54")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a2pdk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ifwqe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dadrr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-z_index = 1
-z_as_relative = false
-position = Vector2(960, 539)
-shape = SubResource("RectangleShape2D_lvtig")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
-
-[connection signal="gui_input" from="Control/RichTextLabel" to="." method="_on_rich_text_label_gui_input"]
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
