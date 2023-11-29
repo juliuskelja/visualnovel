@@ -1,11 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://lfc3s7xxui53"]
+[gd_scene load_steps=16 format=3 uid="uid://lfc3s7xxui53"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_hjt3k"]
 [ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="2_7gnnv"]
-[ext_resource type="Texture2D" uid="uid://toqv1nwpyury" path="res://scenes/Implemented_scenes/placeholder_scene_art/applestall.png" id="3_njb4h"]
+[ext_resource type="Texture2D" uid="uid://d3a1iokgmbd7g" path="res://assets/map/park_assets/0 park background.png" id="3_vpd7h"]
+[ext_resource type="Texture2D" uid="uid://b12w1hpamkdyb" path="res://assets/map/park_assets/1 park road.png" id="4_vnk0r"]
+[ext_resource type="Texture2D" uid="uid://t1q44hoy6mi7" path="res://assets/map/park_assets/2 park pond.png" id="5_ys5ob"]
+[ext_resource type="Texture2D" uid="uid://b6uxv6cffatvk" path="res://assets/map/park_assets/3 park fence background.png" id="6_ggxxk"]
+[ext_resource type="Texture2D" uid="uid://sj4vc3a87ic5" path="res://assets/map/park_assets/4 park fence.png" id="7_mu5dh"]
+[ext_resource type="Texture2D" uid="uid://blow580o67g0n" path="res://assets/map/park_assets/5 park bushes.png" id="8_gvh0o"]
+[ext_resource type="Texture2D" uid="uid://i5tw3lex171k" path="res://assets/map/park_assets/6 park trees.png" id="9_5mp8c"]
+[ext_resource type="Texture2D" uid="uid://dyfhmfarni3n4" path="res://assets/map/park_assets/7 park bushes2.png" id="10_nrdmy"]
+[ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="11_3ex0n"]
+[ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="12_u7iw1"]
+[ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="13_374j0"]
+[ext_resource type="Texture2D" uid="uid://bppcbhib54ayn" path="res://assets/characters/missingno.png" id="14_p0vx2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rk70v"]
-size = Vector2(853.076, 676.09)
+size = Vector2(1027.32, 1037.03)
 
 [node name="park2" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_hjt3k")
@@ -17,15 +28,82 @@ position = Vector2(961.667, 539.5)
 scale = Vector2(5.99444, 5.99444)
 texture = ExtResource("2_7gnnv")
 
+[node name="0ParkBackground" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("3_vpd7h")
+
+[node name="1ParkRoad" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("4_vnk0r")
+
+[node name="2ParkPond" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("5_ys5ob")
+
+[node name="3ParkFenceBackground" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("6_ggxxk")
+
+[node name="4ParkFence" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("7_mu5dh")
+
+[node name="5ParkBushes" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("8_gvh0o")
+
+[node name="6ParkTrees" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("9_5mp8c")
+
+[node name="7ParkBushes2" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("10_nrdmy")
+
+[node name="8ParkPicnic" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("11_3ex0n")
+
+[node name="9ParkBenches" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("12_u7iw1")
+
+[node name="10ParkLighting" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("13_374j0")
+
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(1074.09, 740.037)
-scale = Vector2(0.614046, 0.639763)
-texture = ExtResource("3_njb4h")
+position = Vector2(1150, 621)
+scale = Vector2(0.385468, 0.401612)
+texture = ExtResource("14_p0vx2")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
-position = Vector2(2.9679, 0.361938)
+position = Vector2(1.04755, 1.75574)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_rk70v")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

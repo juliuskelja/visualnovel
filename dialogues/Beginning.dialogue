@@ -11,10 +11,10 @@ Erica: *You try to come up with something*
 
 Erica: [i]*Panic is starting to consume you and you decide to look around. You can see a way out of the situation if you just run away from the seller.[/i]
 Erica: But since you are still hungry, you see two viable options: the tavern and some sort of shop. You choose one that seems more likely to feed your empty stomach.*
-- Choose towns tavern.
+- Choose town's tavern.
 	you chose to make haste into the towns tavern.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/tavern_food.tscn")
-- Choose towns shop.
+- Choose town's shop.
 	You chose to make haste into the towns shop.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/shop_food.tscn")
 

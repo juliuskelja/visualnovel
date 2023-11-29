@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://5rtmn15mltm4"]
+[gd_scene load_steps=2 format=3 uid="uid://5rtmn15mltm4"]
+
+[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/park1.gd" id="1_hjihk"]
 
 [node name="park_1" type="Node2D"]
+script = ExtResource("1_hjihk")

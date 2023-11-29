@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://drxhusabsq3in"
+path="res://.godot/imported/park1.dialogue-99d7c92d22fe96576352df3f77e13095.tres"
+
+[deps]
+
+source_file="res://dialogues/park1.dialogue"
+dest_files=["res://.godot/imported/park1.dialogue-99d7c92d22fe96576352df3f77e13095.tres"]
+
+[params]
+
+defaults=true

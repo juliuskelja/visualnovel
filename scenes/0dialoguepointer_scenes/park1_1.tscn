@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs34dwwnavpwa"]
+
+[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/park1_1.gd" id="1_r57kk"]
+
+[node name="park1_1" type="Node2D"]
+script = ExtResource("1_r57kk")
