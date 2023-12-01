@@ -6,7 +6,6 @@ missingno: Here are some choices.
 	missingno: You picked the first one.
 - Second one
 	missingno: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-	do get_tree().change_scene_to_file("res://scenes/map1.tscn")
+missingno: aight bye
+do get_tree().change_scene_to_file("res://scenes/map1.tscn")
 => END

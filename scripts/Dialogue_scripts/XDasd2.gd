@@ -1,5 +1,6 @@
 extends Node2D
-
+#tämä skripti on kopio XDasd ykkösestä, jota kaikki muut scenet käyttää, eli tätä voi muokata
+#ilman rikkomatta mitään :)
 
 var dialogue
 @export var clickable_sprite : Sprite2D
