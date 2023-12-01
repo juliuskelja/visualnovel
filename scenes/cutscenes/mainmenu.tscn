@@ -27,8 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://assets/fallingleaves/Falling leaves animation20.png" id="24_nxlse"]
 [ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://assets/fallingleaves/Falling leaves animation21.png" id="25_5ffay"]
 [ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="26_t0w4v"]
+[ext_resource type="Script" path="res://scripts/TreeAnimation2D.gd" id="29_7o2we"]
 [ext_resource type="Texture2D" uid="uid://dsvbatdcy7mvp" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart1.png" id="29_7ykp0"]
-[ext_resource type="Script" path="res://scenes/cutscenes/TreeAnimation2D.gd" id="29_64nbs"]
 [ext_resource type="Texture2D" uid="uid://wqing5dpjd01" path="res://assets/ui/Fall Away logo_luonnos.png" id="29_gxtia"]
 [ext_resource type="AudioStream" uid="uid://ww8qpwm5fjdy" path="res://assets/sound/valikkonavigointi.audio.mp3" id="30_ap1nl"]
 [ext_resource type="Texture2D" uid="uid://byw17neb12to3" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart2.png" id="30_obj66"]
@@ -423,7 +423,7 @@ position = Vector2(960.5, 539.5)
 shape = SubResource("RectangleShape2D_u1hnp")
 
 [node name="TreeAnimation2D" type="Area2D" parent="."]
-script = ExtResource("29_64nbs")
+script = ExtResource("29_7o2we")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TreeAnimation2D"]
 texture_filter = 1
