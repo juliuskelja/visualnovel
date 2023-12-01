@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://br2p6icba75is"]
+[gd_scene load_steps=16 format=3 uid="uid://br2p6icba75is"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/endings/ending1-14.gd" id="1_e3kom"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_ppocu"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_xhly7"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_sptqi"]
+[ext_resource type="Texture2D" uid="uid://bgrg0g1xe74f7" path="res://assets/cutscene/Vartijat portilla.png" id="4_sqv3f"]
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/RichTextLabel.gd" id="5_qk0w6"]
 
 [sub_resource type="Theme" id="Theme_revu7"]
@@ -68,6 +69,12 @@ texture_filter = 1
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("3_xhly7")
+
+[node name="VartijatPortilla" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 360)
+scale = Vector2(4.3875, 2.8)
+texture = ExtResource("4_sqv3f")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

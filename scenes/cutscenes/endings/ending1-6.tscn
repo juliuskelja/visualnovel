@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://ctkicoe7wccfw"]
+[gd_scene load_steps=16 format=3 uid="uid://ctkicoe7wccfw"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/endings/ending1-6.gd" id="1_00acs"]
 [ext_resource type="Texture2D" uid="uid://dslertpef5hqe" path="res://assets/cutscene/Black background for cutscene.png" id="2_7uwko"]
 [ext_resource type="Texture2D" uid="uid://4gxswrkroh60" path="res://assets/cutscene/Borders for the cutscene image.png" id="3_757r2"]
+[ext_resource type="Texture2D" uid="uid://bgrg0g1xe74f7" path="res://assets/cutscene/Vartijat portilla.png" id="4_al11b"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_ygscc"]
 [ext_resource type="Script" path="res://scenes/cutscenes/cutscene1/RichTextLabel.gd" id="5_8hogk"]
 
@@ -69,6 +70,12 @@ position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("3_757r2")
 
+[node name="VartijatPortilla" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 360)
+scale = Vector2(4.3875, 2.8)
+texture = ExtResource("4_al11b")
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -105,8 +112,10 @@ libraries = {
 }
 
 [node name="Button" type="Button" parent="."]
-offset_right = 1920.0
-offset_bottom = 1080.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1921.0
+offset_bottom = 1079.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4duov")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_2hupc")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_lqrnp")
