@@ -7,5 +7,5 @@ missingno: Here are some choices.
 - Second one
 	missingno: You picked the second one.
 missingno: aight bye
-do get_tree().change_scene_to_file("res://scenes/map1.tscn")
+do get_tree().change_scene_to_file("res://scenes/implemented_scenes/pharmacy_after_shop.tscn")
 => END
