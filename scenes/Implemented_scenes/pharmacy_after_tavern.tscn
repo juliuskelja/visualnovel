@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5aljsvmj70hq"]
+
+[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_gh2vj"]
+[ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/characters/Spritet/Anne.png" id="2_lmoex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7v0g"]
+size = Vector2(54.596, 54.039)
+
+[node name="pharmacy_after_tavern" type="Node2D"]
+script = ExtResource("1_gh2vj")
+setdialogue = "pharmacy_tavern"
+
+[node name="Anne" type="Sprite2D" parent="."]
+position = Vector2(1091.5, 758.176)
+scale = Vector2(4.70313, 4.9001)
+texture = ExtResource("2_lmoex")
+
+[node name="Area2D" type="Area2D" parent="Anne"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
+position = Vector2(-5.19351, 1.38474)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_q7v0g")
+
+[connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

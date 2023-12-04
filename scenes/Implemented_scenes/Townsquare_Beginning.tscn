@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_rvbxa"]
 [ext_resource type="Texture2D" uid="uid://cv44btmlrhwso" path="res://assets/backgrounds/citycenter.png" id="2_66afl"]
-[ext_resource type="Texture2D" uid="uid://toqv1nwpyury" path="res://scenes/Implemented_scenes/placeholder_scene_art/applestall.png" id="3_oyj6l"]
+[ext_resource type="Texture2D" uid="uid://cgk3rfas2xe7t" path="res://assets/characters/Spritet/Erica.png" id="3_18yhu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttehr"]
-size = Vector2(853.076, 676.09)
+size = Vector2(60.0064, 61.0109)
 
 [node name="citycenter" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_rvbxa")
@@ -18,14 +18,14 @@ scale = Vector2(6, 6)
 texture = ExtResource("2_66afl")
 
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(1074.09, 740.037)
-scale = Vector2(0.614046, 0.639763)
-texture = ExtResource("3_oyj6l")
+position = Vector2(1321, 690)
+scale = Vector2(5.89937, 6.14644)
+texture = ExtResource("3_18yhu")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
-position = Vector2(2.9679, 0.361938)
+position = Vector2(-1.05438, -0.935608)
 shape = SubResource("RectangleShape2D_ttehr")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
