@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
-run/main_scene="res://scenes/cutscenes/endings/ending1-1.tscn"
+run/main_scene="res://credits-scene/credits.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
 
@@ -47,7 +47,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/appleseller2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/dock.dialogue", "res://dialogues/shop_food.dialogue", "res://dialogues/tavern_food.dialogue", "res://dialogues/template1.dialogue", "res://pormestari.dialogue", "res://dialogues/pormestari.dialogue", "res://dialogues/park2.dialogue", "res://dialogues/pormestari2.dialogue", "res://dialogues/deletelater.dialogue", "res://dialogues/park1.dialogue", "res://dialogues/park1_1.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/appleseller2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/dock.dialogue", "res://dialogues/shop_food.dialogue", "res://dialogues/tavern_food.dialogue", "res://dialogues/template1.dialogue", "res://dialogues/pormestari.dialogue", "res://dialogues/park2.dialogue", "res://dialogues/pormestari2.dialogue", "res://dialogues/deletelater.dialogue", "res://dialogues/park1.dialogue", "res://dialogues/park1_1.dialogue")
 
 [layer_names]
 

@@ -29,7 +29,7 @@ var file
 var credits
 
 ## An image to use as Title for the credits
-@export var titleImage: Texture2D
+@export var titleImage = load("res://credits-scene/titleImg.png")
 
 ## The color of the background (covered if there is a video)
 @export var backgroundColor: Color = Color.BLACK

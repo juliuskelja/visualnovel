@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wqing5dpjd01"
-path="res://.godot/imported/Fall Away logo_luonnos.png-b226648ac901911195e4a10ec3cfde12.ctex"
+uid="uid://4r8vsepsq3ig"
+path="res://.godot/imported/FallingLeavesAnimation_DarkerLeaves.png-2bfcd1fce45bff5be57b37768ac43f8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/Fall Away logo_luonnos.png"
-dest_files=["res://.godot/imported/Fall Away logo_luonnos.png-b226648ac901911195e4a10ec3cfde12.ctex"]
+source_file="res://assets/backgrounds/FallingLeavesAnimation_DarkerLeaves.png"
+dest_files=["res://.godot/imported/FallingLeavesAnimation_DarkerLeaves.png-2bfcd1fce45bff5be57b37768ac43f8b.ctex"]
 
 [params]
 

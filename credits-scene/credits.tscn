@@ -1,7 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://ct4dek63v5j5j"]
+[gd_scene load_steps=31 format=3 uid="uid://ct4dek63v5j5j"]
 
 [ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_3jpn6"]
-[ext_resource type="Texture2D" uid="uid://tsln7dwid0dq" path="res://credits-scene/exampleTitle.png" id="2_xutvm"]
+[ext_resource type="AudioStream" uid="uid://dmweghjjk26mt" path="res://assets/music/CREDITS.mp3" id="2_sdjw2"]
 [ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_0scfs"]
 [ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="4_8vh6o"]
 [ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="5_owdsm"]
@@ -25,6 +25,9 @@
 [ext_resource type="Texture2D" uid="uid://cubwlti1o1b8v" path="res://assets/fallingleaves/Falling leaves animation20.png" id="23_ki3ym"]
 [ext_resource type="Texture2D" uid="uid://g7b8h8pq21rr" path="res://assets/fallingleaves/Falling leaves animation21.png" id="24_cm1n3"]
 [ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="25_pu62q"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lkiax"]
+load_path = "res://.godot/imported/titleImg.png-7365764b740dc447b4c2224ad54aa2b6.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_df8se"]
 animations = [{
@@ -133,7 +136,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3jpn6")
 creditsFile = "res://credits-scene/example-CREDITS"
-titleImage = ExtResource("2_xutvm")
 destroyOnEnd = true
 
 [node name="background" type="ColorRect" parent="."]
@@ -152,6 +154,8 @@ grow_vertical = 2
 expand = true
 
 [node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_sdjw2")
+autoplay = true
 
 [node name="scrollingContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -165,6 +169,7 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+texture = SubResource("CompressedTexture2D_lkiax")
 stretch_mode = 5
 
 [node name="FallingLeaves2D" type="Area2D" parent="."]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=41 format=3 uid="uid://edwmahel1v8p"]
 
 [ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_md8rn"]
-[ext_resource type="Texture2D" uid="uid://tsln7dwid0dq" path="res://credits-scene/exampleTitle.png" id="2_jc5mj"]
+[ext_resource type="AudioStream" uid="uid://dmweghjjk26mt" path="res://assets/music/CREDITS.mp3" id="2_hhsj4"]
 [ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_wkk7n"]
 [ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="4_qj87c"]
 [ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="5_2j7a7"]
@@ -151,7 +151,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_md8rn")
 creditsFile = "res://credits-scene/example-CREDITS"
-titleImage = ExtResource("2_jc5mj")
 destroyOnEnd = true
 
 [node name="background" type="ColorRect" parent="."]
@@ -170,6 +169,8 @@ grow_vertical = 2
 expand = true
 
 [node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_hhsj4")
+autoplay = true
 
 [node name="scrollingContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
