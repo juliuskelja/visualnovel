@@ -1,7 +1,26 @@
 ~ this_is_a_node_title
 
-missingno: [[Hi|Hello|Howdy]], this is tavern food
-missingno: 麵包很好吃，特別是預先切片的輕麵包，好吃
+: You open the tavern door with a little jingle of a bell. The air is a bit musty, but the place is lit up nicely.
+: You see people setting up some stringed instruments, most of which seem unfamiliar to you. 
+: Right in the middle of the backwall you see a counter, with someone hunched over it and another behind it with a cloth and a mug in their hands.
+: You decide to approach them in hopes that they might give you some food, willingly free of charge. You don’t want to make every seller in the village angry at you.
+
+Connell: How’s it going there, stranger? Welcome to the Hooves ’n Melodies, how may I help ya out today?
+: You’re taken aback by the welcome. What a strange person.
+You: I uhh… I’m just looking for something to eat.
+Connell: Well, aren’t ya bang on for coming here then! Our menu is right above me head, take a look! Oh, and name’s Connell, nice meeting ya!
+
+: You guess the only way to get through this is to just get used to their odd way of speaking. You give them a smile, and move your gaze up to the menu he mentioned just now.
+: Most things on there seem very unfamiliar, what are spuds anyway?
+: The person hunched over the counter raises their head, and a strong smell of alcohol hits your nose.
+: They don’t look too good, but you decide to show some courtesy by smiling to them too, maybe they have money to help you out.
+
+Dino: Mmmhh… Good morning stranger! I’ve never seen you around! Wanna have a pint with me?
+: Why is he yelling at you, you don’t know, but you decide to engage in this conversation even though your ears are already ringing.
+You: Ah, no thank you, I’m not too big of a drinker.
+Dino: What a shame! What’chu want then? It will be on me!
+
+
 - 牙齒 牙齒 牙齒
 	placehold: The living organism, in situation determined by the play of energy on the surface of the globe, ordinarily receives more energy than is necessary to maintaining life;
 	placehold: the excess energy (wealth) can be used for the growth of the system (e.g., an organism);
