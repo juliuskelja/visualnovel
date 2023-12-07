@@ -1,11 +1,20 @@
 ~ this_is_a_node_title
 
-missingno: [[Hi|Hello|Howdy]], this is shop food
-missingno: Here are some choices.
-- First one
-	missingno: You picked the first one.
-- Second one
-	missingno: You picked the second one.
-missingno: aight bye
-do get_tree().change_scene_to_file("res://scenes/map1.tscn")
+Brian: Hello, welcome to the [wave amp=25 freq=5](shop name)[/wave]. How can I help you? 
+
+- Have any food? 
+	: What do you have here? Is there anything I could eat?
+	Brian: Well of course we do! The[wait=0.3] [wave amp=25 freq=5]best[/wave] [wait=0.3]food money can buy.
+- I'm starving.
+	Do you have food here? I'm starving.
+	Of course! We have the[wait=0.3][wave amp=25 freq=5]best[/wave][wait=0.3] food money can buy.	
+
+: Money? but I dont have money with me currently. can't you just give a little bit?
+Brian: Hmm[speed=0.1] ...[speed=1] I can't give food for free but[speed=0.1]... [speed=1]maybe if you could deliver something for me?
+: Yeah I guess I could. Where do I deliver these?
+Brian: [speed=0.5][shake rate=20 level=10]Great![/shake] [wait=0.5][speed=1]you don't have to go far just bring these to the pharmacy near here.
+: Okay. I'll come back soon.
+
+
+do get_tree().change_scene_to_file("res://scenes/implemented_scenes/pharmacy_shop.tscn")
 => END

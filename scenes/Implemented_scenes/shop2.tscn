@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccx0o6jvvti3b"]
+
+[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_p3jh8"]
+[ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/characters/Spritet/Anne.png" id="2_qorr6"]
+[ext_resource type="Texture2D" uid="uid://d304p2q8sa4fv" path="res://assets/backgrounds/library.png" id="3_r8c73"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfqxv"]
+size = Vector2(54.3538, 53.9143)
+
+[node name="shop2" type="Node2D"]
+script = ExtResource("1_p3jh8")
+setdialogue = "shop2"
+
+[node name="LibraryShop" type="Sprite2D" parent="."]
+position = Vector2(961.024, 540.5)
+scale = Vector2(7.11869, 5.02315)
+texture = ExtResource("3_r8c73")
+
+[node name="Anne" type="Sprite2D" parent="."]
+position = Vector2(935.37, 595.507)
+scale = Vector2(4.94905, 5.15633)
+texture = ExtResource("2_qorr6")
+
+[node name="Area2D" type="Area2D" parent="Anne"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
+position = Vector2(-6.23752, 1.64711)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_cfqxv")
+
+[connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

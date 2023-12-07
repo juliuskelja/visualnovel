@@ -11,6 +11,6 @@ missingno: 麵包很好吃，特別是預先切片的輕麵包，好吃
 	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/deletelater.tscn")
 - Second one
 	missingno: You picked the second one.
-	do get_tree().change_scene_to_file("res://scenes/map1.tscn")
+	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_tavern.tscn")
 
 => END

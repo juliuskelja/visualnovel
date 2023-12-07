@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nha12qawvlqu"]
+
+[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/shop2.gd" id="1_8p0jn"]
+
+[node name="shop2" type="Node2D"]
+script = ExtResource("1_8p0jn")

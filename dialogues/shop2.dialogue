@@ -1,0 +1,17 @@
+~ this_is_a_node_title
+
+Brian: Welcome back! And thank you so much. You have been a big help.
+- You're welcome, but can I now have some food?
+	Brian: Of course! Here's some quality fruits as a thanks.
+- Can I get some food now?
+	Oh my apologies. Here's some quality fruits as a thanks.
+
+: May I ask why you couldn't deliver the groceries?
+Brian: Oh um.. well it is a bit of a long story but we don't get along too well… It wasn't always this way but recently we had a disagreement.
+: Over what exactly?
+Brian: Well… we just don't agree on everything going on in this town.. If you ask me, the town is doing well but she doesn't agree with me.
+Brian: But enough about that, if you want to ask more about this town you should go to speak to the others here.
+: Okay got it, thank you for the food and goodbye!
+Brian: Goodbye and you are welcome to visit here again.
+
+do get_tree().change_scene_to_file("res://scenes/implemented_scenes/map1.tscn")

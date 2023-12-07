@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://grtl80bgtn4g"
-path="res://.godot/imported/Anne.png-86a3968f6afe8e226e8b354f5c586f3d.ctex"
+uid="uid://ca75mbhnyly8d"
+path="res://.godot/imported/Brian.png-8b10fb30aef1d4e855dc52128b1004b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Anne.png"
-dest_files=["res://.godot/imported/Anne.png-86a3968f6afe8e226e8b354f5c586f3d.ctex"]
+source_file="res://assets/characters/Brian.png"
+dest_files=["res://.godot/imported/Brian.png-8b10fb30aef1d4e855dc52128b1004b3.ctex"]
 
 [params]
 

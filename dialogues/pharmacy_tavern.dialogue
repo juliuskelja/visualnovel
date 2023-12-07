@@ -1,0 +1,30 @@
+~ this_is_a_node_title
+
+: Determined to remember both things Dino asked you to bring him, you enter the Apothecary.
+: There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
+Anne: *friendly smile*
+Anne: Hello! How may I help you?
+: I’m fine, thank you. I came on behalf of Dino. He needs White Willow Bark and Marshmallow Root.
+Anne: *frowns*
+Anne: Again? He has been using it a lot this past month. Is he alright since he didn’t come himself? And where do you know each other? Sorry, but I haven’t seen you around before.
+
+- New in town
+	: I haven’t been around for long. We met in the tavern and talked, so I’m helping him out.
+	Anne: *friendly smile*
+	Anne: That’s very kind of you.
+- Local
+	: Oh, I’ve always lived here. I just haven’t come here in the apothecary before. I’ve known Dino for years.
+	Anne: *frown*
+	Anne: I see. I guess that explains why I haven’t seen you around much.
+Anne: *worried*
+Anne: Dino’s a good person, of course. I’m just not sure how long I can keep giving White Willow Bark to him.
+Anne: Marshmallow Root is something I won’t be giving you. He doesn’t need it, just another addiction on top of alcohol, of course.
+Anne: I can barely make the ends meet and get herbs to brew the medicines with how expensive the herbs have become with all the taxes.
+Anne: And I’m not the only one having trouble being able to pay the taxes. Most of Harmony Village lives in poverty and sickness.
+: Really? The marketplace seemed so busy I thought the people were doing alright.
+Anne: Everything is not always what it seems, my dear. Here is the White Willow Bark for Dino.
+: Thank you!
+Anne: You’re most kindly welcome. Have a nice day!
+
+
+=> END

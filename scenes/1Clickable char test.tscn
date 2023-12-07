@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://djajnwjlttk2i"]
 
-[ext_resource type="Texture2D" uid="uid://df00kydi53ng5" path="res://assets/characters/Anne.png" id="1_cft8y"]
+[ext_resource type="Texture2D" uid="uid://df00kydi53ng5" path="res://assets/characters/Anne3.png" id="1_cft8y"]
 [ext_resource type="Script" path="res://scenes/clicktest.gd" id="2_3cuec"]
 [ext_resource type="PackedScene" uid="uid://8hq31n6pr2aa" path="res://scenes/0Clickable dialog test.tscn" id="2_8ughn"]
 

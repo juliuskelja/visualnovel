@@ -1,0 +1,29 @@
+~ this_is_a_node_title
+
+: You enter the pharmacy with the strange plant in your hands.
+: There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
+Anne: Hello! How may I help you?
+: I was asked to deliver you something. I’ve never seen this kind of plant before. What is this called and what is it used for?
+Anne: Oh, thank you! This is called mint and it’s mostly used in herbal teas. It’s a great remedy for many ailments like indigestion or nausea.
+: I do enjoy a good herbal tea.
+Anne: So do I. Thank you again for delivering the mint.
+Anne: I’ve been expecting Brian, the local shopkeeper, to deliver some for me but I suppose the richer you get, the more arrogant and proud you get as a side effect.
+Anne: Perhaps I’m too poor for successful people like him to socialize with me.
+: Actually it was Brian who asked me to deliver it to you. It was a favor in exchange for food. I heard there was some disagreement between you. If I may ask, what happened?
+Anne: Well, things have been going pretty bad here in the village and some people, who would be in the position to do something about it, don’t care enough to do it.
+Anne: can barely get enough herbs to brew medicinal potions to help them. And most people are so poor they can’t afford the medicine they’d need.
+
+- Surprised.
+	: Really? I thought this village was doing so well, judging by how busy the marketplace was.
+	Anne: Yes, sad but true. Everything is not always what they seem, my dear.
+- Sad.
+	: I’m sorry to hear that
+	Anne: Yes, I’m sorry too, my dear. It’s sad to see how bad things are in the village.
+- Doubtful.
+	: But everything seemed to go just fine at the marketplace…
+	Anne: Yes, that’s what everyone would like to think, of course. But did you actually see anyone buy something? Poverty is very real and very much a problem.
+: Surely there is something to be done?
+Anne: Nothing that we two could do, I’m afraid. But thank you, that’s a kind thought. Here, have some money as a thank you for delivering the mint.
+: Thank you so much!
+Anne: You’re most kindly welcome! Have a good day!
+do get_tree().change_scene_to_file("res://scenes/implemented_scenes/shop2.tscn")

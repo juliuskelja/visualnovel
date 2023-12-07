@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://b3hxw1ody0ihq"
+path="res://.godot/imported/pharmacy_2.dialogue-b27172a19ec033794ba63474eea1c067.tres"
+
+[deps]
+
+source_file="res://dialogues/pharmacy_2.dialogue"
+dest_files=["res://.godot/imported/pharmacy_2.dialogue-b27172a19ec033794ba63474eea1c067.tres"]
+
+[params]
+
+defaults=true

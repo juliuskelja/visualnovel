@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwj045tq6ji2f"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_bnet5"]
-[ext_resource type="Texture2D" uid="uid://df00kydi53ng5" path="res://assets/characters/Anne.png" id="1_w4qf7"]
+[ext_resource type="Texture2D" uid="uid://df00kydi53ng5" path="res://assets/characters/Anne3.png" id="1_w4qf7"]
 [ext_resource type="Texture2D" uid="uid://toqv1nwpyury" path="res://scenes/Implemented_scenes/placeholder_scene_art/applestall.png" id="2_q6s6d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y5biu"]
