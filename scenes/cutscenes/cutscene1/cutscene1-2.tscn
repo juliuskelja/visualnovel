@@ -99,7 +99,6 @@ script = ExtResource("5_pnnqa")
 wait_time = 0.001
 
 [node name="FadeRect" type="ColorRect" parent="."]
-visible = false
 offset_right = 1920.0
 offset_bottom = 678.0
 color = Color(0, 0, 0, 1)

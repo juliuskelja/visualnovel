@@ -118,3 +118,4 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_3evuq")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_qlv8a")
 
 [connection signal="timeout" from="Control/RichTextLabel/Timer" to="Control/RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -4,4 +4,4 @@ extends Node2D
 func _ready():
 	pass
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/cutscenes/cutscene3/cutscene3-3.tscn")
+	get_tree().change_scene_to_file("res://scenes/cutscenes/wizard_tower/cutscene3-3.tscn")

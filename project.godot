@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
-run/main_scene="res://credits-scene/credits.tscn"
+run/main_scene="res://scenes/cutscenes/endings/ending1-17.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
 
@@ -22,7 +22,7 @@ buses/default_bus_layout=""
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-MusicPlayer="res://scenes/MusicPlayer.tscn"
+MusicPlayer="*res://assets/music/MusicPlayer.tscn"
 
 [dialogue_manager]
 
