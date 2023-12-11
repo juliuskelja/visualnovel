@@ -15,4 +15,4 @@ Brian: But enough about that, if you want to ask more about this town you should
 Brian: Goodbye and you are welcome to visit here again.
 : You decide to go back to the town square and find something to do whilst waiting for anything interesting to happen. Maybe you could go out and explore a bit?
 
-do get_tree().change_scene_to_file("res://scenes/implemented_scenes/map1.tscn")
+do get_tree().change_scene_to_file("res://scenes/map1.tscn")
