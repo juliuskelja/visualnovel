@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://dfu7i1mw5hmcs"
+path="res://.godot/imported/test_finn_dialog.dialogue-5483b259b21e074226eb43bf75a1b214.tres"
+
+[deps]
+
+source_file="res://dialogues/test_finn_dialog.dialogue"
+dest_files=["res://.godot/imported/test_finn_dialog.dialogue-5483b259b21e074226eb43bf75a1b214.tres"]
+
+[params]
+
+defaults=true

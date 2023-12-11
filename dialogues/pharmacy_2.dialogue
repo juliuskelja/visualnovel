@@ -1,20 +1,20 @@
 ~ this_is_a_node_title
 
 : After talking to the Mayor you come back to the pharmacy, remembering the kindness of Anne, feeling like she would be a good person to talk to.
-Anne: *friendly smile*
+: She gives you a familiar friendly smile.
 Anne: Oh, hello! It’s good to see you again, my dear. Is there something I could help you with?
-: I just need someone wise and realistic to talk to.
+You: I just need someone wise and realistic to talk to.
 Anne: Oh.. What’s the matter, dear?
-: I’ve just met Mayor Copperfield and I feel like I can’t believe a word he says about how things are in this village.
-Anne: *frown*
+You: I’ve just met Mayor Copperfield and I feel like I can’t believe a word he says about how things are in this village.
+: She gets visibly upset
 Anne: Mayor Copperfield? That man lies as soon as he opens his mouth. Things were much better when Mayor Wentworth still was in charge.
 
 - Mayor Wentworth?
 	Nathan: Mayor Wentworth? I don’t think I’ve heard about him before.
-	Anne: *friendly smile*
+	: She gives you a friendly smile
 	Anne: I suppose you are too young to remember him.
 - I agree.
-	Anne: *frown*
+	: She gets visibly upset.
 	Anne: Yes, he doesn’t care about any of the people his actions may harm.
 	
 Anne: Mayor Wentworth was a kind leader. He cared about everyone here in the village. Sadly he got sick and had to step down as the mayor.
@@ -30,7 +30,7 @@ Anne: Oh how I wish I could have your optimism. If you would excuse me, my dear,
 - Slightly offended
 	: But there are hardly any customers?
 	
-Anne: *friendly smile*
+: She gives you a reassuring smile.
 Anne: I will manage, thank you.
 : Of course. Thank YOU for the talk.
 Anne: Yes, but an apothecary does more than just serve the people buying their herbs and medicines.

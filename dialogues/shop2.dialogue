@@ -13,5 +13,6 @@ Brian: Well… we just don't agree on everything going on in this town.. If you 
 Brian: But enough about that, if you want to ask more about this town you should go to speak to the others here.
 : Okay got it, thank you for the food and goodbye!
 Brian: Goodbye and you are welcome to visit here again.
+: You decide to go back to the town square and find something to do whilst waiting for anything interesting to happen. Maybe you could go out and explore a bit?
 
 do get_tree().change_scene_to_file("res://scenes/implemented_scenes/map1.tscn")

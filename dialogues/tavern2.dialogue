@@ -1,13 +1,37 @@
 ~ this_is_a_node_title
 
-Nathan: [[Hi|Hello|Howdy]], this is some tavern2.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
+: You enter the tavern with the same jingle of the bells. This time going straight for the counter to give Dino what he asked for.
+: Or at least what you were able to get from the apothecary. You take a deep breath and sit next to Dino, who seems to be on his second pint already.
+You: I’m back, here is what you asked for.
+Dino: Are you trying to scam me?! Where is the rest?!
 
-=> END
+:You have to decide whether to tell Dino the truth, or to give him a white lie.
+- Tell the truth.
+	You: Anne didn’t want you to have Marshmallow Root anymore, she said you’re addicted to it. I’m sorry, but she wouldn’t budge.
+	Dino: Addicted! I am not! I really need it, but she doesn’t get it! I will get it later by myself then!
+	: You wait for Dino to calm down a little, before raising your gaze to the menu. Dino notices you looking at the sign and sighs.
+	Dino: Well, I guess you still deserve your food! Just order whatever you like, fancy pants!
+	
+- White lie.
+	You: Oh, Anne said that the Marshmallow Root, uhh… was out of stock! I’m sorry about that.
+	Dino: Well then! I guess it can’t be helped! Just order the food you like, it’ll be on me!
+	
+: You start reading all the different names, but most of them seem so unfamiliar to you, that you won’t even bother asking what they are.
+: Simple things like “Connell’s Stew”, “Potato Pancakes” and “Shepherd’s Pie” seem like good options to you. But which one to choose?
+
+- Connell’s Stew.
+	You: Um, could I get Connell’s Stew, please.
+	Connell: Ya sure can!
+- Potato Pancakes.
+	You: Um, could I get the Potato Pancakes, please.
+	Connell: Ya sure can!
+- Shepherd’s Pie
+	You: Um, could I get the Shepherd’s Pie, please.
+	Connell: Ya sure can!
+	
+: Connell starts cooking up what you asked for. They start banging pots and pans together, slicing and dicing all sorts of ingredients and you soon find an extremely pleasant smell getting to your nose.
+: You have been waiting for this since entering the village, and finally you will be able to fill your empty stomach.
+: After finishing your meal, you thank Connell for the delicious meal. You turn to also thank Dino, but you see him passed out next to you.
+: You decide to go back to the town square and find something to do whilst waiting for anything interesting to happen. Maybe you could go out and explore a bit?
+
+do get_tree().change_scene_to_file("res://scenes/implemented_scenes/map1.tscn")

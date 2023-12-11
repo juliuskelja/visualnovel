@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://drsf6qnk8vd3s"]
+[gd_scene load_steps=6 format=3 uid="uid://drsf6qnk8vd3s"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_bq44t"]
 [ext_resource type="Texture2D" uid="uid://bg0fvtwf84dlh" path="res://scenes/Implemented_scenes/placeholder_scene_art/Laituri-export.png" id="1_p3usj"]
 [ext_resource type="Texture2D" uid="uid://dy7sjl5o414pt" path="res://assets/characters/Spritet/finn kelp.png" id="2_juoyx"]
+[ext_resource type="Texture2D" uid="uid://bglpq66ih2dmv" path="res://assets/characters/Spritet/Blake.png" id="3_7b7gt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe1xe"]
-size = Vector2(56.3191, 64.6489)
+size = Vector2(113.487, 74.1561)
 
 [node name="Dock" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_bq44t")
@@ -16,6 +17,11 @@ setdialogue = "dock_fish"
 position = Vector2(962, 543)
 texture = ExtResource("1_p3usj")
 
+[node name="Blake" type="Sprite2D" parent="."]
+position = Vector2(1111, 625)
+scale = Vector2(4.04687, 4.04687)
+texture = ExtResource("3_7b7gt")
+
 [node name="Anne" type="Sprite2D" parent="."]
 position = Vector2(931, 610)
 scale = Vector2(3.53344, 3.68142)
@@ -24,7 +30,8 @@ texture = ExtResource("2_juoyx")
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
-position = Vector2(-3.25464, -0.814911)
+position = Vector2(25.3293, 3.93869)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_xe1xe")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
