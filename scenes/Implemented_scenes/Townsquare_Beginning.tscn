@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bdvpaysj2ipwl"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_rvbxa"]
-[ext_resource type="Texture2D" uid="uid://cv44btmlrhwso" path="res://assets/backgrounds/citycenter.png" id="2_66afl"]
+[ext_resource type="Texture2D" uid="uid://bwlyicdcrogn2" path="res://assets/cutscene/omena koju cutscene.png" id="3_d1jg3"]
 [ext_resource type="Texture2D" uid="uid://cgk3rfas2xe7t" path="res://assets/characters/Spritet/Erica.png" id="3_j7jqb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttehr"]
@@ -12,14 +12,16 @@ script = ExtResource("1_rvbxa")
 clickable_sprite = NodePath("Anne")
 setdialogue = "test_dialogue"
 
-[node name="Citycenter" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("2_66afl")
+[node name="OmenaKojuCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(961.444, 539.75)
+scale = Vector2(6.00278, 6.00278)
+texture = ExtResource("3_d1jg3")
 
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(951.37, 612.177)
-scale = Vector2(4.44905, 4.63539)
+texture_filter = 1
+position = Vector2(925, 747)
+scale = Vector2(6.53124, 6.80479)
 texture = ExtResource("3_j7jqb")
 
 [node name="Area2D" type="Area2D" parent="Anne"]

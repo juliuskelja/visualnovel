@@ -10,4 +10,4 @@ Erica: Oh.[wait=0.5] It’s you again. What do you want to steal now?
 - Annoyed
 : Actually, I just realized that I didn’t need to be here. Good luck with your business, you sure do need it.
 
-=> END
+do get_tree().change_scene_to_file("res://scenes/map3.tscn")

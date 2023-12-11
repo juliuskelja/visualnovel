@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://drsf6qnk8vd3s"]
+[gd_scene load_steps=6 format=3 uid="uid://drsf6qnk8vd3s"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_bq44t"]
 [ext_resource type="Texture2D" uid="uid://bg0fvtwf84dlh" path="res://scenes/Implemented_scenes/placeholder_scene_art/Laituri-export.png" id="1_p3usj"]
 [ext_resource type="Texture2D" uid="uid://dy7sjl5o414pt" path="res://assets/characters/Spritet/finn kelp.png" id="2_juoyx"]
 [ext_resource type="Texture2D" uid="uid://bglpq66ih2dmv" path="res://assets/characters/Spritet/Blake.png" id="3_7b7gt"]
-[ext_resource type="AudioStream" uid="uid://cu35pk2e53yqm" path="res://assets/music/dock.mp3" id="5_d7ysg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe1xe"]
 size = Vector2(113.487, 74.1561)
@@ -15,15 +14,18 @@ clickable_sprite = NodePath("Anne")
 setdialogue = "dock_fish"
 
 [node name="Laituri-export" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(962, 543)
 texture = ExtResource("1_p3usj")
 
 [node name="Blake" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(1111, 625)
 scale = Vector2(4.04687, 4.04687)
 texture = ExtResource("3_7b7gt")
 
 [node name="Anne" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(931, 610)
 scale = Vector2(3.53344, 3.68142)
 texture = ExtResource("2_juoyx")
@@ -35,7 +37,6 @@ position = Vector2(25.3293, 3.93869)
 shape = SubResource("RectangleShape2D_xe1xe")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_d7ysg")
 autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
