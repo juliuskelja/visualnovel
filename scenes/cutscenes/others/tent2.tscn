@@ -1,0 +1,65 @@
+[gd_scene load_steps=12 format=3 uid="uid://tj78xgpl0e7o"]
+
+[ext_resource type="Script" path="res://scenes/cutscenes/others/tent2.gd" id="1_3l1iu"]
+[ext_resource type="Texture2D" uid="uid://re135dh6abih" path="res://assets/backgrounds/tent.png" id="1_nxfwv"]
+[ext_resource type="AudioStream" uid="uid://dylq06mxujacy" path="res://assets/music/tentambience(VOLATOK).mp3" id="3_dokym"]
+[ext_resource type="Texture2D" uid="uid://bxrlcppr0mor5" path="res://assets/cutscene/Borders_Cutscene.png" id="4_sx053"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_id3d6"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="6_h2sgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m6trc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gsrk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7m2y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abt55"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eon0m"]
+
+[node name="tent2" type="Node2D"]
+script = ExtResource("1_3l1iu")
+
+[node name="Teltta" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_nxfwv")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dokym")
+autoplay = true
+
+[node name="BordersCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(958, 122.5)
+scale = Vector2(6, 4.23889)
+texture = ExtResource("4_sx053")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 297.0
+offset_top = 131.0
+offset_right = 1651.0
+offset_bottom = 458.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("5_id3d6")
+theme_override_font_sizes/normal_font_size = 28
+text = "You wonder if anyone actually lives there, but after some investigating you see all sorts of pots and pans, clothes and food items inside the tent. This must be someone’s actual living space."
+scroll_active = false
+script = ExtResource("6_h2sgc")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_m6trc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3gsrk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7m2y")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_abt55")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eon0m")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

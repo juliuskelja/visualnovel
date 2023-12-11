@@ -1,0 +1,66 @@
+[gd_scene load_steps=12 format=3 uid="uid://tlgka4kiwnos"]
+
+[ext_resource type="Texture2D" uid="uid://re135dh6abih" path="res://assets/backgrounds/tent.png" id="1_jhh4s"]
+[ext_resource type="Script" path="res://scenes/cutscenes/others/tent.gd" id="1_s71sr"]
+[ext_resource type="AudioStream" uid="uid://dylq06mxujacy" path="res://assets/music/tentambience(VOLATOK).mp3" id="3_yhuc0"]
+[ext_resource type="Texture2D" uid="uid://bxrlcppr0mor5" path="res://assets/cutscene/Borders_Cutscene.png" id="4_qfarw"]
+[ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="5_qpmuq"]
+[ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="6_sunxg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlepk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghu5v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r475c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r1kjk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgkh3"]
+
+[node name="tent" type="Node2D"]
+script = ExtResource("1_s71sr")
+
+[node name="Teltta" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(6, 6)
+texture = ExtResource("1_jhh4s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_yhuc0")
+autoplay = true
+
+[node name="BordersCutscene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(958, 122.5)
+scale = Vector2(6, 4.23889)
+texture = ExtResource("4_qfarw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 287.0
+offset_top = 90.0
+offset_right = 1641.0
+offset_bottom = 417.0
+theme_override_constants/line_separation = 21
+theme_override_fonts/normal_font = ExtResource("5_qpmuq")
+theme_override_font_sizes/normal_font_size = 28
+text = "You’ve made your way through the beautiful park of Harmony Valley. Curious as to what lies beyond the rose bushes, you make your way behind the park, where you see some kind of structure. Is it an abandoned shack covered in leaves? You get closer, and realize that it’s actually a tent."
+scroll_active = false
+script = ExtResource("6_sunxg")
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.001
+
+[node name="Button" type="Button" parent="."]
+offset_left = -2.0
+offset_right = 1918.0
+offset_bottom = 1080.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dlepk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ghu5v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_r475c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_r1kjk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qgkh3")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
