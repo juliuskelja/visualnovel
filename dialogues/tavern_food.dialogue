@@ -50,8 +50,5 @@ Dino: Anne knows what to do if you just mention me! But I need these badly, okay
 	placehold: it must necessarily be lost without profit; it must be spent, willingly or not, gloriously
 	placehold: or [shake rate=20 level=10]catastrophically.[/shake]
 	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/deletelater.tscn")
-- Second one
-	missingno: You picked the second one.
-	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_tavern.tscn")
 
 => END
