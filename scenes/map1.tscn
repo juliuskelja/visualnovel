@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=61 format=3 uid="uid://d2t5jrn5gpuy1"]
 
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_5y1ay"]
@@ -68,6 +68,11 @@ shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hna3i"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vdqg8"]
 shader = ExtResource("13_4d64m")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
@@ -287,8 +292,10 @@ position = Vector2(646, 395)
 scale = Vector2(5.99688, 6)
 texture = ExtResource("24_43njb")
 
-[node name="14WorldMapHouse1" type="Sprite2D" parent="."]
+[node name="14WorldMapShop" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_vdqg8")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("25_vflyq")
@@ -359,6 +366,7 @@ scale = Vector2(6, 6)
 texture = ExtResource("35_wymqv")
 
 [node name="Warning" type="Sprite2D" parent="."]
+visible = false
 z_index = 2
 position = Vector2(646, 394.5)
 scale = Vector2(1, 1.00093)
