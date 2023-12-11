@@ -1,8 +1,12 @@
 extends Node2D
 
+var cutscene1_music : AudioStream = load("res://assets/music/opening_cutscene.mp3")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-		$FadeRect/AnimationPlayer.play("fade_in")
+	MusicPlayer.set_stream(cutscene1_music)
+	MusicPlayer.play()
+	$FadeRect/AnimationPlayer.play("fade_in")
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/cutscenes/cutscene1/cutscene1-2.tscn")

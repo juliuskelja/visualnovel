@@ -49,5 +49,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_4j85j")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_v57re")
 metadata/_edit_use_anchors_ = true
 
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
 [connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

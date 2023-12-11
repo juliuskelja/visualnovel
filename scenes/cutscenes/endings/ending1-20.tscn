@@ -72,8 +72,8 @@ texture = ExtResource("3_c36e5")
 
 [node name="4_yhteiskuvaKyläläisistä" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(960, 360)
-scale = Vector2(4.3875, 2.8)
+position = Vector2(958.5, 360)
+scale = Vector2(4.39687, 2.8)
 texture = ExtResource("4_qoe5i")
 
 [node name="Control" type="Control" parent="."]
