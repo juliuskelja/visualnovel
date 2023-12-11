@@ -1,13 +1,37 @@
 ~ this_is_a_node_title
 
-missingno: [[Hi|Hello|Howdy]], this is park1
+: Feeling like taking a walk in the park after your meal, you meet Mother Deer on a picnic with her child.
+Mother Deer: Hello there!
+You: Hello!
+Mother Deer: I’m Penelope and this is my son, Bambi.
+You: Nice to meet you
+Mother Deer: May we help you with anything?
+You: Thank you very much, but no thank you.
+Mother Deer: Of course. If anything comes up, we in Harmony Valley are here to help each other.
+You: Thank you.
+Bambi: Mamma, I’m hungry.. Can we eat now?
+Mother Deer: Oh, pardon my little one, we were just about to picnic. Would you like to join us?
+You: It’s alright. And thank you for the invitation, but
+
+- I’ve just eaten.
+	Mother Deer: I see. Maybe later today?
+- I do not wish to intrude.
+	Mother Deer: Oh, don’t worry. We’d be delighted to have you with us.
+- I don’t have time.
+	I see. Maybe some other time then?
+
+You: : Thank you, you’re too kind. But I think I really should be going now.
+Mother Deer: Alright. It was nice to meet you anyway.
+You: : It was nice to meet you too. Have a nice day!
+Mother Deer: Have a nice day you too!
+Bambi: Bye bye!
+
+
+
 missingno: Here are some choices.
 - First one
 	missingno: You picked the first one.
 - Second one
 	missingno: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-missingno: For more information see the online documentation.
 
 => END

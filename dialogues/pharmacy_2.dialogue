@@ -38,8 +38,6 @@ Anne: I also need to brew the medicines and visit the sick who are too weak to c
 : Of course, I’m sorry. Thank you for the talk.
 Anne: My pleasure, my dear. Have a good day!
 do get_tree().change_scene_to_file("res://scenes/implemented_scenes/pormestari2.tscn")
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
+
 
 => END
