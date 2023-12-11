@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://qnn0q8c1asay"]
+[gd_scene load_steps=11 format=3 uid="uid://qnn0q8c1asay"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/others/farm.gd" id="1_00rtn"]
 [ext_resource type="Texture2D" uid="uid://qy62ipg0l0fi" path="res://scenes/cutscenes/others/Maatila.png" id="2_yofue"]
 [ext_resource type="Texture2D" uid="uid://bxrlcppr0mor5" path="res://assets/cutscene/Borders_Cutscene.png" id="3_mn4dk"]
 [ext_resource type="FontFile" uid="uid://bcaimoqptoi87" path="res://assets/fonts/public-pixel/PublicPixel.ttf" id="4_3ji53"]
 [ext_resource type="Script" path="res://scenes/cutscenes/wizard_tower/RichTextLabel.gd" id="5_c883y"]
-[ext_resource type="AudioStream" uid="uid://b3irxteg3pqet" path="res://assets/music/farmimusa.mp3" id="6_geej1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lwunu"]
 
@@ -63,7 +62,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_gl0l5")
 metadata/_edit_use_anchors_ = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_geej1")
 autoplay = true
 
 [connection signal="timeout" from="RichTextLabel/Timer" to="RichTextLabel" method="_on_timer_timeout"]

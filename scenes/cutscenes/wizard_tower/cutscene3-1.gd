@@ -1,6 +1,6 @@
 extends Node2D
 
-var wizard_music = load("res://assets/music/Velhun troni.mp3")
+var wizard_music = load("res://assets/music/wizard_tower(VOLATOK).mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

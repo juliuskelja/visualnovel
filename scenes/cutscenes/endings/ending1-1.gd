@@ -1,6 +1,6 @@
 extends Node2D
 
-var end_music : AudioStream = load("res://assets/music/end_cutscene.mp3")
+var end_music : AudioStream = load("res://assets/music/end_cutscene(VOLATOK).mp3")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

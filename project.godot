@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="VisualNovel"
-run/main_scene="res://scenes/cutscenes/endings/ending1-17.tscn"
+run/main_scene="res://scenes/cutscenes/forest/forest1.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://assets/other/icon.svg"
 
@@ -23,6 +23,7 @@ buses/default_bus_layout=""
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 MusicPlayer="*res://assets/music/MusicPlayer.tscn"
+SoundPlayer="*res://assets/sound/SoundPlayer.tscn"
 
 [dialogue_manager]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://d16wa5rf06oth"]
+[gd_scene load_steps=68 format=3 uid="uid://d16wa5rf06oth"]
 
 [ext_resource type="Script" path="res://scenes/cutscenes/mainmenu.gd" id="1_e0y1b"]
 [ext_resource type="Texture2D" uid="uid://7op04hm4cghp" path="res://assets/backgrounds/Menu_background_gradient.png" id="2_jvg13"]
@@ -32,7 +32,6 @@
 [ext_resource type="Texture2D" uid="uid://btsaral71o5bl" path="res://assets/fallingleaves/Falling leaves animation22.png" id="26_t0w4v"]
 [ext_resource type="Script" path="res://scripts/TreeAnimation2D.gd" id="29_7o2we"]
 [ext_resource type="Texture2D" uid="uid://dsvbatdcy7mvp" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart1.png" id="29_7ykp0"]
-[ext_resource type="AudioStream" uid="uid://ww8qpwm5fjdy" path="res://assets/sound/valikkonavigointi.audio.mp3" id="30_ap1nl"]
 [ext_resource type="Texture2D" uid="uid://byw17neb12to3" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart2.png" id="30_obj66"]
 [ext_resource type="Texture2D" uid="uid://dt5rpnounhb2h" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart3.png" id="31_5pih0"]
 [ext_resource type="Texture2D" uid="uid://c8y6ysj5ys71i" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart4.png" id="32_wlgif"]
@@ -54,7 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://bse50310kp0tx" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart20.png" id="48_2qbfr"]
 [ext_resource type="Texture2D" uid="uid://c8hivxsal7ej2" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart21.png" id="49_hdwv8"]
 [ext_resource type="Texture2D" uid="uid://cqo2smxes5mrr" path="res://assets/fallingleaves/FallingLeavesAnimation-TopPart22.png" id="50_glc15"]
-[ext_resource type="AudioStream" uid="uid://bceio66u38nt5" path="res://assets/music/päämenu pohja.mp3" id="55_e8kxd"]
+[ext_resource type="AudioStream" uid="uid://lj6swujy3h3d" path="res://assets/music/main_menu(VOLATOK).mp3" id="54_6kren"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmro4"]
 size = Vector2(496, 208)
@@ -507,15 +506,8 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_f4pa6")
 [node name="QuitTimer" type="Timer" parent="QuitButton"]
 wait_time = 0.3
 
-[node name="MenuHover" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("30_ap1nl")
-
-[node name="MenuClick" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("55_e8kxd")
-volume_db = 6.0
-
 [node name="BGMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("55_e8kxd")
+stream = ExtResource("54_6kren")
 autoplay = true
 
 [connection signal="mouse_entered" from="Play/PlayArea2D" to="." method="_on_play_area_2d_mouse_entered"]

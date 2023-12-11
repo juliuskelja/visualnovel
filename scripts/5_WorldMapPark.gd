@@ -31,6 +31,5 @@ func _on_warning_no_button_pressed():
 	warning.z_index = -2
 	openingWarn()
 
-
 func _on_warning_yes_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park1.tscn")
