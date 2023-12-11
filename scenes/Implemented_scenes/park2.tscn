@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://lfc3s7xxui53"]
+[gd_scene load_steps=17 format=3 uid="uid://lfc3s7xxui53"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_hjt3k"]
 [ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="2_7gnnv"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="12_u7iw1"]
 [ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="13_374j0"]
 [ext_resource type="Texture2D" uid="uid://bppcbhib54ayn" path="res://assets/characters/missingno.png" id="14_p0vx2"]
+[ext_resource type="AudioStream" uid="uid://bh81fg3n08bo7" path="res://assets/music/the_park(VOLATOK).mp3" id="15_m0opg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rk70v"]
 size = Vector2(1027.32, 1037.03)
@@ -104,5 +105,8 @@ texture = ExtResource("14_p0vx2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
 position = Vector2(1.04755, 1.75574)
 shape = SubResource("RectangleShape2D_rk70v")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_m0opg")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

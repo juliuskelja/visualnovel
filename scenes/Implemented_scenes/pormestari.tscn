@@ -28,4 +28,6 @@ texture = ExtResource("3_sieyu")
 position = Vector2(4.05566, -0.361328)
 shape = SubResource("RectangleShape2D_mrdco")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
