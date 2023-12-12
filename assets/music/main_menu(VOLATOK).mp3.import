@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/main_menu(VOLATOK).mp3-16872ac126bb1b33068973
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

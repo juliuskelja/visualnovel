@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/the_park(VOLATOK).mp3-4ddf5c9050272f167d63f85
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

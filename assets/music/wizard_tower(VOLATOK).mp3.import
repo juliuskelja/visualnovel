@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/wizard_tower(VOLATOK).mp3-631385c2d093bbe7372
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

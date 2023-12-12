@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/the_mayor(VOLATOK).mp3-aca4f63af25fec7211497c
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
