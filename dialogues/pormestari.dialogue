@@ -1,12 +1,50 @@
 ~ this_is_a_node_title
 
-missingno: [[Hi|Hello|Howdy]], this is pormestari dialogue.
-missingno: Here are some choices.
-- First one
-	missingno: You picked the first one.
-- Second one
-	missingno: You picked the second one.
-missingno: You contemplate where to go next.
+: After your pleasant chat with the lovely family and Ferdinand, you decide to go back to the town square. You see a house that looks a bit more fancy than the rest.
+: In front of said houses you see someone who looks like you could’ve known in the castle. You decide to approach them in hopes that they might know more about what is going on in the village.
+Copperfield: Hello there!
+You: Oh, hello.
+Copperfield: I don’t think I’ve seen you here before. Who are you?
+
+- Oh, I’m new here.
+	Mayor Copperfield: Oh really? I suppose maybe then it’s understandable I haven’t seen you before.
+- Oh, I’m just not so much around.
+	Copperfield: To be sure, but this village has no secrets from me. I think I should have at least heard about you.
+	
+	You: No one knows everyone.
+Copperfield: I think you don’t know who I am. My name is Copperfield and I am the Mayor of Harmony Valley. I know everything that goes on in this village.
+You: Oh?
+Copperfield: Yes, indeed, no one knows this village quite as well as I know it. I have been there to lead the village to the peaceful paradise it is today. Indeed, the village was sad and empty before my time as Mayor
+- Confront.
+	You: I happen to know that people live in poverty and sickness.
+	: Copperfield gets visibly angry.
+	Copperfield: You dare try to contradict me? Me, who knows the village better than anyone and who has every right to be above everyone else by rank and by fortune!
+- Doubt.
+	You: Really? You are the only one dressed so fine. Everyone else seems pretty poor.
+	: Copperfield gets visibly angry.
+	Copperfield: You dare try to contradict me? Me, who knows the village better than anyone and who has every right to be above everyone else by rank and by fortune!
+- Be quiet.
+	You: [speed=0.2]...
+
+You: No, I simply think that people should be treated equally in spite of their fortune or rank. But I can see we cannot agree on this matter. So I will just go before either of us says anything we will regret later. Good day to you!
+Copperfield: Even my house, why, it was built just for me, you see! They even demolished a wreck from its place to build it for me!
+You: I’m happy for you, but surely there would have been a house for you somewhere else, so they wouldn’t have had to build a new one?
+You: Surely it would have been better to repair the old building instead of demolishing it and building a new one!
+Copperfield: I can assure you, that nothing else would not have done! Why, I am the Mayor, surely you see that I have to uphold my rank and fortune in both clothing and living!
+You: I dare say, I agree to disagree. Well, good day!
+
+: You leave, disgusted by the Mayor’s arrogance and selfish attitude and try to think of something to do to clear your head.
+: This Mayor is starting to make you think that the people within the castle walls might not be the ones you want to mingle with. If they are all so out of touch, maybe it’s better to not go back?
+: Through your disappointment, and slight anger, you start thinking about all the people you have met today and decide that talking to someone might be helpful.
+: Two places come to mind and you decide to go to one of them:
+
+- Go to the park.
+: You decide to go back to the park.
+
+- Go to the Apothecary.
+: You decide to go back to the Apothecary.
+
+
 - park.
 	you chose park.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park2.tscn")
