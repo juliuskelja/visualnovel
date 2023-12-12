@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://188uhypqbjiy"]
+[gd_scene load_steps=59 format=3 uid="uid://188uhypqbjiy"]
 
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_e6jwm"]
 [ext_resource type="Script" path="res://scripts/map3.gd" id="1_w53qt"]
@@ -29,9 +29,15 @@
 [ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="29_656ft"]
 [ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="30_3qked"]
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="32_0b6jv"]
+[ext_resource type="Texture2D" uid="uid://cdi1i7jgaw7r3" path="res://assets/ui/Modal_textbox_base.png" id="32_fal68"]
 [ext_resource type="AudioStream" uid="uid://lj6swujy3h3d" path="res://assets/music/main_menu(VOLATOK).mp3" id="32_jihoc"]
+[ext_resource type="Texture2D" uid="uid://d0od8kvq4r337" path="res://assets/ui/Modal_no_button_h – kopio.png" id="33_itvip"]
 [ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/map_assets/21 World Map mood lighting.png" id="33_sp3k6"]
+[ext_resource type="Texture2D" uid="uid://282wtnamsuq3" path="res://assets/ui/Modal_no_button_default – kopio.png" id="34_8d6s7"]
 [ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="34_yhd76"]
+[ext_resource type="Texture2D" uid="uid://cx4h2xbrhy7ny" path="res://assets/ui/Modal_yes_button_h.png" id="35_uo7fj"]
+[ext_resource type="Texture2D" uid="uid://cm781vdpyet6y" path="res://assets/ui/Modal_yes_button_default.png" id="36_x0env"]
+[ext_resource type="FontFile" uid="uid://deon8ctwm8aae" path="res://credits-scene/Autour_One/AutourOne-Regular.ttf" id="37_28wcx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ffomd"]
 shader = ExtResource("5_i55h4")
@@ -83,6 +89,36 @@ shader_parameter/line_thickness = 1.0
 shader = ExtResource("5_i55h4")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih3xw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y0mr0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("33_itvip")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uae58"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7qs0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1lsxd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjcfk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k627e"]
+texture = ExtResource("35_uo7fj")
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yrduw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b30tx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kf2qw"]
 
 [node name="map3" type="Node2D"]
 script = ExtResource("1_w53qt")
@@ -293,6 +329,68 @@ position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("33_sp3k6")
 
+[node name="Warning" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(960, 542)
+scale = Vector2(1, 1.00093)
+texture = ExtResource("32_fal68")
+
+[node name="ModalNoButtonH–Kopio" type="Sprite2D" parent="Warning"]
+position = Vector2(202, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("33_itvip")
+
+[node name="ModalNoButtonDefault–Kopio" type="Sprite2D" parent="Warning"]
+position = Vector2(202, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("34_8d6s7")
+
+[node name="WarningNoButton" type="Button" parent="Warning/ModalNoButtonDefault–Kopio"]
+offset_left = -135.0
+offset_top = -49.0
+offset_right = 134.0
+offset_bottom = 49.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ih3xw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y0mr0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uae58")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v7qs0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1lsxd")
+
+[node name="ModalYesButtonH" type="Sprite2D" parent="Warning"]
+position = Vector2(-201, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("35_uo7fj")
+
+[node name="ModalYesButtonDefault" type="Sprite2D" parent="Warning"]
+position = Vector2(-200, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("36_x0env")
+
+[node name="WarningYesButton" type="Button" parent="Warning/ModalYesButtonDefault"]
+offset_left = -133.0
+offset_top = -48.0
+offset_right = 132.0
+offset_bottom = 49.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vjcfk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k627e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yrduw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b30tx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kf2qw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Warning"]
+offset_left = -415.0
+offset_top = -122.387
+offset_right = 418.0
+offset_bottom = 106.613
+theme_override_colors/default_color = Color(0.269531, 0.203125, 0.113281, 1)
+theme_override_fonts/normal_font = ExtResource("37_28wcx")
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[center]Are you sure you’ve explored the village thoroughly? You will not be able to go back and explore Harmony Valley after this point. 
+
+Do you wish to continue?"
+scroll_active = false
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("32_jihoc")
 autoplay = true
@@ -311,3 +409,7 @@ autoplay = true
 [connection signal="input_event" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_mouse_entered"]
+[connection signal="pressed" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_pressed"]
+[connection signal="mouse_entered" from="Warning/ModalYesButtonDefault/WarningYesButton" to="5_WorldMapPark" method="_on_warning_yes_button_mouse_entered"]
+[connection signal="pressed" from="Warning/ModalYesButtonDefault/WarningYesButton" to="5_WorldMapPark" method="_on_warning_yes_button_pressed"]

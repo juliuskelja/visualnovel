@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://bqnfws5511sik"]
+[gd_scene load_steps=60 format=3 uid="uid://bqnfws5511sik"]
 
 [ext_resource type="Script" path="res://scripts/map2.gd" id="1_ppmkr"]
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_w0njp"]
@@ -29,10 +29,16 @@
 [ext_resource type="Texture2D" uid="uid://ceer4vjekaap3" path="res://assets/map/map_assets/17 World Map house2.png" id="30_7avx4"]
 [ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="31_1raa6"]
 [ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="32_xdbv5"]
+[ext_resource type="Texture2D" uid="uid://cdi1i7jgaw7r3" path="res://assets/ui/Modal_textbox_base.png" id="33_fw15a"]
 [ext_resource type="AudioStream" uid="uid://lj6swujy3h3d" path="res://assets/music/main_menu(VOLATOK).mp3" id="33_k45vj"]
 [ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="34_08rgh"]
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_mhnj0"]
+[ext_resource type="Texture2D" uid="uid://d0od8kvq4r337" path="res://assets/ui/Modal_no_button_h – kopio.png" id="34_t5xwd"]
 [ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/map_assets/21 World Map mood lighting.png" id="35_krajd"]
+[ext_resource type="Texture2D" uid="uid://282wtnamsuq3" path="res://assets/ui/Modal_no_button_default – kopio.png" id="35_vojq6"]
+[ext_resource type="Texture2D" uid="uid://cx4h2xbrhy7ny" path="res://assets/ui/Modal_yes_button_h.png" id="36_i4pvm"]
+[ext_resource type="Texture2D" uid="uid://cm781vdpyet6y" path="res://assets/ui/Modal_yes_button_default.png" id="37_tjldk"]
+[ext_resource type="FontFile" uid="uid://deon8ctwm8aae" path="res://credits-scene/Autour_One/AutourOne-Regular.ttf" id="38_gp6sv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6vrjm"]
 shader = ExtResource("13_di6jh")
@@ -84,6 +90,36 @@ shader_parameter/line_thickness = 1.0
 shader = ExtResource("13_di6jh")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rxjfy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ymxlg"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("34_t5xwd")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mhh2b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i72ev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yg5s4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_umvhc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tdni8"]
+texture = ExtResource("36_i4pvm")
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7bnjm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihho8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c7dpa"]
 
 [node name="map2" type="Node2D"]
 position = Vector2(314, 146)
@@ -301,6 +337,68 @@ position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("35_krajd")
 
+[node name="Warning" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(646, 394.5)
+scale = Vector2(1, 1.00093)
+texture = ExtResource("33_fw15a")
+
+[node name="ModalNoButtonH–Kopio" type="Sprite2D" parent="Warning"]
+position = Vector2(202, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("34_t5xwd")
+
+[node name="ModalNoButtonDefault–Kopio" type="Sprite2D" parent="Warning"]
+position = Vector2(202, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("35_vojq6")
+
+[node name="WarningNoButton" type="Button" parent="Warning/ModalNoButtonDefault–Kopio"]
+offset_left = -135.0
+offset_top = -49.0
+offset_right = 134.0
+offset_bottom = 49.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rxjfy")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ymxlg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mhh2b")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_i72ev")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yg5s4")
+
+[node name="ModalYesButtonH" type="Sprite2D" parent="Warning"]
+position = Vector2(-201, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("36_i4pvm")
+
+[node name="ModalYesButtonDefault" type="Sprite2D" parent="Warning"]
+position = Vector2(-200, 157.354)
+scale = Vector2(1, 0.999075)
+texture = ExtResource("37_tjldk")
+
+[node name="WarningYesButton" type="Button" parent="Warning/ModalYesButtonDefault"]
+offset_left = -133.0
+offset_top = -48.0
+offset_right = 132.0
+offset_bottom = 49.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_umvhc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdni8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7bnjm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ihho8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c7dpa")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Warning"]
+offset_left = -415.0
+offset_top = -122.387
+offset_right = 418.0
+offset_bottom = 106.613
+theme_override_colors/default_color = Color(0.269531, 0.203125, 0.113281, 1)
+theme_override_fonts/normal_font = ExtResource("38_gp6sv")
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[center]Are you sure you’ve explored the village thoroughly? You will not be able to go back and explore Harmony Valley after this point. 
+
+Do you wish to continue?"
+scroll_active = false
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("33_k45vj")
 autoplay = true
@@ -322,3 +420,7 @@ autoplay = true
 [connection signal="input_event" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_mouse_entered"]
+[connection signal="pressed" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_pressed"]
+[connection signal="mouse_entered" from="Warning/ModalYesButtonDefault/WarningYesButton" to="5_WorldMapPark" method="_on_warning_yes_button_mouse_entered"]
+[connection signal="pressed" from="Warning/ModalYesButtonDefault/WarningYesButton" to="5_WorldMapPark" method="_on_warning_yes_button_pressed"]

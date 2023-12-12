@@ -370,6 +370,27 @@ metadata/_edit_use_anchors_ = true
 visible = false
 shape = SubResource("RectangleShape2D_wasuj")
 
+[node name="TitleScreenMenuHighlight2" type="Sprite2D" parent="."]
+position = Vector2(960, 897)
+texture = ExtResource("4_iwthl")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight2"]
+clip_contents = false
+anchors_preset = -1
+anchor_right = 1.03878
+anchor_bottom = 0.912195
+offset_left = -125.0
+offset_top = -76.0
+offset_right = -360.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
+theme_override_fonts/normal_font = ExtResource("4_mjak7")
+theme_override_font_sizes/normal_font_size = 90
+text = "Credits"
+metadata/_edit_use_anchors_ = true
+
 [node name="TitleScreenMenuHighlight3" type="Sprite2D" parent="."]
 position = Vector2(1488, 896)
 texture = ExtResource("4_iwthl")
@@ -389,27 +410,6 @@ theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
 theme_override_fonts/normal_font = ExtResource("4_mjak7")
 theme_override_font_sizes/normal_font_size = 90
 text = "Quit"
-metadata/_edit_use_anchors_ = true
-
-[node name="TitleScreenMenuHighlight2" type="Sprite2D" parent="."]
-position = Vector2(959, 897)
-texture = ExtResource("4_iwthl")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreenMenuHighlight2"]
-clip_contents = false
-anchors_preset = -1
-anchor_right = 1.03878
-anchor_bottom = 0.912195
-offset_left = -125.0
-offset_top = -76.0
-offset_right = -360.0
-offset_bottom = -125.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/default_color = Color(0.738281, 0.5625, 0.296875, 1)
-theme_override_fonts/normal_font = ExtResource("4_mjak7")
-theme_override_font_sizes/normal_font_size = 90
-text = "Credits"
 metadata/_edit_use_anchors_ = true
 
 [node name="TreeAnimation2D" type="Area2D" parent="."]
@@ -447,6 +447,7 @@ position = Vector2(960.5, 539.5)
 shape = SubResource("RectangleShape2D_u1hnp")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)
