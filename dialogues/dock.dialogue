@@ -19,7 +19,7 @@
 				Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
 				Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
 				Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
-				do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+				do get_tree().change_scene_to_file("res://scenes/map2.tscn")
 		- Can you help me with something?
 			: You decide to tell the polar bear what you did at the market earlier and how it bothers you.
 			Blake: You decided to steal from our beloved vegetable and fruit vendor? Why would you do such a thing? 
@@ -27,7 +27,7 @@
 			Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
 			Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
 			Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
-			do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+			do get_tree().change_scene_to_file("res://scenes/map2.tscn")
 
 
 	- What is this place?
@@ -41,7 +41,7 @@
 				Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
 				Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
 				Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
-				do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+				do get_tree().change_scene_to_file("res://scenes/map2.tscn")
 
 
 		- Can you help me with something?
@@ -51,7 +51,7 @@
 			Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
 			Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
 			Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
-			do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+			do get_tree().change_scene_to_file("res://scenes/map2.tscn")
 
 
 	- Can you help me with something?
@@ -61,7 +61,7 @@
 		Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
 		Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
 		Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
-		do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+		do get_tree().change_scene_to_file("res://scenes/map2.tscn")
 
 
 
