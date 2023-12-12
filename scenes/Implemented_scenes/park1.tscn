@@ -1,130 +1,120 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=21 format=3 uid="uid://disldcaiqbroc"]
-=======
-[gd_scene load_steps=15 format=3 uid="uid://disldcaiqbroc"]
->>>>>>> Stashed changes
+[gd_scene load_steps=18 format=3 uid="uid://y385q7v84re6"]
 
-[ext_resource type="Texture2D" uid="uid://d3a1iokgmbd7g" path="res://assets/map/park_assets/0 park background.png" id="1_ve640"]
-[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_ymkfa"]
-[ext_resource type="Texture2D" uid="uid://b12w1hpamkdyb" path="res://assets/map/park_assets/1 park road.png" id="2_kre87"]
-[ext_resource type="Texture2D" uid="uid://t1q44hoy6mi7" path="res://assets/map/park_assets/2 park pond.png" id="3_ujr1k"]
-[ext_resource type="Texture2D" uid="uid://b6uxv6cffatvk" path="res://assets/map/park_assets/3 park fence background.png" id="4_4wl67"]
-[ext_resource type="Texture2D" uid="uid://sj4vc3a87ic5" path="res://assets/map/park_assets/4 park fence.png" id="5_0ddd5"]
-[ext_resource type="Texture2D" uid="uid://blow580o67g0n" path="res://assets/map/park_assets/5 park bushes.png" id="6_kuh50"]
-[ext_resource type="Texture2D" uid="uid://i5tw3lex171k" path="res://assets/map/park_assets/6 park trees.png" id="7_rcfbr"]
-[ext_resource type="Texture2D" uid="uid://dyfhmfarni3n4" path="res://assets/map/park_assets/7 park bushes2.png" id="8_61o8p"]
-[ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="9_g7aw4"]
-[ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="10_mower"]
-[ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="11_shqll"]
-[ext_resource type="Texture2D" uid="uid://c0cayos11p2cw" path="res://scenes/Implemented_scenes/placeholder_scene_art/missingno.png" id="15_ir3wc"]
-<<<<<<< Updated upstream
-[ext_resource type="Texture2D" uid="uid://bppcbhib54ayn" path="res://assets/characters/missingno.png" id="16_b1wfa"]
-[ext_resource type="AudioStream" uid="uid://bh81fg3n08bo7" path="res://assets/music/the_park(VOLATOK).mp3" id="17_c5k55"]
-[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd2.gd" id="17_p0caj"]
+[ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_1g0gp"]
+[ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="2_k1mvy"]
+[ext_resource type="Texture2D" uid="uid://d3a1iokgmbd7g" path="res://assets/map/park_assets/0 park background.png" id="3_v1kbb"]
+[ext_resource type="Texture2D" uid="uid://b12w1hpamkdyb" path="res://assets/map/park_assets/1 park road.png" id="4_l5t6f"]
+[ext_resource type="Texture2D" uid="uid://t1q44hoy6mi7" path="res://assets/map/park_assets/2 park pond.png" id="5_ww3k3"]
+[ext_resource type="Texture2D" uid="uid://b6uxv6cffatvk" path="res://assets/map/park_assets/3 park fence background.png" id="6_dsfrq"]
+[ext_resource type="Texture2D" uid="uid://sj4vc3a87ic5" path="res://assets/map/park_assets/4 park fence.png" id="7_atcgt"]
+[ext_resource type="Texture2D" uid="uid://blow580o67g0n" path="res://assets/map/park_assets/5 park bushes.png" id="8_7wyx1"]
+[ext_resource type="Texture2D" uid="uid://i5tw3lex171k" path="res://assets/map/park_assets/6 park trees.png" id="9_syjrw"]
+[ext_resource type="Texture2D" uid="uid://dyfhmfarni3n4" path="res://assets/map/park_assets/7 park bushes2.png" id="10_kv215"]
+[ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="11_vwqwr"]
+[ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="12_wnvic"]
+[ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="13_gq407"]
+[ext_resource type="Texture2D" uid="uid://3kwe5ruiuu5n" path="res://assets/characters/Spritet/peuraäiti.png" id="14_4g558"]
+[ext_resource type="Texture2D" uid="uid://ilcw5dqghm7p" path="res://assets/characters/Spritet/peuralapsi.png" id="14_aiei3"]
+[ext_resource type="AudioStream" uid="uid://bh81fg3n08bo7" path="res://assets/music/the_park(VOLATOK).mp3" id="15_ucn87"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cei1"]
-=======
->>>>>>> Stashed changes
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhnnm"]
+size = Vector2(88.8652, 63.8186)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_61dox"]
-size = Vector2(1055.41, 1046.76)
-
-[node name="parkmap" type="Node2D"]
-script = ExtResource("1_ymkfa")
+[node name="park1" type="Node2D"]
+script = ExtResource("1_1g0gp")
 setdialogue = "park_1"
 
-[node name="0ParkBackground" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("1_ve640")
+[node name="Park" type="Sprite2D" parent="."]
+position = Vector2(961.667, 539.5)
+scale = Vector2(5.99444, 5.99444)
+texture = ExtResource("2_k1mvy")
 
-[node name="1ParkRoad" type="Sprite2D" parent="."]
+[node name="0ParkBackground" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("2_kre87")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("3_v1kbb")
 
-[node name="2ParkPond" type="Sprite2D" parent="."]
+[node name="1ParkRoad" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("3_ujr1k")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("4_l5t6f")
 
-[node name="3ParkFenceBackground" type="Sprite2D" parent="."]
+[node name="2ParkPond" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("4_4wl67")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("5_ww3k3")
 
-[node name="4ParkFence" type="Sprite2D" parent="."]
+[node name="3ParkFenceBackground" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("5_0ddd5")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("6_dsfrq")
 
-[node name="5ParkBushes" type="Sprite2D" parent="."]
+[node name="4ParkFence" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("6_kuh50")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("7_atcgt")
 
-[node name="6ParkTrees" type="Sprite2D" parent="."]
+[node name="5ParkBushes" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("7_rcfbr")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("8_7wyx1")
 
-[node name="7ParkBushes2" type="Sprite2D" parent="."]
+[node name="6ParkTrees" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("8_61o8p")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("9_syjrw")
 
-[node name="8ParkPicnic" type="Sprite2D" parent="."]
+[node name="7ParkBushes2" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("9_g7aw4")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("10_kv215")
 
-[node name="9ParkBenches" type="Sprite2D" parent="."]
+[node name="8ParkPicnic" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("10_mower")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("11_vwqwr")
 
-[node name="10ParkLighting" type="Sprite2D" parent="."]
+[node name="9ParkBenches" type="Sprite2D" parent="Park"]
 texture_filter = 1
-position = Vector2(960, 540)
-scale = Vector2(6, 6)
-texture = ExtResource("11_shqll")
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("12_wnvic")
+
+[node name="10ParkLighting" type="Sprite2D" parent="Park"]
+texture_filter = 1
+position = Vector2(-0.27803, 0.0834122)
+scale = Vector2(1.00093, 1.00093)
+texture = ExtResource("13_gq407")
+
+[node name="Peuralapsi" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(745, 300)
+scale = Vector2(3.33594, 3.33594)
+texture = ExtResource("14_aiei3")
 
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(390.196, 648.439)
-scale = Vector2(0.369523, 0.384999)
-texture = ExtResource("15_ir3wc")
+texture_filter = 1
+position = Vector2(637, 273.633)
+scale = Vector2(3.6875, 3.84194)
+texture = ExtResource("14_4g558")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
-position = Vector2(7.58887, -7.63403)
-shape = SubResource("RectangleShape2D_61dox")
-
-<<<<<<< Updated upstream
-[node name="Blake" type="Sprite2D" parent="."]
-position = Vector2(1150, 621)
-scale = Vector2(0.385468, 0.401612)
-texture = ExtResource("16_b1wfa")
-
-[node name="Area2D" type="Area2D" parent="Blake"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Blake/Area2D"]
-position = Vector2(1.04755, 1.75574)
-shape = SubResource("RectangleShape2D_fqut6")
+position = Vector2(12.5165, 5.40691)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_yhnnm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("17_c5k55")
+stream = ExtResource("15_ucn87")
 
-=======
->>>>>>> Stashed changes
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

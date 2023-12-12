@@ -57,3 +57,7 @@ func _on_dialogue_ended(_resource: DialogueResource):
 #	get_tree().current_scene.add_child(balloon)
 #	balloon.start(dialogue_resource, dialogue_start)
 
+
+
+func _on_anne_child_entered_tree(node):
+	pass # Replace with function body.

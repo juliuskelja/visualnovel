@@ -1,27 +1,40 @@
 [gd_scene load_steps=5 format=3 uid="uid://78ekcyauyje"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_0dcqa"]
+<<<<<<< Updated upstream
 [ext_resource type="AudioStream" uid="uid://d4csuv1icp4l7" path="res://assets/music/the_mayor(VOLATOK).mp3" id="3_tfo6b"]
 [ext_resource type="Texture2D" uid="uid://b8ifr5mn88sfr" path="res://assets/characters/Spritet/majaavaaaa.png" id="3_wfvy2"]
+=======
+[ext_resource type="Texture2D" uid="uid://cemor1qje3qfh" path="res://assets/cutscene/pormestari crib.png" id="2_baw7t"]
+[ext_resource type="Texture2D" uid="uid://dgepblk3njnsq" path="res://assets/characters/Spritet/Pormestari.png" id="3_wiai6"]
+>>>>>>> Stashed changes
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m61g"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3mjq"]
 size = Vector2(39.3969, 65.3671)
 
 [node name="pormestari2" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_0dcqa")
-clickable_sprite = NodePath("Anne")
+clickable_sprite = NodePath("")
 setdialogue = "pormestari2"
 
+[node name="PormestariCrib" type="Sprite2D" parent="."]
+position = Vector2(1045, 535)
+scale = Vector2(1.42989, 1.42989)
+texture = ExtResource("2_baw7t")
+
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(1153, 749)
-scale = Vector2(4.05562, 4.22547)
-texture = ExtResource("3_wfvy2")
+texture_filter = 1
+position = Vector2(1027, 740)
+scale = Vector2(6.79298, 7.07747)
+texture = ExtResource("3_wiai6")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
 position = Vector2(4.05566, -0.361328)
-shape = SubResource("RectangleShape2D_4m61g")
+shape = SubResource("RectangleShape2D_u3mjq")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_tfo6b")

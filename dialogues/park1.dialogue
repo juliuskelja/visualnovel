@@ -26,12 +26,46 @@ You: : It was nice to meet you too. Have a nice day!
 Mother Deer: Have a nice day you too!
 Bambi: Bye bye!
 
+: You turn around to leave the park, when suddenly you hear some shuffling coming from behind you.
+: A small child runs up to you with a wide smile, and you can’t help but hear this little one out.
+Ferdinand: Hi there!
+You: Oh, hello.
+- Who are you?
+	Ferdinand: I’m Ferdinard!
+- Are you lost?
+	Ferdinand: Oh, no, I live here, since I don’t have a real home. My name is Ferdinand.
+You: Nice to meet you, Ferdinand. Where are your parents?
+Ferdinand: I don’t know.
+You: Oh. . . you don’t know what happened to your parents?
+Ferdinand: Mayor Copperfield sent my parents away… My parents were helping the apothecary to collect some herbs and accidentally went too close to someone’s backyard.
+You: And for that they were sent away?
+Ferdinand: Oh, Mayor Copperfield sends anyone away for the tiniest reason just to hold onto his position.
+You: I’m so sorry about your parents.
+Ferdinand: Thanks. I get by though.
+You: I’m glad to hear that. But are you sure you get by?
+Ferdinand: I’m sure. Thanks for asking.
+You: If you say so.
+Ferdinand: Yeah. But... I don’t think I’ve seen you here before, are you new here?
 
+- New in town.
+	You: I’m from another part of Auturnia and have never been to Harmony Valley before.
+	Ferdinand: Oh, I see. Have you liked it here so far?
+- Local.
+	You: I’m just rarely in the park, that’s all.
+	Ferdinand: Oh, I guess that explains why I haven’t seen you around. You don’t like the park?
+You: Oh, I do like it here. I just don’t have that much time to take a walk and look around.
+Ferdinand: You should definitely take the time to.
+You: You are right. I should take the chance while I’m here.
+Ferdinand: I agree. Have you been to the docks yet? The sea breeze is an absolute must!
 
-missingno: Here are some choices.
-- First one
-	missingno: You picked the first one.
-- Second one
-	missingno: You picked the second one.
+- polite decline.
+	You: I’m more into forests and meadows than water, but thanks!
+	Ferdinand: I see, that’s alright! There’s plenty to explore in the forest, too!
+- seen it already.
+	You: Oh, I actually have already been there. It’s lovely!
+	Ferdinand: Oh, that’s awesome!
 
-=> END
+Ferdinand: Anyway, I think I better go now. 
+You: Alright. It was nice to talk to you.
+Ferdinand: It was nice to talk to you too. Bye!
+You: Bye!
