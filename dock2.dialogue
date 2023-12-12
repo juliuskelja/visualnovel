@@ -1,0 +1,41 @@
+~ this_is_a_node_title
+
+: You see a dock in the distance and decide to walk towards it. A nice cold breeze hits your face and hands, filling your lungs with fresh air from the ocean and you cannot help but close your eyes to enjoy the freshness of the air.
+: You feel [wave amp=25 freq=5]relaxed.[/wave]
+: After you open your eyes, you only now notice two large figures standing on the dock. You decide to walk closer to get a better look at who the two were.
+: After further inspection, you realize that the two were bears! One of them being a polar bear and the other being a brown bear.
+
+
+- Talk to the polar bear.
+	Blake: Why hello there! How may I help you on this fine day?
+	- Who are you two? 
+		Blake: Oh I am Blake and this is my fishing buddy Finn. Just your two local fishermen.
+	- What is this place?
+		Blake: This is just the town's dock. We fish here and occasionally go out to the sea to fish with our boat. Come by sometime! We definitely do not mind extra hands on board!
+		: You decide to tell the polar bear what you did at the market earlier and how it bothers you.
+	- Can you help me with something?
+		Blake: You decided to steal from our beloved vegetable and fruit vendor? Why would you do such a thing? 
+		: You explain how you just were hungry and wanted to eat, but didn’t know things worked like that in here.
+	: You explain how you just were hungry and wanted to eat, but didn’t know things worked like that in here.
+	Blake: But you can’t just take something that is up for sale! You need to pay for such a thing. Somethings you need to pay for and are not for you to just take freely.
+	Blake: Look, I am gonna give you some money to pay off the vendor with, okay? Just let this be a lesson for you that not everything comes free. 
+	Blake: You nod before taking the money off of the polar bear’s paw. you hurry to the town square in the hopes of finding the apple seller.
+	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/Appleseller_season2.tscn")
+	
+- Talk to the brown bear.
+	: You decide to approach the two bears, specifically the brown bear. He looks a bit worn down and tired, and you wonder to yourself if you should even talk to him.
+	Finn: What do you want?
+	- Who are you two? 
+		Finn: Just your run of the mill bear duo. If it weren’t for my friend, Blake over there, I would tell you to piss off. Name’s Finn, by the way.
+	- What is this place?
+		Finn: What is this place? Well what does it look like? It is a dock, nothing more nothing less.
+	- Can you help me with something?
+		Finn: This better be important, I do not like having my time wasted on some none issue..
+	: You decide to tell the brown bear what you did at the market earlier and how it bothers you.
+	Finn: You did [shake rate=20 level=10]WHAT?![/shake]
+	Finn: Look kid, I do not know who you are and what makes you think that stealing is an okay thing to do.
+	Finn: You cannot do that, life has rules that you have to follow whether you like it or not. I will let this one slide, but know in the future I might not be so nice.
+	: You get a few gold coins from the brown bear to pay off the merchant with.
+	: Deciding that it’s better you don’t waste Finn’s time any more than you already had, you hurry to the town  square in the hopes of finding the apple seller.
+	do get_tree().change_scene_to_file("res://scenes/map2.tscn")
+=> END
