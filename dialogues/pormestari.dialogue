@@ -45,7 +45,7 @@ You: I dare say, I agree to disagree. Well, good day!
 	: You decide to go back to the park.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park2.tscn")
 - Go to the Apothecary.
-	: You decide to go back to the Apothecary.
+	: You decide to go back to the apothecary.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_2.tscn")
 
 => END
