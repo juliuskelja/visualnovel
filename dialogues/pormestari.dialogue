@@ -7,7 +7,7 @@ You: Oh, hello.
 Copperfield: I don’t think I’ve seen you here before. Who are you?
 
 - Oh, I’m new here.
-	Mayor Copperfield: Oh really? I suppose maybe then it’s understandable I haven’t seen you before.
+	Copperfield: Oh really? I suppose maybe then it’s understandable I haven’t seen you before.
 - Oh, I’m just not so much around.
 	Copperfield: To be sure, but this village has no secrets from me. I think I should have at least heard about you.
 	
@@ -50,6 +50,6 @@ You: I dare say, I agree to disagree. Well, good day!
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park2.tscn")
 - pharmacy.
 	you chose pharmacy.
-	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy.tscn")
+	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_2.tscn")
 
 => END

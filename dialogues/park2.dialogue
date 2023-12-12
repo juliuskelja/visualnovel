@@ -1,5 +1,48 @@
 ~ this_is_a_node_title
 
+: After the talk with the Mayor, you don’t feel like talking to anyone and try to clear your head with another walk in the park. You barely notice Mother Deer and Bambi until she greets you.
+Mother Deer: Oh, hello again!
+You: Oh, hello...
+Mother Deer: Are you alright? You seem distracted.
+You: Oh.. I’m okay, I was just in thoughts.
+Mother Deer: What’s got you in such deep thoughts?
+You: Mayor Copperfield.
+: She looks worried.
+Mother Deer: Oh dear, what has he done this time?
+You: Oh, he hasn’t caused ME harm, but I’m almost afraid to hear what he has done to all you locals here.
+Mother Deer: Sad but true. We in Harmony Valley could write a book about everything he’s done.
+
+- That bad, huh?
+	Mother Deer: Sadly, yes.
+- I’m sorry to hear it’s that bad.
+	Mother Deer: Thank you, how kind.
+- Even you?
+	Mother Deer: Yes, even me and Bambi.
+
+Mother Deer: I’m sure he bragged about how his house is so much better than everyone else’s, how it was built just for him and how something was demolished out of the way?
+You: Amongst everything else, yes.
+Mother Deer: The “less important building” was the house of my parents. They were evicted so that the Mayor could have his house on the plot of land, since it’s one of the best spots for beautiful landscape sights.
+You: Say what now? I’m so sorry to hear that!
+Mother Deer: Thank you, you are so kind. But alas, I’m afraid we can do nothing as long as the Mayor has his high connections to the Auturnian royalty.
+
+- Encouraging.
+	Unless Harmony Valley unites to show to the King and Queen, how things really are.
+	Mother Deer: Very true, we are stronger together. And louder.
+- Cunning.
+	Unless there’s someone with even closer connections to the crown...
+	Mother Deer: Yes, but no one else in Harmony Valley has any connections. It was a good idea though.
+- Sympathetic.
+	There’s really nothing to be done?
+	Mother Deer: I’m afraid not, my dear. But thank you for the kind thought.
+
+You: Hmmmm, yes. 
+Bambi: Mom, I’m tired. Can we go home now?
+Mother Deer: Of course, my dear. If you’d excuse us.
+You: Of course. You sleep well, Bambi! Bye!
+Bambi: Thank you! Bye bye!
+Mother Deer: Goodbye! Have a nice day you too!
+
+
 
 do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pormestari2.tscn")
 
