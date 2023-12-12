@@ -236,6 +236,7 @@ func _input(event):
 
 # Use this function to stop all
 func end():
+	get_tree().change_scene_to_file("res://scenes/cutscenes/mainmenu.tscn")
 	emit_signal("ended") # Emit a signal to make easy for programmers to connect other things to this
 	done = true # And a var, to make things even more easy to connect
 	
@@ -243,7 +244,7 @@ func end():
 	# otherwise if quitOnEnd is enabled, just quit
 	if nextScene != null:
 		# warning-ignore:return_value_discarded
-		get_tree().change_scene_to_file(nextScene.get_path())
+		get_tree().change_scene_to_file("res://scenes/cutscenes/mainmenu.tscn")
 	elif quitOnEnd:
 		get_tree().quit()
 	elif destroyOnEnd:
