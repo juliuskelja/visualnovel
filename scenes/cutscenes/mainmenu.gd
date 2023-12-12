@@ -1,8 +1,8 @@
 extends Node2D
 
 # Called when the node enters the scene tree for the first time.
-var menu_click = load("res://assets/sound/valikkovalitse.audio.mp3")
-var menu_hover = load("res://assets/sound/valikkonavigointi.audio.mp3")
+var menu_click = load("res://assets/sound/valikkovalitse.audio(VOLATOK).mp3")
+var menu_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
 
 func _ready():
 	$ColorRect2/AnimationPlayer.play("creditfade")

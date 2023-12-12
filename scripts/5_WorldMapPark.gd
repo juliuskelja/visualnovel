@@ -3,6 +3,7 @@ extends Sprite2D
 @onready var warning = $"../Warning"
 
 var warningOpen = false
+var map_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
 
 func openingWarn():
 	if (warning.z_index == -2):
@@ -23,6 +24,8 @@ func _on_park_input_event(viewport, event, shape_idx):
 func _on_park_mouse_entered():
 	use_parent_material = false;
 	set_z_index(1)
+	SoundPlayer.set_stream(map_hover)
+	SoundPlayer.play()
 func _on_park_mouse_exited():
 	use_parent_material = true;
 	set_z_index(0)

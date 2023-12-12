@@ -1,5 +1,6 @@
-[gd_scene load_steps=63 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=59 format=3 uid="uid://d2t5jrn5gpuy1"]
 
+[ext_resource type="Script" path="res://scripts/map1.gd" id="1_kbplg"]
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_5y1ay"]
 [ext_resource type="Texture2D" uid="uid://bg5i7spvdqo16" path="res://assets/map/map_assets/1. World map road.png" id="3_lld47"]
@@ -11,9 +12,7 @@
 [ext_resource type="Script" path="res://scripts/5_WorldMapPark.gd" id="8_gwlaf"]
 [ext_resource type="Texture2D" uid="uid://6s7i7v2dwv7o" path="res://assets/map/map_assets/5. World map park.png" id="9_flkek"]
 [ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/map/map_assets/6. World map tent.png" id="11_knbui"]
-[ext_resource type="Script" path="res://scripts/7_WorldMapTavern.gd" id="12_4ewu2"]
 [ext_resource type="Shader" path="res://shaders/map1.gdshader" id="13_4d64m"]
-[ext_resource type="Script" path="res://scripts/8_WorldMapLibrary.gd" id="13_72x65"]
 [ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="13_ynxue"]
 [ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/map/map_assets/7. World map tavern.png" id="14_gd3bo"]
 [ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/map/map_assets/8. World map library.png" id="16_udmqt"]
@@ -25,12 +24,9 @@
 [ext_resource type="Texture2D" uid="uid://mce4mh4k0jd3" path="res://assets/map/map_assets/12 World Map wizard tower.png" id="22_lemck"]
 [ext_resource type="Texture2D" uid="uid://8sdoqjjyei4b" path="res://assets/map/map_assets/13 World Map castle.png" id="24_43njb"]
 [ext_resource type="Texture2D" uid="uid://dinomf8gaiitr" path="res://assets/map/map_assets/14 World Map house1.png" id="25_vflyq"]
-[ext_resource type="Script" path="res://scripts/15WorldMapPharmacy.gd" id="26_5pjjx"]
 [ext_resource type="Texture2D" uid="uid://dcentpqd2ungw" path="res://assets/map/map_assets/15 World Map pharmacy.png" id="26_vi4k7"]
-[ext_resource type="Script" path="res://scripts/16WorldMapCityCenter.gd" id="28_hnxpp"]
 [ext_resource type="Texture2D" uid="uid://3qxxc5qu680b" path="res://assets/map/map_assets/16 World Map city center.png" id="28_nc0yh"]
 [ext_resource type="Texture2D" uid="uid://ceer4vjekaap3" path="res://assets/map/map_assets/17 World Map house2.png" id="30_7qaga"]
-[ext_resource type="Script" path="res://scripts/19WorldMapMayorsHouse.gd" id="31_gdg68"]
 [ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="31_wfk42"]
 [ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="32_esln5"]
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_12aw6"]
@@ -130,6 +126,7 @@ expand_margin_bottom = 1.0
 
 [node name="map1" type="Node2D"]
 position = Vector2(314, 146)
+script = ExtResource("1_kbplg")
 
 [node name="0_WorldMapRoadBackground" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -224,7 +221,6 @@ use_parent_material = true
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("14_gd3bo")
-script = ExtResource("12_4ewu2")
 
 [node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
 z_as_relative = false
@@ -234,15 +230,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("16_udmqt")
-script = ExtResource("13_72x65")
-
-[node name="Library" type="Area2D" parent="8_WorldMapLibrary"]
-position = Vector2(0, 0.138893)
-scale = Vector2(1, 0.998456)
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="8_WorldMapLibrary/Library"]
-position = Vector2(-64.7222, -28.8889)
-polygon = PackedVector2Array(-5.83334, -12.7778, 22.2222, -8.88889, 26.3889, -4.72222, 26.6667, 10, 15.5556, 18.3333, -12.7778, 10, -11.3889, -4.72222, -9.72222, -9.72222)
 
 [node name="9WorldMapForest" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -311,7 +298,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("26_vi4k7")
-script = ExtResource("26_5pjjx")
 
 [node name="16WorldMapCityCenter" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -320,7 +306,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("28_nc0yh")
-script = ExtResource("28_hnxpp")
 
 [node name="17WorldMapHouse2" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -341,12 +326,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("32_esln5")
-script = ExtResource("31_gdg68")
-
-[node name="Area2D" type="Area2D" parent="19WorldMapMayorsHouse"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="19WorldMapMayorsHouse/Area2D"]
-polygon = PackedVector2Array(13, -35.1667, 13, -16.6667, 15.5, -14.1667, 33, -11.8333, 42.8333, -11, 53.6667, -11.3333, 59.5, -12.5, 64, -16, 64, -34.6667, 61, -37, 56.8333, -38.8333, 50, -39.1667, 49.8333, -44.1667, 45.6667, -48.1667, 40, -50.1667, 33, -49.8333, 28.6667, -47.3333, 25.1667, -43.5, 25, -39.1667, 21, -39.5)
 
 [node name="20WorldMapForest3" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -431,18 +410,12 @@ scroll_active = false
 [connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
 [connection signal="mouse_entered" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_entered"]
 [connection signal="mouse_exited" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_exited"]
-[connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
-[connection signal="mouse_entered" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_entered"]
-[connection signal="mouse_exited" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_exited"]
 [connection signal="input_event" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_exited"]
-[connection signal="input_event" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_exited"]
 [connection signal="mouse_entered" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_mouse_entered"]
 [connection signal="pressed" from="Warning/ModalNoButtonDefault–Kopio/WarningNoButton" to="5_WorldMapPark" method="_on_warning_no_button_pressed"]
 [connection signal="mouse_entered" from="Warning/ModalYesButtonDefault/WarningYesButton" to="5_WorldMapPark" method="_on_warning_yes_button_mouse_entered"]

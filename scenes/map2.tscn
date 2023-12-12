@@ -1,5 +1,6 @@
-[gd_scene load_steps=46 format=3 uid="uid://bqnfws5511sik"]
+[gd_scene load_steps=42 format=3 uid="uid://bqnfws5511sik"]
 
+[ext_resource type="Script" path="res://scripts/map2.gd" id="1_ppmkr"]
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_w0njp"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_3bp7v"]
 [ext_resource type="Texture2D" uid="uid://bg5i7spvdqo16" path="res://assets/map/map_assets/1. World map road.png" id="3_wejge"]
@@ -11,9 +12,7 @@
 [ext_resource type="Script" path="res://scripts/5_WorldMapPark2.gd" id="11_8kja8"]
 [ext_resource type="Texture2D" uid="uid://cfk6wfrr052g0" path="res://assets/map/map_assets/6. World map tent.png" id="11_isjm0"]
 [ext_resource type="Shader" path="res://shaders/map1.gdshader" id="13_di6jh"]
-[ext_resource type="Script" path="res://scripts/7_WorldMapTavern2.gd" id="14_1ls71"]
 [ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/map/map_assets/7. World map tavern.png" id="14_tr5m1"]
-[ext_resource type="Script" path="res://scripts/8_WorldMapLibrary2.gd" id="16_bvhe5"]
 [ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/map/map_assets/8. World map library.png" id="16_s5xju"]
 [ext_resource type="Texture2D" uid="uid://dtypq18x3hvmt" path="res://assets/map/map_assets/9 World Map forest.png" id="18_28e2m"]
 [ext_resource type="Script" path="res://scripts/10WorldMapFarm2.gd" id="19_lppe4"]
@@ -24,12 +23,10 @@
 [ext_resource type="Texture2D" uid="uid://8sdoqjjyei4b" path="res://assets/map/map_assets/13 World Map castle.png" id="24_2jx6n"]
 [ext_resource type="Texture2D" uid="uid://dinomf8gaiitr" path="res://assets/map/map_assets/14 World Map house1.png" id="25_bpe0i"]
 [ext_resource type="Texture2D" uid="uid://dcentpqd2ungw" path="res://assets/map/map_assets/15 World Map pharmacy.png" id="26_k0yoa"]
-[ext_resource type="Script" path="res://scripts/15WorldMapPharmacy2.gd" id="26_ryhru"]
 [ext_resource type="Script" path="res://scripts/16WorldMapCityCenter2.gd" id="28_g0xxf"]
 [ext_resource type="Texture2D" uid="uid://3qxxc5qu680b" path="res://assets/map/map_assets/16 World Map city center.png" id="28_ymgj2"]
 [ext_resource type="Texture2D" uid="uid://ceer4vjekaap3" path="res://assets/map/map_assets/17 World Map house2.png" id="30_7avx4"]
 [ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="31_1raa6"]
-[ext_resource type="Script" path="res://scripts/19WorldMapMayorsHouse2.gd" id="32_8q2kr"]
 [ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="32_xdbv5"]
 [ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="34_08rgh"]
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_mhnj0"]
@@ -39,24 +36,6 @@
 shader = ExtResource("13_di6jh")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
-
-[sub_resource type="GDScript" id="GDScript_tjgoc"]
-script/source = "extends Sprite2D
-
-func _on_pier_input_event(viewport, event, shape_idx):
-	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file(\"res://scenes/Implemented_scenes/Dock.tscn\")
-		print('Entered pier')
-
-
-func _on_pier_mouse_entered():
-	use_parent_material = false;
-	set_z_index(1)
-
-func _on_pier_mouse_exited():
-	use_parent_material = true;
-	set_z_index(0)
-"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_avkg3"]
 shader = ExtResource("13_di6jh")
@@ -106,6 +85,7 @@ shader_parameter/line_thickness = 1.0
 
 [node name="map2" type="Node2D"]
 position = Vector2(314, 146)
+script = ExtResource("1_ppmkr")
 
 [node name="0_WorldMapRoadBackground" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -138,7 +118,6 @@ use_parent_material = true
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("5_j1egg")
-script = SubResource("GDScript_tjgoc")
 
 [node name="4_WorldMapCartwheel" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -193,7 +172,6 @@ use_parent_material = true
 position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("14_tr5m1")
-script = ExtResource("14_1ls71")
 
 [node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
 z_as_relative = false
@@ -203,15 +181,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("16_s5xju")
-script = ExtResource("16_bvhe5")
-
-[node name="Library" type="Area2D" parent="8_WorldMapLibrary"]
-position = Vector2(0, 0.138893)
-scale = Vector2(1, 0.998456)
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="8_WorldMapLibrary/Library"]
-position = Vector2(-64.7222, -28.8889)
-polygon = PackedVector2Array(-5.83334, -12.7778, 22.2222, -8.88889, 26.3889, -4.72222, 26.6667, 10, 15.5556, 18.3333, -12.7778, 10, -11.3889, -4.72222, -9.72222, -9.72222)
 
 [node name="9WorldMapForest" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -278,7 +247,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("26_k0yoa")
-script = ExtResource("26_ryhru")
 
 [node name="16WorldMapCityCenter" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -313,12 +281,6 @@ use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("32_xdbv5")
-script = ExtResource("32_8q2kr")
-
-[node name="Area2D" type="Area2D" parent="19WorldMapMayorsHouse"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="19WorldMapMayorsHouse/Area2D"]
-polygon = PackedVector2Array(13, -35.1667, 13, -16.6667, 15.5, -14.1667, 33, -11.8333, 42.8333, -11, 53.6667, -11.3333, 59.5, -12.5, 64, -16, 64, -34.6667, 61, -37, 56.8333, -38.8333, 50, -39.1667, 49.8333, -44.1667, 45.6667, -48.1667, 40, -50.1667, 33, -49.8333, 28.6667, -47.3333, 25.1667, -43.5, 25, -39.1667, 21, -39.5)
 
 [node name="20WorldMapForest3" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -338,9 +300,6 @@ texture = ExtResource("35_krajd")
 [connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
 [connection signal="mouse_entered" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_entered"]
 [connection signal="mouse_exited" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_exited"]
-[connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
-[connection signal="mouse_entered" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_entered"]
-[connection signal="mouse_exited" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_exited"]
 [connection signal="input_event" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_exited"]
@@ -350,6 +309,3 @@ texture = ExtResource("35_krajd")
 [connection signal="input_event" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="16WorldMapCityCenter/Area2D" to="16WorldMapCityCenter" method="_on_area_2d_mouse_exited"]
-[connection signal="input_event" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_exited"]

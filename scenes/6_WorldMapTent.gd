@@ -1,5 +1,8 @@
 extends Sprite2D
 
+var map_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
+var map_click = load("res://assets/other/karttavalitse.audio(VOLATOK).mp3")
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,11 +17,15 @@ func _process(delta):
 func _on_tent_input_event(viewport, event, shape_idx):
 	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
 		get_tree().change_scene_to_file("res://scenes/cutscenes/others/tent.tscn")
+		SoundPlayer.set_stream(map_click)
+		SoundPlayer.play()
 
 
 func _on_tent_mouse_entered():
 	use_parent_material = false;
 	set_z_index(1)
+	SoundPlayer.set_stream(map_hover)
+	SoundPlayer.play()
 
 func _on_tent_mouse_exited():
 	use_parent_material = true;

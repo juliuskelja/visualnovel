@@ -1,7 +1,6 @@
-[gd_scene load_steps=41 format=3 uid="uid://edwmahel1v8p"]
+[gd_scene load_steps=38 format=3 uid="uid://edwmahel1v8p"]
 
 [ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_md8rn"]
-[ext_resource type="AudioStream" uid="uid://dmweghjjk26mt" path="res://assets/music/CREDITS.mp3" id="2_hhsj4"]
 [ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_wkk7n"]
 [ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="4_qj87c"]
 [ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="5_2j7a7"]
@@ -28,8 +27,6 @@
 [ext_resource type="Texture2D" uid="uid://bel1w8rmbcrho" path="res://assets/other/Button_back_default.png" id="26_bhqw5"]
 [ext_resource type="Script" path="res://scenes/cutscenes/credits-scene2/ButtonBackDefault.gd" id="27_uuvex"]
 [ext_resource type="Texture2D" uid="uid://ccy1u666m5ut3" path="res://assets/other/Button_back_highlighted.png" id="28_rxfat"]
-[ext_resource type="AudioStream" uid="uid://ww8qpwm5fjdy" path="res://assets/sound/valikkonavigointi.audio.mp3" id="29_ab76k"]
-[ext_resource type="AudioStream" uid="uid://b2b6ix56pd0oo" path="res://assets/sound/valikkovalitse.audio.mp3" id="30_gqito"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_df8se"]
 animations = [{
@@ -169,7 +166,6 @@ grow_vertical = 2
 expand = true
 
 [node name="musicPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_hhsj4")
 autoplay = true
 
 [node name="scrollingContainer" type="VBoxContainer" parent="."]
@@ -238,24 +234,12 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_o30uh")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_s5pvf")
 metadata/_edit_use_anchors_ = true
 
-[node name="Timer" type="Timer" parent="ButtonBackDefault/Button"]
-wait_time = 0.3
-one_shot = true
-
 [node name="ButtonBackHighlighted" type="Sprite2D" parent="."]
 position = Vector2(131, 129)
 texture = ExtResource("28_rxfat")
-
-[node name="MenuHover" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("29_ab76k")
-
-[node name="MenuClick" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("30_gqito")
-volume_db = 6.0
 
 [connection signal="finished" from="backgroundVideo" to="." method="_on_backgroundVideo_finished"]
 [connection signal="finished" from="musicPlayer" to="." method="_on_musicPlayer_finished"]
 [connection signal="mouse_entered" from="ButtonBackDefault/Area2D" to="ButtonBackDefault" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonBackDefault/Area2D" to="ButtonBackDefault" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="ButtonBackDefault/Button" to="ButtonBackDefault" method="_on_button_pressed"]
-[connection signal="timeout" from="ButtonBackDefault/Button/Timer" to="ButtonBackDefault" method="_on_timer_timeout"]
