@@ -16,17 +16,17 @@ Connell: Well, aren’t ya bang on for coming here then! Our menu is right above
 : They don’t look too good, but you decide to show some courtesy by smiling to them too, maybe they have money to help you out.
 
 Dino: Mmmhh… Good morning stranger! I’ve never seen you around! Wanna have a pint with me?
-: Why is he yelling at you, you don’t know, but you decide to engage in this conversation even though your ears are already ringing.
+You: Why is he yelling at you, you don’t know, but you decide to engage in this conversation even though your ears are already ringing.
 You: Ah, no thank you, I’m not too big of a drinker.
 Dino: What a shame! What’chu want then? It will be on me!
-: O-oh, are you sure?
+You: O-oh, are you sure?
 Dino: As sure as I am of the fact that my name is Dino! Get anything you fancy!
 
 : You raise your head up to the menu again. What to get is the next problem. You see three dishes that seem familiar, and cheap enough, that you could consider ordering them.
 : Just when you are about to decide, Dino interrupts you.
 
 Dino: Hey! I just came up with something! I need your help with something, okay? You need to go to the apothecary and get me some White Willow Bark and Marshmallow Root, alright?!
-: Um, okay, I should be able to do that.
+You: Um, okay, I should be able to do that.
 Dino: Anne knows what to do if you just mention me! But I need these badly, okay? Get them to me, wait… Here is the money for them! Tell me, what were you supposed to go get?
 
 - Yellow Willow Bark and Marshmallow Root.
@@ -42,13 +42,5 @@ Dino: Anne knows what to do if you just mention me! But I need these badly, okay
 	: Feeling kind of embarrassed, you took the money that Dino gave you and hurried out through the tavern door, hoping to find the apothecary with no issues.
 	: This hunger was starting to cloud your thoughts.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_tavern.tscn")
-
-- 牙齒 牙齒 牙齒
-	placehold: The living organism, in situation determined by the play of energy on the surface of the globe, ordinarily receives more energy than is necessary to maintaining life;
-	placehold: the excess energy (wealth) can be used for the growth of the system (e.g., an organism);
-	placehold: if the system can no longer grow, or if the excess cannot be completely absorbed in its growth,
-	placehold: it must necessarily be lost without profit; it must be spent, willingly or not, gloriously
-	placehold: or [shake rate=20 level=10]catastrophically.[/shake]
-	do get_tree().change_scene_to_file("res://scenes/implemented_scenes/deletelater.tscn")
 
 => END

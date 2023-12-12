@@ -1,29 +1,36 @@
-[gd_scene load_steps=5 format=3 uid="uid://c62j630gbnn3v"]
+[gd_scene load_steps=6 format=3 uid="uid://c62j630gbnn3v"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_y34om"]
 [ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/characters/Spritet/Anne.png" id="2_mpwf7"]
+[ext_resource type="Texture2D" uid="uid://bsvskk2vkgrxq" path="res://assets/backgrounds/apteekki tausta.png" id="2_rrb27"]
 [ext_resource type="AudioStream" uid="uid://dstsx6c8mc0jo" path="res://assets/music/apothecary(VOLATOK+ambienssilisäys).mp3" id="3_ry5di"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2repr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1hha"]
 size = Vector2(54.3538, 53.9143)
 
 [node name="pharmacy_shop" type="Node2D"]
 script = ExtResource("1_y34om")
 setdialogue = "pharmacy_shop"
 
+[node name="ApteekkiTausta" type="Sprite2D" parent="."]
+position = Vector2(1492, 543)
+scale = Vector2(1.46032, 1.46032)
+texture = ExtResource("2_rrb27")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ry5di")
+autoplay = true
+
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(935.37, 595.507)
-scale = Vector2(4.94905, 5.15633)
+texture_filter = 1
+position = Vector2(1278, 764)
+scale = Vector2(8.0839, 8.42248)
 texture = ExtResource("2_mpwf7")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
 position = Vector2(-6.23752, 1.64711)
-shape = SubResource("RectangleShape2D_2repr")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_ry5di")
-autoplay = true
+shape = SubResource("RectangleShape2D_n1hha")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

@@ -69,3 +69,4 @@ Ferdinand: Anyway, I think I better go now.
 You: Alright. It was nice to talk to you.
 Ferdinand: It was nice to talk to you too. Bye!
 You: Bye!
+do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pormestari.tscn")
