@@ -1,6 +1,7 @@
 extends Node2D
 
 var dialogue
+
 @export var clickable_sprite : Sprite2D
 @export var setdialogue : String #added this for dialogue load func line 9
 

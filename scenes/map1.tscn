@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=61 format=3 uid="uid://d2t5jrn5gpuy1"]
 
 [ext_resource type="Script" path="res://scripts/map1.gd" id="1_kbplg"]
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://4wlklg3hkgur" path="res://assets/map/map_assets/10 World Map farm.png" id="19_qnwxr"]
 [ext_resource type="Script" path="res://scripts/12WorldMapWizardTower.gd" id="21_jafs3"]
 [ext_resource type="Texture2D" uid="uid://bb2o7sua3kmj5" path="res://assets/map/map_assets/11 World Map forest2.png" id="21_uf0bd"]
+[ext_resource type="Script" path="res://scenes/11WorldMapForest2.gd" id="21_xpr46"]
 [ext_resource type="Texture2D" uid="uid://mce4mh4k0jd3" path="res://assets/map/map_assets/12 World Map wizard tower.png" id="22_lemck"]
 [ext_resource type="Texture2D" uid="uid://8sdoqjjyei4b" path="res://assets/map/map_assets/13 World Map castle.png" id="24_43njb"]
 [ext_resource type="Texture2D" uid="uid://dinomf8gaiitr" path="res://assets/map/map_assets/14 World Map house1.png" id="25_vflyq"]
@@ -37,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://cx4h2xbrhy7ny" path="res://assets/ui/Modal_yes_button_h.png" id="38_5t1cn"]
 [ext_resource type="Texture2D" uid="uid://cm781vdpyet6y" path="res://assets/ui/Modal_yes_button_default.png" id="38_c8g14"]
 [ext_resource type="FontFile" uid="uid://deon8ctwm8aae" path="res://credits-scene/Autour_One/AutourOne-Regular.ttf" id="39_467pe"]
+[ext_resource type="AudioStream" uid="uid://lj6swujy3h3d" path="res://assets/music/main_menu(VOLATOK).mp3" id="39_mdyrf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6vrjm"]
 shader = ExtResource("13_4d64m")
@@ -262,6 +264,12 @@ texture_filter = 1
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("21_uf0bd")
+script = ExtResource("21_xpr46")
+
+[node name="Area2D" type="Area2D" parent="11WorldMapForest2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="11WorldMapForest2/Area2D"]
+polygon = PackedVector2Array(159.833, 3.83334, 96.8333, 4.33334, 97.8333, 16.1667, 96.5, 21.1667, 94.8333, 18.3333, 93, 11.5, 91.3333, 19.5, 88.1667, 17.6667, 88, 21.8333, 90.6667, 27.3333, 94.8333, 28.5, 92.1667, 32.8333, 91.8333, 38.6667, 86.8333, 38.6667, 84.3333, 34.5, 84.6667, 40.3333, 96.1667, 48.6667, 97.6667, 43.6667, 107, 43.3333, 117.833, 42.5, 123.833, 46.1667, 133, 55.5, 145.833, 66.1667, 147.667, 75.8333, 144.167, 72.6667, 142.833, 78.1667, 146, 82.1667, 152, 77.1667, 152.833, 72.3333, 157.833, 69.6667, 160.167, 69.1667)
 
 [node name="12WorldMapWizardTower" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -400,6 +408,10 @@ text = "[center]Are you sure you’ve explored the village thoroughly? You will 
 Do you wish to continue?"
 scroll_active = false
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("39_mdyrf")
+autoplay = true
+
 [connection signal="input_event" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_input_event"]
 [connection signal="mouse_entered" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_mouse_entered"]
 [connection signal="mouse_exited" from="3_WorldMapPier/Pier" to="3_WorldMapPier" method="_on_pier_mouse_exited"]
@@ -413,6 +425,7 @@ scroll_active = false
 [connection signal="input_event" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="10WorldMapFarm/Area2D" to="10WorldMapFarm" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="11WorldMapForest2/Area2D" to="11WorldMapForest2" method="_on_area_2d_input_event"]
 [connection signal="input_event" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_exited"]
