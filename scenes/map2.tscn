@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://bqnfws5511sik"]
+[gd_scene load_steps=46 format=3 uid="uid://bqnfws5511sik"]
 
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_w0njp"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_3bp7v"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://bdvyot2iycq2m" path="res://assets/map/map_assets/18 World Map house3.png" id="31_1raa6"]
 [ext_resource type="Script" path="res://scripts/19WorldMapMayorsHouse2.gd" id="32_8q2kr"]
 [ext_resource type="Texture2D" uid="uid://c4k0l4us0fx0n" path="res://assets/map/map_assets/19 World Map Mayors house.png" id="32_xdbv5"]
+[ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="34_08rgh"]
 [ext_resource type="Texture2D" uid="uid://dujb2un7bysiv" path="res://assets/map/map_assets/20 World Map forest3.png" id="34_mhnj0"]
 [ext_resource type="Texture2D" uid="uid://crurf5dm2fyy4" path="res://assets/map/map_assets/21 World Map mood lighting.png" id="35_krajd"]
 
@@ -58,6 +59,11 @@ func _on_pier_mouse_exited():
 "
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_avkg3"]
+shader = ExtResource("13_di6jh")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_504wn"]
 shader = ExtResource("13_di6jh")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
@@ -165,9 +171,12 @@ polygon = PackedVector2Array(10.5556, 13.8889, 12.7778, 3.05556, 30.2778, -14.44
 
 [node name="6_WorldMapTent" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_504wn")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("11_isjm0")
+script = ExtResource("34_08rgh")
 
 [node name="Tent" type="Area2D" parent="6_WorldMapTent"]
 position = Vector2(0, 0.138885)
@@ -327,6 +336,8 @@ texture = ExtResource("35_krajd")
 [connection signal="mouse_entered" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_entered"]
 [connection signal="mouse_exited" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_exited"]
 [connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
+[connection signal="mouse_entered" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_entered"]
+[connection signal="mouse_exited" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_exited"]
 [connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
 [connection signal="mouse_entered" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_entered"]
 [connection signal="mouse_exited" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_exited"]

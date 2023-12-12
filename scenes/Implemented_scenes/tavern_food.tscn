@@ -35,5 +35,6 @@ texture = ExtResource("3_ehcsx")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_o7c5m")
+autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

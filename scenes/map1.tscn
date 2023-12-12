@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://d2t5jrn5gpuy1"]
+[gd_scene load_steps=63 format=3 uid="uid://d2t5jrn5gpuy1"]
 
 [ext_resource type="Texture2D" uid="uid://b0cp8jmm7lujr" path="res://assets/map/map_assets/0. World map road background.png" id="1_n0k70"]
 [ext_resource type="Texture2D" uid="uid://cq6al3y0fc0f1" path="res://assets/map/map_assets/skyline.png" id="2_5y1ay"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://scripts/7_WorldMapTavern.gd" id="12_4ewu2"]
 [ext_resource type="Shader" path="res://shaders/map1.gdshader" id="13_4d64m"]
 [ext_resource type="Script" path="res://scripts/8_WorldMapLibrary.gd" id="13_72x65"]
+[ext_resource type="Script" path="res://scenes/6_WorldMapTent.gd" id="13_ynxue"]
 [ext_resource type="Texture2D" uid="uid://c0xrfediwjr3x" path="res://assets/map/map_assets/7. World map tavern.png" id="14_gd3bo"]
 [ext_resource type="Texture2D" uid="uid://ciof0la0ywiq7" path="res://assets/map/map_assets/8. World map library.png" id="16_udmqt"]
 [ext_resource type="Texture2D" uid="uid://dtypq18x3hvmt" path="res://assets/map/map_assets/9 World Map forest.png" id="18_p7aa3"]
@@ -47,6 +48,11 @@ shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_avkg3"]
+shader = ExtResource("13_4d64m")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_thgud"]
 shader = ExtResource("13_4d64m")
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_thickness = 1.0
@@ -196,9 +202,12 @@ polygon = PackedVector2Array(10.5556, 13.8889, 12.7778, 3.05556, 30.2778, -14.44
 
 [node name="6_WorldMapTent" type="Sprite2D" parent="."]
 texture_filter = 1
+material = SubResource("ShaderMaterial_thgud")
+use_parent_material = true
 position = Vector2(646, 394)
 scale = Vector2(6, 6)
 texture = ExtResource("11_knbui")
+script = ExtResource("13_ynxue")
 
 [node name="Tent" type="Area2D" parent="6_WorldMapTent"]
 position = Vector2(0, 0.138885)
@@ -216,11 +225,6 @@ position = Vector2(646, 394.5)
 scale = Vector2(6, 5.99444)
 texture = ExtResource("14_gd3bo")
 script = ExtResource("12_4ewu2")
-
-[node name="Area2D" type="Area2D" parent="7_WorldMapTavern"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="7_WorldMapTavern/Area2D"]
-polygon = PackedVector2Array(-108.333, 9.75903, -108.333, 1.91844, -97.5, -9.75903, -73, -1.25116, -69, 0.583878, -68.6667, 10.9268, -107.833, 45.2919, -127, 35.95, -126.833, 27.9425)
 
 [node name="8_WorldMapLibrary" type="Sprite2D" parent="."]
 z_as_relative = false
@@ -309,11 +313,6 @@ scale = Vector2(6, 6)
 texture = ExtResource("26_vi4k7")
 script = ExtResource("26_5pjjx")
 
-[node name="Area2D" type="Area2D" parent="15WorldMapPharmacy"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="15WorldMapPharmacy/Area2D"]
-polygon = PackedVector2Array(43.8333, 24, 38, 27.3333, 38, 40.1667, 45.1667, 35.6667, 47, 36.3333, 52.8333, 39.5, 55.3333, 40.1667, 74.8333, 30.6667, 75.1667, 24.1667, 76.6667, 18.1667, 68, 7.83334, 46.1667, 16.3333, 42.1667, 21.5, 44.3333, 22)
-
 [node name="16WorldMapCityCenter" type="Sprite2D" parent="."]
 texture_filter = 1
 material = SubResource("ShaderMaterial_obx8c")
@@ -361,7 +360,6 @@ scale = Vector2(6, 6)
 texture = ExtResource("35_wymqv")
 
 [node name="Warning" type="Sprite2D" parent="."]
-visible = false
 z_index = 2
 position = Vector2(646, 394.5)
 scale = Vector2(1, 1.00093)
@@ -431,9 +429,8 @@ scroll_active = false
 [connection signal="mouse_entered" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_entered"]
 [connection signal="mouse_exited" from="5_WorldMapPark/Park" to="5_WorldMapPark" method="_on_park_mouse_exited"]
 [connection signal="input_event" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_input_event"]
-[connection signal="input_event" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="7_WorldMapTavern/Area2D" to="7_WorldMapTavern" method="_on_area_2d_mouse_exited"]
+[connection signal="mouse_entered" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_entered"]
+[connection signal="mouse_exited" from="6_WorldMapTent/Tent" to="6_WorldMapTent" method="_on_tent_mouse_exited"]
 [connection signal="input_event" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_input_event"]
 [connection signal="mouse_entered" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_entered"]
 [connection signal="mouse_exited" from="8_WorldMapLibrary/Library" to="8_WorldMapLibrary" method="_on_library_mouse_exited"]
@@ -443,9 +440,6 @@ scroll_active = false
 [connection signal="input_event" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="12WorldMapWizardTower/Area2D" to="12WorldMapWizardTower" method="_on_area_2d_mouse_exited"]
-[connection signal="input_event" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="15WorldMapPharmacy/Area2D" to="15WorldMapPharmacy" method="_on_area_2d_mouse_exited"]
 [connection signal="input_event" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="19WorldMapMayorsHouse/Area2D" to="19WorldMapMayorsHouse" method="_on_area_2d_mouse_exited"]

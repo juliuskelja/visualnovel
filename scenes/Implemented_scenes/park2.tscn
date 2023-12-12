@@ -108,5 +108,6 @@ shape = SubResource("RectangleShape2D_rk70v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_m0opg")
+autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

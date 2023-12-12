@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d3qat04lplalg"]
+[gd_scene load_steps=6 format=3 uid="uid://d3qat04lplalg"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_gsnbp"]
 [ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/characters/Spritet/Anne.png" id="2_t0l8q"]
 [ext_resource type="Texture2D" uid="uid://bsvskk2vkgrxq" path="res://assets/backgrounds/apteekki tausta.png" id="2_yyae7"]
+[ext_resource type="AudioStream" uid="uid://dstsx6c8mc0jo" path="res://assets/music/apothecary(VOLATOK+ambienssilisäys).mp3" id="4_a6s2l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5e0b"]
 size = Vector2(54.3538, 53.9143)
@@ -28,5 +29,9 @@ texture = ExtResource("2_t0l8q")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
 position = Vector2(-6.23752, 1.64711)
 shape = SubResource("RectangleShape2D_q5e0b")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_a6s2l")
+autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

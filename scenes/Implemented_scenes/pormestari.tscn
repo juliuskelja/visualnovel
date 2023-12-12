@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bl5g3yfh7x7n1"]
+[gd_scene load_steps=6 format=3 uid="uid://bl5g3yfh7x7n1"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_0m52h"]
 [ext_resource type="Texture2D" uid="uid://bppcbhib54ayn" path="res://assets/characters/missingno.png" id="2_4nmpa"]
 [ext_resource type="Texture2D" uid="uid://b8ifr5mn88sfr" path="res://assets/characters/Spritet/majaavaaaa.png" id="3_sieyu"]
+[ext_resource type="AudioStream" uid="uid://d4csuv1icp4l7" path="res://assets/music/the_mayor(VOLATOK).mp3" id="4_oadbf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mrdco"]
 size = Vector2(39.3969, 65.3671)
@@ -29,5 +30,7 @@ position = Vector2(4.05566, -0.361328)
 shape = SubResource("RectangleShape2D_mrdco")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oadbf")
+autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]

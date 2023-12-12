@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cleysh40bdypg"]
+[gd_scene load_steps=6 format=3 uid="uid://cleysh40bdypg"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_aoqej"]
 [ext_resource type="Texture2D" uid="uid://bwlyicdcrogn2" path="res://assets/cutscene/omena koju cutscene.png" id="2_fpgyk"]
 [ext_resource type="Texture2D" uid="uid://cgk3rfas2xe7t" path="res://assets/characters/Spritet/Erica.png" id="3_x57q6"]
+[ext_resource type="AudioStream" uid="uid://jvd1pcd0aeur" path="res://assets/music/town_square.mp3" id="4_6h25k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttehr"]
 size = Vector2(56.4127, 66.2356)
@@ -25,10 +26,13 @@ scale = Vector2(5.47749, 5.7069)
 texture = ExtResource("3_x57q6")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
 position = Vector2(-0.456436, 2.97887)
 shape = SubResource("RectangleShape2D_ttehr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6h25k")
+autoplay = true
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
