@@ -37,7 +37,7 @@ Anne: Yes, but an apothecary does more than just serve the people buying their h
 Anne: I also need to brew the medicines and visit the sick who are too weak to come and visit.
 : Of course, I’m sorry. Thank you for the talk.
 Anne: My pleasure, my dear. Have a good day!
-do get_tree().change_scene_to_file("res://scenes/implemented_scenes/pormestari2.tscn")
+do get_tree().change_scene_to_file("res://scenes/cutscenes/endings/ending1-1.tscn")
 
 
 => END

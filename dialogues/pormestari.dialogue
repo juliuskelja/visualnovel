@@ -38,18 +38,14 @@ You: I dare say, I agree to disagree. Well, good day!
 : Through your disappointment, and slight anger, you start thinking about all the people you have met today and decide that talking to someone might be helpful.
 : Two places come to mind and you decide to go to one of them:
 
+
+
+
 - Go to the park.
-: You decide to go back to the park.
-
-- Go to the Apothecary.
-: You decide to go back to the Apothecary.
-
-
-- park.
-	you chose park.
+	: You decide to go back to the park.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park2.tscn")
-- pharmacy.
-	you chose pharmacy.
+- Go to the Apothecary.
+	: You decide to go back to the Apothecary.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_2.tscn")
 
 => END

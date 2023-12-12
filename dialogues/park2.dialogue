@@ -44,6 +44,6 @@ Mother Deer: Goodbye! Have a nice day you too!
 
 
 
-do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pormestari2.tscn")
+do get_tree().change_scene_to_file("res://scenes/cutscenes/endings/ending1-1.tscn")
 
 => END

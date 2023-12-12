@@ -11,7 +11,7 @@ Erica: [speed=0.1]. . .[speed=0.5][shake rate=20.0 level=5 connected=1]Hey![/sha
 : [i]Panic is starting to consume you and you decide to look around. You can see a way out of the situation if you just run away from the seller.[/i]
 : But since you are still hungry, you see two viable options: the tavern and some sort of shop. You choose one that seems more likely to feed your empty stomach.
 - Choose town's tavern.
-	: you chose to make haste into the towns tavern.
+	: You chose to make haste into the towns tavern.
 	do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/tavern_food.tscn")
 - Choose town's shop.
 	: You chose to make haste into the towns shop.

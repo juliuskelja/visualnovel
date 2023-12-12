@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://lfc3s7xxui53"]
+[gd_scene load_steps=18 format=3 uid="uid://lfc3s7xxui53"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_hjt3k"]
 [ext_resource type="Texture2D" uid="uid://mchhkw440rpu" path="res://assets/backgrounds/park.png" id="2_7gnnv"]
@@ -13,15 +13,16 @@
 [ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="11_3ex0n"]
 [ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="12_u7iw1"]
 [ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="13_374j0"]
-[ext_resource type="Texture2D" uid="uid://bppcbhib54ayn" path="res://assets/characters/missingno.png" id="14_p0vx2"]
+[ext_resource type="Texture2D" uid="uid://ilcw5dqghm7p" path="res://assets/characters/Spritet/peuralapsi.png" id="15_cvjwu"]
 [ext_resource type="AudioStream" uid="uid://bh81fg3n08bo7" path="res://assets/music/the_park(VOLATOK).mp3" id="15_m0opg"]
+[ext_resource type="Texture2D" uid="uid://3kwe5ruiuu5n" path="res://assets/characters/Spritet/peuraäiti.png" id="16_nci4p"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rk70v"]
-size = Vector2(1027.32, 1037.03)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ovo6"]
+size = Vector2(88.8652, 63.8186)
 
 [node name="park2" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
 script = ExtResource("1_hjt3k")
-clickable_sprite = NodePath("Anne")
+clickable_sprite = NodePath("")
 setdialogue = "park2"
 
 [node name="Park" type="Sprite2D" parent="."]
@@ -95,19 +96,26 @@ position = Vector2(-0.27803, 0.0834122)
 scale = Vector2(1.00093, 1.00093)
 texture = ExtResource("13_374j0")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_m0opg")
+autoplay = true
+
+[node name="Peuralapsi" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(745, 300)
+scale = Vector2(3.33594, 3.33594)
+texture = ExtResource("15_cvjwu")
+
 [node name="Anne" type="Sprite2D" parent="."]
-position = Vector2(1150, 621)
-scale = Vector2(0.385468, 0.401612)
-texture = ExtResource("14_p0vx2")
+texture_filter = 1
+position = Vector2(637, 273.633)
+scale = Vector2(3.6875, 3.84194)
+texture = ExtResource("16_nci4p")
 
 [node name="Area2D" type="Area2D" parent="Anne"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Anne/Area2D"]
-position = Vector2(1.04755, 1.75574)
-shape = SubResource("RectangleShape2D_rk70v")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_m0opg")
-autoplay = true
+position = Vector2(12.5165, 5.40691)
+shape = SubResource("RectangleShape2D_3ovo6")
 
 [connection signal="input_event" from="Anne/Area2D" to="." method="_on_area_2d_input_event"]
