@@ -20,9 +20,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3ovo6"]
 size = Vector2(88.8652, 63.8186)
 
-[node name="park2" type="Node2D" node_paths=PackedStringArray("clickable_sprite")]
+[node name="park2" type="Node2D"]
 script = ExtResource("1_hjt3k")
-clickable_sprite = NodePath("")
 setdialogue = "park2"
 
 [node name="Park" type="Sprite2D" parent="."]
