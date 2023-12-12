@@ -4,7 +4,7 @@ var map_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
-		get_tree().change_scene_to_file("res://scenes/wizardtower.tscn")
+		get_tree().change_scene_to_file("res://scenes/cutscenes/wizard_tower/cutscene3-1.tscn")
 
 func _on_area_2d_mouse_entered():
 	use_parent_material = false;

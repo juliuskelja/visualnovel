@@ -9,7 +9,6 @@ size = Vector2(62.1652, 88.764)
 
 [node name="pormestari2" type="Node2D"]
 script = ExtResource("1_l4vvd")
-setdialogue = "pormestari2"
 
 [node name="PormestariCrib" type="Sprite2D" parent="."]
 position = Vector2(1015, 541.75)
