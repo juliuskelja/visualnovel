@@ -1,11 +1,7 @@
 ~ this_is_a_node_title
 
-missingno: [[Hi|Hello|Howdy]], this is pormestari2 dialogue.
-missingno: Here are some choices.
-- First one
-	missingno: You picked the first one.
-- Second one
-	missingno: You picked the second one.
+: After your pleasant chat with the lovely family and Ferdinand, you decide to go back to the town square. You see a house that looks a bit more fancy than the rest.
+: In front of said houses you see someone who looks like you could’ve known in the castle. You decide to approach them in hopes that they might know more about what is going on in the village.
 missingno: xd
 
 => END
