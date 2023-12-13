@@ -1,7 +1,7 @@
 ~ this_is_a_node_title
 
-: You enter the pharmacy with the strange plant in your hands.
-: There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
+: [speed=0.5]You enter the pharmacy with the strange plant in your hands.
+: [speed=0.5]There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
 Anne: Hello! How may I help you?
 You: I was asked to deliver you something. I’ve never seen this kind of plant before. What is this called and what is it used for?
 Anne: Oh, thank you! This is called mint and it’s mostly used in herbal teas. It’s a great remedy for many ailments like indigestion or nausea.
@@ -26,4 +26,5 @@ You: Surely there is something to be done?
 Anne: Nothing that we two could do, I’m afraid. But thank you, that’s a kind thought. Here, have some money as a thank you for delivering the mint.
 You: Thank you so much!
 Anne: You’re most kindly welcome! Have a good day!
+: [speed=0.5]You decide you head straight back to the shop.
 do get_tree().change_scene_to_file("res://scenes/implemented_scenes/shop2.tscn")

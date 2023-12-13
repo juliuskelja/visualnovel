@@ -1,22 +1,22 @@
 ~ this_is_a_node_title
 
-: Determined to remember both things Dino asked you to bring him, you enter the Apothecary.
-: There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
-: She notices you and gives you a friendly smile.
+: [speed=0.5]Determined to remember both things Dino asked you to bring him, you enter the Apothecary.
+: [speed=0.5]There’s an herbal scent in the air and you see a disheveled looking, elderly apothecary who comes to you with a friendly smile on her face.
+: [speed=0.5]She notices you and gives you a friendly smile.
 Anne: Hello! How may I help you?
 You : I’m fine, thank you. I came on behalf of Dino. He needs White Willow Bark and Marshmallow Root.
-: She gives a worrying frown.
+: [speed=0.5]She gives a worrying frown.
 Anne: Again? He has been using it a lot this past month. Is he alright since he didn’t come himself? And where do you know each other? Sorry, but I haven’t seen you around before.
 
 - New in town
 	You: I haven’t been around for long. We met in the tavern and talked, so I’m helping him out.
-	: She smiles, although seemingly surprised hearing this.
+	: [speed=0.5]She smiles, although seemingly surprised hearing this.
 	Anne: That’s very kind of you.
 - Local
 	You: Oh, I’ve always lived here. I just haven’t come here in the apothecary before. I’ve known Dino for years.
-	: She frowns.
+	: [speed=0.5]She frowns.
 	Anne: I see. I guess that explains why I haven’t seen you around much.
-: She looks visibly concerned.
+: [speed=0.5]She looks visibly concerned.
 Anne: Dino’s a good person, of course. I’m just not sure how long I can keep giving White Willow Bark to him.
 Anne: Marshmallow Root is something I won’t be giving you. He doesn’t need it, just another addiction on top of alcohol, of course.
 Anne: I can barely make the ends meet and get herbs to brew the medicines with how expensive the herbs have become with all the taxes.
@@ -24,9 +24,9 @@ Anne: And I’m not the only one having trouble being able to pay the taxes. Mos
 You: Really? The marketplace seemed so busy I thought the people were doing alright.
 Anne: Everything is not always what it seems, my dear. Here is the White Willow Bark for Dino.
 You: Thank you!
-: Even if concerned she gives you a slight smile and waves at you as you run back to the door with Dinos items in hand.
+: [speed=0.5]Even if concerned she gives you a slight smile and waves at you as you run back to the door with Dinos items in hand.
 Anne: You’re most kindly welcome. Have a nice day!
-: You decide you head straight back to the tavern.
+: [speed=0.5]You decide you head straight back to the tavern.
 do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/tavern2.tscn")
 
 

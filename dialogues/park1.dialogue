@@ -26,8 +26,8 @@ You: It was nice to meet you too. Have a nice day!
 Mother Deer: Have a nice day you too!
 Bambi: Bye bye!
 
-: You turn around to leave the park, when suddenly you hear some shuffling coming from behind you.
-: A small child runs up to you with a wide smile, and you can’t help but hear this little one out.
+: [speed=0.5]You turn around to leave the park, when suddenly you hear some shuffling coming from behind you.
+: [speed=0.5]A small child runs up to you with a wide smile, and you can’t help but hear this little one out.
 Ferdinand: Hi there!
 You: Oh, hello.
 - Who are you?
@@ -36,7 +36,7 @@ You: Oh, hello.
 	Ferdinand: Oh, no, I live here, since I don’t have a real home. My name is Ferdinand.
 You: Nice to meet you, Ferdinand. Where are your parents?
 Ferdinand: I don’t know.
-You: Oh. . . you don’t know what happened to your parents?
+You: Oh... you don’t know what happened to your parents?
 Ferdinand: Mayor Copperfield sent my parents away… My parents were helping the apothecary to collect some herbs and accidentally went too close to someone’s backyard.
 You: And for that they were sent away?
 Ferdinand: Oh, Mayor Copperfield sends anyone away for the tiniest reason just to hold onto his position.
@@ -69,4 +69,5 @@ Ferdinand: Anyway, I think I better go now.
 You: Alright. It was nice to talk to you.
 Ferdinand: It was nice to talk to you too. Bye!
 You: Bye!
+: [speed=0.5]After your pleasant chat with the lovely family and Ferdinand, you decide to go back to the town square.
 do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pormestari.tscn")

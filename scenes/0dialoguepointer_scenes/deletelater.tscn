@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5p0w8wrqf8pk"]
-
-[ext_resource type="Script" path="res://scenes/0dialoguepointer_scenes/deletelater.gd" id="1_glrww"]
-
-[node name="deletelater" type="Node2D"]
-script = ExtResource("1_glrww")
