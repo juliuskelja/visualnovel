@@ -425,7 +425,6 @@ frame_progress = 0.336626
 speed_scale = 0.4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TreeAnimation2D"]
-visible = false
 position = Vector2(960, 539)
 shape = SubResource("RectangleShape2D_s1fi0")
 
@@ -442,12 +441,10 @@ frame_progress = 0.334094
 speed_scale = 0.28
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FallingLeaves2D"]
-visible = false
 position = Vector2(960.5, 539.5)
 shape = SubResource("RectangleShape2D_u1hnp")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0, 0, 1)

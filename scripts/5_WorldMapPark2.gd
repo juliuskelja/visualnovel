@@ -4,6 +4,7 @@ extends Sprite2D
 
 var warningOpen = false
 var map_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
+var map_click = load("res://assets/sound/karttavalitse.audio(VOLATOK).mp3")
 
 func openingWarn():
 	if (warning.z_index == -2):
@@ -23,6 +24,8 @@ func _on_park_input_event(viewport, event, shape_idx):
 		warning.z_index = 1
 		warning.show()
 		openingWarn()
+		SoundPlayer.set_stream(map_click)
+		SoundPlayer.play()
 
 func _on_park_mouse_entered():
 	use_parent_material = false;
@@ -36,6 +39,10 @@ func _on_park_mouse_exited():
 func _on_warning_no_button_pressed():
 	warning.z_index = -2
 	openingWarn()
+	SoundPlayer.set_stream(map_click)
+	SoundPlayer.play()
 
 func _on_warning_yes_button_pressed():
+	SoundPlayer.set_stream(map_click)
+	SoundPlayer.play()
 	get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park1.tscn")

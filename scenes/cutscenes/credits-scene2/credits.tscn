@@ -1,6 +1,7 @@
-[gd_scene load_steps=38 format=3 uid="uid://edwmahel1v8p"]
+[gd_scene load_steps=39 format=3 uid="uid://edwmahel1v8p"]
 
 [ext_resource type="Script" path="res://credits-scene/credits.gd" id="1_md8rn"]
+[ext_resource type="AudioStream" uid="uid://blufj0or5ydrf" path="res://assets/music/credits(VOLATOK).mp3" id="2_orv7r"]
 [ext_resource type="Script" path="res://credits-scene/FallingLeaves2D.gd" id="3_wkk7n"]
 [ext_resource type="Texture2D" uid="uid://darsbo6a0amdt" path="res://assets/fallingleaves/Falling leaves animation1.png" id="4_qj87c"]
 [ext_resource type="Texture2D" uid="uid://bj6p86jf3ivo5" path="res://assets/fallingleaves/Falling leaves animation2.png" id="5_2j7a7"]
@@ -166,6 +167,7 @@ grow_vertical = 2
 expand = true
 
 [node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_orv7r")
 autoplay = true
 
 [node name="scrollingContainer" type="VBoxContainer" parent="."]
@@ -200,7 +202,6 @@ position = Vector2(960.5, 539.5)
 shape = SubResource("RectangleShape2D_cwo7g")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
