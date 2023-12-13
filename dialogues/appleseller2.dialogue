@@ -5,9 +5,15 @@ Erica: [[Hi!|Hello!|]]. . .
 Erica: Oh.[wait=0.5] It’s you again. What do you want to steal now?
 - Apologetic.
 	You: I’m not looking for anything to steal. Quite the opposite, actually. Here, this is what I owe you. And I’m sorry for stealing in the first place.
+	Erica: Oh… Well, thank you, I wasn’t expecting this. Sorry for being so judgemental in the beginning. I, uhh, I need to get back to work, but do know that I am very thankful and I accept your apology.
+	: [speed=0.5]You leave the stall, feeling better about yourself.
 - Offended.
 	You: Awfully rude of you. I know that I wronged you, but that is no way to talk to someone. Anyway, I came here to pay you what I owe. Here.
+	Erica: Oh… Thank you. I’m sorry for snapping at you like that. I, uhh, I need to get back to work, but do know that I am very thankful and I accept your apology.
+	: [speed=0.5]You leave the stall, feeling better about yourself.
 - Annoyed.
 	You: Actually, I just realized that I didn’t need to be here. Good luck with your business, you sure do need it.
+	Erica: I definitely don’t need luck from someone like you, just scram already!
+	: [speed=0.5]You leave the stall, and wonder to yourself if that was the right thing to do.
 
 do get_tree().change_scene_to_file("res://scenes/map3.tscn")
