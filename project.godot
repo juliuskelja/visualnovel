@@ -48,7 +48,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/appleseller2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/dock.dialogue", "res://dialogues/shop_food.dialogue", "res://dialogues/tavern_food.dialogue", "res://dialogues/template1.dialogue", "res://dialogues/pormestari.dialogue", "res://dialogues/park2.dialogue", "res://dialogues/pormestari2.dialogue", "res://dialogues/deletelater.dialogue", "res://dialogues/park1.dialogue", "res://dialogues/park1_1.dialogue", "res://dialogues/pharmacy_shop.dialogue", "res://dialogues/pharmacy_tavern.dialogue", "res://dialogues/pharmacy_2.dialogue", "res://dialogues/shop2.dialogue", "res://dialogues/tavern2.dialogue", "res://dialogues/test_finn_dialog.dialogue", "res://dialogues/test_blake_dialog.dialogue", "res://dock2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue", "res://main1.dialogue", "res://main2.dialogue", "res://dialogues/appleseller2.dialogue", "res://dialogues/Beginning.dialogue", "res://dialogues/dock.dialogue", "res://dialogues/shop_food.dialogue", "res://dialogues/tavern_food.dialogue", "res://dialogues/template1.dialogue", "res://dialogues/pormestari.dialogue", "res://dialogues/park2.dialogue", "res://dialogues/pormestari2.dialogue", "res://dialogues/park1.dialogue", "res://dialogues/park1_1.dialogue", "res://dialogues/pharmacy_shop.dialogue", "res://dialogues/pharmacy_tavern.dialogue", "res://dialogues/pharmacy_2.dialogue", "res://dialogues/shop2.dialogue", "res://dialogues/tavern2.dialogue", "res://dock2.dialogue")
 
 [layer_names]
 
