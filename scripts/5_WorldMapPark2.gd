@@ -8,17 +8,20 @@ var map_hover = load("res://assets/sound/valikkonavigointi.audio(VOLATOK).mp3")
 func openingWarn():
 	if (warning.z_index == -2):
 		warningOpen = false
+		warning.hide()
 		print("is false")
 	if (warning.z_index == 1):
 		warningOpen = true
 		print("is open")
 
 func _ready():
+	warning.hide()
 	warning.z_index = -2
 
 func _on_park_input_event(viewport, event, shape_idx):
 	if (event is InputEventMouseButton and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and event.pressed):
 		warning.z_index = 1
+		warning.show()
 		openingWarn()
 
 func _on_park_mouse_entered():
@@ -36,11 +39,3 @@ func _on_warning_no_button_pressed():
 
 func _on_warning_yes_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Implemented_scenes/park1.tscn")
-
-
-func _on_warning_no_button_mouse_entered():
-	pass # Replace with function body.
-
-
-func _on_warning_yes_button_mouse_entered():
-	pass # Replace with function body.

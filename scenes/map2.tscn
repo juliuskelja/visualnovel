@@ -339,6 +339,7 @@ texture = ExtResource("35_krajd")
 
 [node name="Warning" type="Sprite2D" parent="."]
 z_index = 2
+z_as_relative = false
 position = Vector2(646, 394.5)
 scale = Vector2(1, 1.00093)
 texture = ExtResource("33_fw15a")
