@@ -64,7 +64,7 @@ script = ExtResource("1_4u26j")
 
 [node name="Balloon" type="Panel" parent="."]
 unique_name_in_owner = true
-z_index = 1
+z_index = 7
 texture_filter = 2
 anchors_preset = 12
 anchor_top = 1.0
@@ -79,7 +79,7 @@ grow_vertical = 0
 theme = SubResource("Theme_qq3yp")
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon"]
-z_index = 1
+z_index = 6
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -98,6 +98,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
+z_index = 7
 layout_mode = 2
 offset_left = 321.0
 offset_top = -305.0
@@ -127,14 +128,21 @@ texture = ExtResource("7_j887r")
 
 [node name="Portrait" type="TextureRect" parent="Balloon"]
 unique_name_in_owner = true
-z_index = -5
+clip_children = 2
+light_mask = 5
+visibility_layer = 5
+z_index = 1
 texture_filter = 1
 custom_minimum_size = Vector2(400, 400)
 layout_mode = 2
-offset_left = -267.0
-offset_top = -356.0
-offset_right = 349.0
-offset_bottom = 260.0
+anchor_left = 0.034
+anchor_top = -0.181
+anchor_right = 0.034
+anchor_bottom = -0.181
+offset_left = -308.446
+offset_top = -308.035
+offset_right = 307.554
+offset_bottom = 307.965
 expand_mode = 1
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon"]

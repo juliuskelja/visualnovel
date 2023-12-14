@@ -35,8 +35,10 @@ var dialogue_line: DialogueLine:
 		character_label.text = tr(dialogue_line.character, "dialogue")
 		var portrait_path: String = "res://assets/characters/%s.png" % dialogue_line.character.to_lower()
 		if FileAccess.file_exists(portrait_path):
+			print ("texture load successful")
 			portrait.texture = load(portrait_path)
 		else:
+			print ("texture load fail")
 			portrait.texture = null
 
 		dialogue_label.hide()

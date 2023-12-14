@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_kf1bk"]
 [ext_resource type="Texture2D" uid="uid://xy6sxgb0yjq3" path="res://assets/backgrounds/Kauppa.png" id="2_g4xh4"]
-[ext_resource type="Texture2D" uid="uid://b8ifr5mn88sfr" path="res://assets/characters/Spritet/majaavaaaa.png" id="3_blxtv"]
+[ext_resource type="Texture2D" uid="uid://b8ifr5mn88sfr" path="res://assets/cutscene/Spritet/majaavaaaa.png" id="3_blxtv"]
 [ext_resource type="AudioStream" uid="uid://cvbafdl2kft4q" path="res://assets/music/the_shop(VOLATOK).mp3" id="4_ypee6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rfy14"]

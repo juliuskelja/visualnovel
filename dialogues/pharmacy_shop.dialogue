@@ -27,4 +27,4 @@ Anne: Nothing that we two could do, I’m afraid. But thank you, that’s a kind
 You: Thank you so much!
 Anne: You’re most kindly welcome! Have a good day!
 : [speed=0.5]You decide you head straight back to the shop.
-do get_tree().change_scene_to_file("res://scenes/implemented_scenes/shop2.tscn")
+do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/shop2.tscn")

@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://dhmmlxmpmegb2" path="res://assets/map/park_assets/8 park picnic.png" id="11_vwqwr"]
 [ext_resource type="Texture2D" uid="uid://bfq74scvrja7x" path="res://assets/map/park_assets/9 park benches.png" id="12_wnvic"]
 [ext_resource type="Texture2D" uid="uid://qjcoytqixpas" path="res://assets/map/park_assets/10 park lighting.png" id="13_gq407"]
-[ext_resource type="Texture2D" uid="uid://3kwe5ruiuu5n" path="res://assets/characters/Spritet/peuraäiti.png" id="14_4g558"]
-[ext_resource type="Texture2D" uid="uid://ilcw5dqghm7p" path="res://assets/characters/Spritet/peuralapsi.png" id="14_aiei3"]
+[ext_resource type="Texture2D" uid="uid://3kwe5ruiuu5n" path="res://assets/cutscene/Spritet/peuraäiti.png" id="14_4g558"]
+[ext_resource type="Texture2D" uid="uid://ilcw5dqghm7p" path="res://assets/cutscene/Spritet/peuralapsi.png" id="14_aiei3"]
 [ext_resource type="AudioStream" uid="uid://bh81fg3n08bo7" path="res://assets/music/the_park(VOLATOK).mp3" id="15_ucn87"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yhnnm"]

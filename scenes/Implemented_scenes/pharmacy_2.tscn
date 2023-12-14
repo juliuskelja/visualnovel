@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3qat04lplalg"]
 
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_gsnbp"]
-[ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/characters/Spritet/Anne.png" id="2_t0l8q"]
+[ext_resource type="Texture2D" uid="uid://d2q6ue3dl3nfx" path="res://assets/cutscene/Spritet/Anne.png" id="2_t0l8q"]
 [ext_resource type="Texture2D" uid="uid://bsvskk2vkgrxq" path="res://assets/backgrounds/apteekki tausta.png" id="2_yyae7"]
 [ext_resource type="AudioStream" uid="uid://dstsx6c8mc0jo" path="res://assets/music/apothecary(VOLATOK+ambienssilisäys).mp3" id="4_a6s2l"]
 

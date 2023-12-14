@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cemor1qje3qfh" path="res://assets/cutscene/pormestari crib.png" id="1_6a2p6"]
 [ext_resource type="Script" path="res://scripts/Dialogue_scripts/XDasd.gd" id="1_nvhsd"]
-[ext_resource type="Texture2D" uid="uid://dgepblk3njnsq" path="res://assets/characters/Spritet/Pormestari.png" id="2_xk5ti"]
+[ext_resource type="Texture2D" uid="uid://dgepblk3njnsq" path="res://assets/cutscene/Spritet/Pormestari.png" id="2_xk5ti"]
 [ext_resource type="AudioStream" uid="uid://d4csuv1icp4l7" path="res://assets/music/the_mayor(VOLATOK).mp3" id="4_infvu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_urkp6"]

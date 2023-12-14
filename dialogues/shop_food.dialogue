@@ -17,5 +17,5 @@ You: Okay. I'll come back soon.
 
 : [speed=0.5]Brian hands you a strange plant, with the delivery in tow you start making your way to the pharmacy.
 
-do get_tree().change_scene_to_file("res://scenes/implemented_scenes/pharmacy_shop.tscn")
+do get_tree().change_scene_to_file("res://scenes/Implemented_scenes/pharmacy_shop.tscn")
 => END
