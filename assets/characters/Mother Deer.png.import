@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4obfmuyexd0w"
-path="res://.godot/imported/Mother Deer.png-1b8b8e05638b4912782259081e44b3dd.ctex"
+path="res://.godot/imported/mother deer.png-80c44ed81439e39b5c580fa7e12827dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Mother Deer.png"
-dest_files=["res://.godot/imported/Mother Deer.png-1b8b8e05638b4912782259081e44b3dd.ctex"]
+source_file="res://assets/characters/mother deer.png"
+dest_files=["res://.godot/imported/mother deer.png-80c44ed81439e39b5c580fa7e12827dd.ctex"]
 
 [params]
 

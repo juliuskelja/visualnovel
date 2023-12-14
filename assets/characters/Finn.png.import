@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvy3w8dh12npc"
-path="res://.godot/imported/Finn.png-4be31fd34f7d73c96f90ed9481b8fcd9.ctex"
+path="res://.godot/imported/finn.png-41b39cf4d47116e09ca598d5ebe9bb68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Finn.png"
-dest_files=["res://.godot/imported/Finn.png-4be31fd34f7d73c96f90ed9481b8fcd9.ctex"]
+source_file="res://assets/characters/finn.png"
+dest_files=["res://.godot/imported/finn.png-41b39cf4d47116e09ca598d5ebe9bb68.ctex"]
 
 [params]
 

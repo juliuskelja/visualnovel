@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://grtl80bgtn4g"
-path="res://.godot/imported/Anne.png-86a3968f6afe8e226e8b354f5c586f3d.ctex"
+path="res://.godot/imported/anne.png-e0326e3c0fb7f96e25e97a8455f36285.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Anne.png"
-dest_files=["res://.godot/imported/Anne.png-86a3968f6afe8e226e8b354f5c586f3d.ctex"]
+source_file="res://assets/characters/anne.png"
+dest_files=["res://.godot/imported/anne.png-e0326e3c0fb7f96e25e97a8455f36285.ctex"]
 
 [params]
 

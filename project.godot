@@ -24,6 +24,7 @@ buses/default_bus_layout=""
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 MusicPlayer="*res://assets/music/MusicPlayer.tscn"
 SoundPlayer="*res://assets/sound/SoundPlayer.tscn"
+Tx="*res://textures.gd"
 
 [dialogue_manager]
 

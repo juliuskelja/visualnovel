@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7vys8yu6o3gw"
-path="res://.godot/imported/Connell.png-62df070730a09194afe1758f31511a4c.ctex"
+path="res://.godot/imported/connell.png-bc943daac79abb624babf15a734a05ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Connell.png"
-dest_files=["res://.godot/imported/Connell.png-62df070730a09194afe1758f31511a4c.ctex"]
+source_file="res://assets/characters/connell.png"
+dest_files=["res://.godot/imported/connell.png-bc943daac79abb624babf15a734a05ca.ctex"]
 
 [params]
 

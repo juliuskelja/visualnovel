@@ -9,6 +9,10 @@ func _ready():
 	$TitleScreenMenuHighlight1.hide()
 	$TitleScreenMenuHighlight2.hide()
 	$TitleScreenMenuHighlight3.hide()
+	
+	#var path = {Anne : "res://assets/characters/Anne.png", Bambi : "res://assets/characters/Bambi.png",Blake : "res://assets/characters/Blake.png",Brian : "res://assets/characters/Brian.png",Connell : "res://assets/characters/Connell.png",Copperfield : "res://assets/characters/Copperfield.png",Dino : "res://assets/characters/Dino.png",Erica : "res://assets/characters/erica.png",Ferd : "res://assets/characters/Ferdinand.png","res://assets/characters/Finn.png","res://assets/characters/Mother Deer.png"]
+	#for i in path:
+		#Tx.list.append(i)
 
 func _on_play_area_2d_mouse_entered():
 	$TitleScreenMenuHighlight1.show()

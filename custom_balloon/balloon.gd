@@ -7,6 +7,8 @@ extends CanvasLayer
 @onready var dialogue_label: DialogueLabel = %DialogueLabel
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
 
+var index = 0
+
 ## The dialogue resource
 var resource: DialogueResource
 
@@ -33,11 +35,13 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		character_label.text = tr(dialogue_line.character, "dialogue")
-		var portrait_path: String = "res://assets/characters/%s.png" % dialogue_line.character.to_lower()
-		if FileAccess.file_exists(portrait_path):
-			portrait.texture = load(portrait_path)
-		else:
-			portrait.texture = null
+		#var portrait_path: String = "res://assets/characters/%s.png" % dialogue_line.character.to_lower()
+		var tex = load("res://assets/characters/%s.png" % dialogue_line.character.to_lower())
+		portrait.texture = tex
+		#if FileAccess.file_exists(portrait_path):
+			#portrait.texture = load(portrait_path)
+		#else:
+			#portrait.texture = null
 
 		dialogue_label.hide()
 		dialogue_label.dialogue_line = dialogue_line
